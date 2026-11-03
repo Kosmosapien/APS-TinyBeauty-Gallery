@@ -1,0 +1,588 @@
+{
+  "title": "TinyBeauty V6",
+  "style": "Social",
+  "checkpoint_v5": 2100,
+  "checkpoint_v6": 3300,
+  "v6_train_count": 1107,
+  "v6_val_count": 154,
+  "cases": [
+    {
+      "index": 1,
+      "identity": "SFHQ_pt3_00011865",
+      "group": "shared",
+      "images": {
+        "Original": "assets/01_original.webp",
+        "Teacher": "assets/01_teacher.webp",
+        "V5": "assets/01_v5.webp",
+        "V6": "assets/01_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 15.966,
+        "V5": 11.316,
+        "V6": 10.942
+      }
+    },
+    {
+      "index": 2,
+      "identity": "SFHQ_pt3_00040440",
+      "group": "shared",
+      "images": {
+        "Original": "assets/02_original.webp",
+        "Teacher": "assets/02_teacher.webp",
+        "V5": "assets/02_v5.webp",
+        "V6": "assets/02_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 9.789,
+        "V5": 7.575,
+        "V6": 7.367
+      }
+    },
+    {
+      "index": 3,
+      "identity": "SFHQ_pt3_00081041",
+      "group": "shared",
+      "images": {
+        "Original": "assets/03_original.webp",
+        "Teacher": "assets/03_teacher.webp",
+        "V5": "assets/03_v5.webp",
+        "V6": "assets/03_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 7.552,
+        "V5": 5.249,
+        "V6": 5.183
+      }
+    },
+    {
+      "index": 4,
+      "identity": "SFHQ_pt3_00092615",
+      "group": "shared",
+      "images": {
+        "Original": "assets/04_original.webp",
+        "Teacher": "assets/04_teacher.webp",
+        "V5": "assets/04_v5.webp",
+        "V6": "assets/04_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 8.709,
+        "V5": 6.999,
+        "V6": 6.713
+      }
+    },
+    {
+      "index": 5,
+      "identity": "SFHQ_pt3_00000073",
+      "group": "shared",
+      "images": {
+        "Original": "assets/05_original.webp",
+        "Teacher": "assets/05_teacher.webp",
+        "V5": "assets/05_v5.webp",
+        "V6": "assets/05_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 9.524,
+        "V5": 6.664,
+        "V6": 6.691
+      }
+    },
+    {
+      "index": 6,
+      "identity": "SFHQ_pt3_00063318",
+      "group": "shared",
+      "images": {
+        "Original": "assets/06_original.webp",
+        "Teacher": "assets/06_teacher.webp",
+        "V5": "assets/06_v5.webp",
+        "V6": "assets/06_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 11.391,
+        "V5": 10.66,
+        "V6": 10.56
+      }
+    },
+    {
+      "index": 7,
+      "identity": "SFHQ_pt3_00091939",
+      "group": "shared",
+      "images": {
+        "Original": "assets/07_original.webp",
+        "Teacher": "assets/07_teacher.webp",
+        "V5": "assets/07_v5.webp",
+        "V6": "assets/07_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 11.093,
+        "V5": 8.695,
+        "V6": 8.436
+      }
+    },
+    {
+      "index": 8,
+      "identity": "SFHQ_pt3_00086143",
+      "group": "shared",
+      "images": {
+        "Original": "assets/08_original.webp",
+        "Teacher": "assets/08_teacher.webp",
+        "V5": "assets/08_v5.webp",
+        "V6": "assets/08_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 13.776,
+        "V5": 11.311,
+        "V6": 11.247
+      }
+    },
+    {
+      "index": 9,
+      "identity": "SFHQ_pt3_00029366",
+      "group": "shared",
+      "images": {
+        "Original": "assets/09_original.webp",
+        "Teacher": "assets/09_teacher.webp",
+        "V5": "assets/09_v5.webp",
+        "V6": "assets/09_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 9.215,
+        "V5": 7.124,
+        "V6": 7.05
+      }
+    },
+    {
+      "index": 10,
+      "identity": "SFHQ_pt3_00027398",
+      "group": "shared",
+      "images": {
+        "Original": "assets/10_original.webp",
+        "Teacher": "assets/10_teacher.webp",
+        "V5": "assets/10_v5.webp",
+        "V6": "assets/10_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 11.502,
+        "V5": 8.149,
+        "V6": 7.743
+      }
+    },
+    {
+      "index": 11,
+      "identity": "SFHQ_pt3_00044372",
+      "group": "shared",
+      "images": {
+        "Original": "assets/11_original.webp",
+        "Teacher": "assets/11_teacher.webp",
+        "V5": "assets/11_v5.webp",
+        "V6": "assets/11_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 8.019,
+        "V5": 7.098,
+        "V6": 7.02
+      }
+    },
+    {
+      "index": 12,
+      "identity": "SFHQ_pt3_00082227",
+      "group": "shared",
+      "images": {
+        "Original": "assets/12_original.webp",
+        "Teacher": "assets/12_teacher.webp",
+        "V5": "assets/12_v5.webp",
+        "V6": "assets/12_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 6.312,
+        "V5": 5.011,
+        "V6": 4.8
+      }
+    },
+    {
+      "index": 13,
+      "identity": "SFHQ_pt3_00033750",
+      "group": "shared",
+      "images": {
+        "Original": "assets/13_original.webp",
+        "Teacher": "assets/13_teacher.webp",
+        "V5": "assets/13_v5.webp",
+        "V6": "assets/13_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 6.365,
+        "V5": 5.373,
+        "V6": 5.29
+      }
+    },
+    {
+      "index": 14,
+      "identity": "SFHQ_pt3_00010706",
+      "group": "shared",
+      "images": {
+        "Original": "assets/14_original.webp",
+        "Teacher": "assets/14_teacher.webp",
+        "V5": "assets/14_v5.webp",
+        "V6": "assets/14_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 12.289,
+        "V5": 9.582,
+        "V6": 9.541
+      }
+    },
+    {
+      "index": 15,
+      "identity": "SFHQ_pt3_00104060",
+      "group": "shared",
+      "images": {
+        "Original": "assets/15_original.webp",
+        "Teacher": "assets/15_teacher.webp",
+        "V5": "assets/15_v5.webp",
+        "V6": "assets/15_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 16.601,
+        "V5": 13.401,
+        "V6": 13.371
+      }
+    },
+    {
+      "index": 16,
+      "identity": "SFHQ_pt3_00020466",
+      "group": "shared",
+      "images": {
+        "Original": "assets/16_original.webp",
+        "Teacher": "assets/16_teacher.webp",
+        "V5": "assets/16_v5.webp",
+        "V6": "assets/16_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 6.878,
+        "V5": 5.027,
+        "V6": 4.562
+      }
+    },
+    {
+      "index": 17,
+      "identity": "SFHQ_pt3_00003289",
+      "group": "shared",
+      "images": {
+        "Original": "assets/17_original.webp",
+        "Teacher": "assets/17_teacher.webp",
+        "V5": "assets/17_v5.webp",
+        "V6": "assets/17_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 10.43,
+        "V5": 8.792,
+        "V6": 8.445
+      }
+    },
+    {
+      "index": 18,
+      "identity": "SFHQ_pt3_00008011",
+      "group": "shared",
+      "images": {
+        "Original": "assets/18_original.webp",
+        "Teacher": "assets/18_teacher.webp",
+        "V5": "assets/18_v5.webp",
+        "V6": "assets/18_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 7.173,
+        "V5": 5.995,
+        "V6": 6.0
+      }
+    },
+    {
+      "index": 19,
+      "identity": "SFHQ_pt3_00001690",
+      "group": "shared",
+      "images": {
+        "Original": "assets/19_original.webp",
+        "Teacher": "assets/19_teacher.webp",
+        "V5": "assets/19_v5.webp",
+        "V6": "assets/19_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 10.091,
+        "V5": 8.174,
+        "V6": 8.116
+      }
+    },
+    {
+      "index": 20,
+      "identity": "SFHQ_pt3_00052714",
+      "group": "shared",
+      "images": {
+        "Original": "assets/20_original.webp",
+        "Teacher": "assets/20_teacher.webp",
+        "V5": "assets/20_v5.webp",
+        "V6": "assets/20_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 13.166,
+        "V5": 9.302,
+        "V6": 9.021
+      }
+    },
+    {
+      "index": 21,
+      "identity": "SFHQ_pt3_00018415",
+      "group": "shared",
+      "images": {
+        "Original": "assets/21_original.webp",
+        "Teacher": "assets/21_teacher.webp",
+        "V5": "assets/21_v5.webp",
+        "V6": "assets/21_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 7.954,
+        "V5": 6.828,
+        "V6": 6.676
+      }
+    },
+    {
+      "index": 22,
+      "identity": "SFHQ_pt3_00017617",
+      "group": "shared",
+      "images": {
+        "Original": "assets/22_original.webp",
+        "Teacher": "assets/22_teacher.webp",
+        "V5": "assets/22_v5.webp",
+        "V6": "assets/22_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 15.556,
+        "V5": 13.205,
+        "V6": 13.018
+      }
+    },
+    {
+      "index": 23,
+      "identity": "SFHQ_pt3_00007250",
+      "group": "shared",
+      "images": {
+        "Original": "assets/23_original.webp",
+        "Teacher": "assets/23_teacher.webp",
+        "V5": "assets/23_v5.webp",
+        "V6": "assets/23_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 10.483,
+        "V5": 9.385,
+        "V6": 9.325
+      }
+    },
+    {
+      "index": 24,
+      "identity": "SFHQ_pt3_00050616",
+      "group": "shared",
+      "images": {
+        "Original": "assets/24_original.webp",
+        "Teacher": "assets/24_teacher.webp",
+        "V5": "assets/24_v5.webp",
+        "V6": "assets/24_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 7.556,
+        "V5": 6.445,
+        "V6": 6.333
+      }
+    },
+    {
+      "index": 25,
+      "identity": "SFHQ_pt3_00066396",
+      "group": "new",
+      "images": {
+        "Original": "assets/25_original.webp",
+        "Teacher": "assets/25_teacher.webp",
+        "V5": "assets/25_v5.webp",
+        "V6": "assets/25_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 10.568,
+        "V5": 8.903,
+        "V6": 8.807
+      }
+    },
+    {
+      "index": 26,
+      "identity": "SFHQ_pt3_00116575",
+      "group": "new",
+      "images": {
+        "Original": "assets/26_original.webp",
+        "Teacher": "assets/26_teacher.webp",
+        "V5": "assets/26_v5.webp",
+        "V6": "assets/26_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 11.942,
+        "V5": 9.99,
+        "V6": 9.974
+      }
+    },
+    {
+      "index": 27,
+      "identity": "SFHQ_pt3_00078711",
+      "group": "new",
+      "images": {
+        "Original": "assets/27_original.webp",
+        "Teacher": "assets/27_teacher.webp",
+        "V5": "assets/27_v5.webp",
+        "V6": "assets/27_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 11.173,
+        "V5": 9.141,
+        "V6": 8.96
+      }
+    },
+    {
+      "index": 28,
+      "identity": "SFHQ_pt3_00007455",
+      "group": "new",
+      "images": {
+        "Original": "assets/28_original.webp",
+        "Teacher": "assets/28_teacher.webp",
+        "V5": "assets/28_v5.webp",
+        "V6": "assets/28_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 7.076,
+        "V5": 6.651,
+        "V6": 6.507
+      }
+    },
+    {
+      "index": 29,
+      "identity": "SFHQ_pt3_00070721",
+      "group": "new",
+      "images": {
+        "Original": "assets/29_original.webp",
+        "Teacher": "assets/29_teacher.webp",
+        "V5": "assets/29_v5.webp",
+        "V6": "assets/29_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 9.783,
+        "V5": 7.231,
+        "V6": 7.313
+      }
+    },
+    {
+      "index": 30,
+      "identity": "SFHQ_pt3_00064670",
+      "group": "new",
+      "images": {
+        "Original": "assets/30_original.webp",
+        "Teacher": "assets/30_teacher.webp",
+        "V5": "assets/30_v5.webp",
+        "V6": "assets/30_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 12.403,
+        "V5": 10.214,
+        "V6": 10.001
+      }
+    },
+    {
+      "index": 31,
+      "identity": "SFHQ_pt3_00044318",
+      "group": "new",
+      "images": {
+        "Original": "assets/31_original.webp",
+        "Teacher": "assets/31_teacher.webp",
+        "V5": "assets/31_v5.webp",
+        "V6": "assets/31_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 8.632,
+        "V5": 7.736,
+        "V6": 7.586
+      }
+    },
+    {
+      "index": 32,
+      "identity": "SFHQ_pt3_00005043",
+      "group": "new",
+      "images": {
+        "Original": "assets/32_original.webp",
+        "Teacher": "assets/32_teacher.webp",
+        "V5": "assets/32_v5.webp",
+        "V6": "assets/32_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 15.145,
+        "V5": 12.9,
+        "V6": 12.757
+      }
+    },
+    {
+      "index": 33,
+      "identity": "SFHQ_pt3_00099282",
+      "group": "new",
+      "images": {
+        "Original": "assets/33_original.webp",
+        "Teacher": "assets/33_teacher.webp",
+        "V5": "assets/33_v5.webp",
+        "V6": "assets/33_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 9.134,
+        "V5": 7.947,
+        "V6": 7.902
+      }
+    },
+    {
+      "index": 34,
+      "identity": "SFHQ_pt3_00108733",
+      "group": "new",
+      "images": {
+        "Original": "assets/34_original.webp",
+        "Teacher": "assets/34_teacher.webp",
+        "V5": "assets/34_v5.webp",
+        "V6": "assets/34_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 12.518,
+        "V5": 10.389,
+        "V6": 10.127
+      }
+    },
+    {
+      "index": 35,
+      "identity": "SFHQ_pt3_00058199",
+      "group": "new",
+      "images": {
+        "Original": "assets/35_original.webp",
+        "Teacher": "assets/35_teacher.webp",
+        "V5": "assets/35_v5.webp",
+        "V6": "assets/35_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 7.062,
+        "V5": 5.518,
+        "V6": 5.238
+      }
+    },
+    {
+      "index": 36,
+      "identity": "SFHQ_pt3_00100216",
+      "group": "new",
+      "images": {
+        "Original": "assets/36_original.webp",
+        "Teacher": "assets/36_teacher.webp",
+        "V5": "assets/36_v5.webp",
+        "V6": "assets/36_v6.webp"
+      },
+      "mae_teacher": {
+        "Original": 10.579,
+        "V5": 9.033,
+        "V6": 9.06
+      }
+    }
+  ],
+  "research_only": true,
+  "generated_utc": "2026-11-03T20:57:56.131343+00:00"
+}
