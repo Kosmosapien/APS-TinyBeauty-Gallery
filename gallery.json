@@ -1,0 +1,249 @@
+{
+  "style": "Social / elegante",
+  "checkpoint_step": 2500,
+  "train_count": 334,
+  "validation_count": 45,
+  "cases": [
+    {
+      "number": 1,
+      "images": {
+        "original": "assets/case-01-original.webp",
+        "teacher": "assets/case-01-teacher.webp",
+        "student": "assets/case-01-student.webp"
+      },
+      "delta_student": 4.58,
+      "delta_teacher": 11.99
+    },
+    {
+      "number": 2,
+      "images": {
+        "original": "assets/case-02-original.webp",
+        "teacher": "assets/case-02-teacher.webp",
+        "student": "assets/case-02-student.webp"
+      },
+      "delta_student": 4.39,
+      "delta_teacher": 11.56
+    },
+    {
+      "number": 3,
+      "images": {
+        "original": "assets/case-03-original.webp",
+        "teacher": "assets/case-03-teacher.webp",
+        "student": "assets/case-03-student.webp"
+      },
+      "delta_student": 2.5,
+      "delta_teacher": 6.92
+    },
+    {
+      "number": 4,
+      "images": {
+        "original": "assets/case-04-original.webp",
+        "teacher": "assets/case-04-teacher.webp",
+        "student": "assets/case-04-student.webp"
+      },
+      "delta_student": 4.13,
+      "delta_teacher": 8.88
+    },
+    {
+      "number": 5,
+      "images": {
+        "original": "assets/case-05-original.webp",
+        "teacher": "assets/case-05-teacher.webp",
+        "student": "assets/case-05-student.webp"
+      },
+      "delta_student": 3.12,
+      "delta_teacher": 7.45
+    },
+    {
+      "number": 6,
+      "images": {
+        "original": "assets/case-06-original.webp",
+        "teacher": "assets/case-06-teacher.webp",
+        "student": "assets/case-06-student.webp"
+      },
+      "delta_student": 4.43,
+      "delta_teacher": 9.0
+    },
+    {
+      "number": 7,
+      "images": {
+        "original": "assets/case-07-original.webp",
+        "teacher": "assets/case-07-teacher.webp",
+        "student": "assets/case-07-student.webp"
+      },
+      "delta_student": 3.29,
+      "delta_teacher": 6.55
+    },
+    {
+      "number": 8,
+      "images": {
+        "original": "assets/case-08-original.webp",
+        "teacher": "assets/case-08-teacher.webp",
+        "student": "assets/case-08-student.webp"
+      },
+      "delta_student": 3.16,
+      "delta_teacher": 14.48
+    },
+    {
+      "number": 9,
+      "images": {
+        "original": "assets/case-09-original.webp",
+        "teacher": "assets/case-09-teacher.webp",
+        "student": "assets/case-09-student.webp"
+      },
+      "delta_student": 3.04,
+      "delta_teacher": 8.62
+    },
+    {
+      "number": 10,
+      "images": {
+        "original": "assets/case-10-original.webp",
+        "teacher": "assets/case-10-teacher.webp",
+        "student": "assets/case-10-student.webp"
+      },
+      "delta_student": 4.83,
+      "delta_teacher": 8.63
+    },
+    {
+      "number": 11,
+      "images": {
+        "original": "assets/case-11-original.webp",
+        "teacher": "assets/case-11-teacher.webp",
+        "student": "assets/case-11-student.webp"
+      },
+      "delta_student": 3.43,
+      "delta_teacher": 7.25
+    },
+    {
+      "number": 12,
+      "images": {
+        "original": "assets/case-12-original.webp",
+        "teacher": "assets/case-12-teacher.webp",
+        "student": "assets/case-12-student.webp"
+      },
+      "delta_student": 2.98,
+      "delta_teacher": 8.28
+    },
+    {
+      "number": 13,
+      "images": {
+        "original": "assets/case-13-original.webp",
+        "teacher": "assets/case-13-teacher.webp",
+        "student": "assets/case-13-student.webp"
+      },
+      "delta_student": 4.62,
+      "delta_teacher": 8.0
+    },
+    {
+      "number": 14,
+      "images": {
+        "original": "assets/case-14-original.webp",
+        "teacher": "assets/case-14-teacher.webp",
+        "student": "assets/case-14-student.webp"
+      },
+      "delta_student": 2.87,
+      "delta_teacher": 5.78
+    },
+    {
+      "number": 15,
+      "images": {
+        "original": "assets/case-15-original.webp",
+        "teacher": "assets/case-15-teacher.webp",
+        "student": "assets/case-15-student.webp"
+      },
+      "delta_student": 3.93,
+      "delta_teacher": 9.93
+    },
+    {
+      "number": 16,
+      "images": {
+        "original": "assets/case-16-original.webp",
+        "teacher": "assets/case-16-teacher.webp",
+        "student": "assets/case-16-student.webp"
+      },
+      "delta_student": 3.54,
+      "delta_teacher": 6.36
+    },
+    {
+      "number": 17,
+      "images": {
+        "original": "assets/case-17-original.webp",
+        "teacher": "assets/case-17-teacher.webp",
+        "student": "assets/case-17-student.webp"
+      },
+      "delta_student": 4.08,
+      "delta_teacher": 9.04
+    },
+    {
+      "number": 18,
+      "images": {
+        "original": "assets/case-18-original.webp",
+        "teacher": "assets/case-18-teacher.webp",
+        "student": "assets/case-18-student.webp"
+      },
+      "delta_student": 5.41,
+      "delta_teacher": 15.74
+    },
+    {
+      "number": 19,
+      "images": {
+        "original": "assets/case-19-original.webp",
+        "teacher": "assets/case-19-teacher.webp",
+        "student": "assets/case-19-student.webp"
+      },
+      "delta_student": 3.61,
+      "delta_teacher": 8.55
+    },
+    {
+      "number": 20,
+      "images": {
+        "original": "assets/case-20-original.webp",
+        "teacher": "assets/case-20-teacher.webp",
+        "student": "assets/case-20-student.webp"
+      },
+      "delta_student": 3.49,
+      "delta_teacher": 9.82
+    },
+    {
+      "number": 21,
+      "images": {
+        "original": "assets/case-21-original.webp",
+        "teacher": "assets/case-21-teacher.webp",
+        "student": "assets/case-21-student.webp"
+      },
+      "delta_student": 4.21,
+      "delta_teacher": 13.54
+    },
+    {
+      "number": 22,
+      "images": {
+        "original": "assets/case-22-original.webp",
+        "teacher": "assets/case-22-teacher.webp",
+        "student": "assets/case-22-student.webp"
+      },
+      "delta_student": 3.38,
+      "delta_teacher": 10.07
+    },
+    {
+      "number": 23,
+      "images": {
+        "original": "assets/case-23-original.webp",
+        "teacher": "assets/case-23-teacher.webp",
+        "student": "assets/case-23-student.webp"
+      },
+      "delta_student": 3.33,
+      "delta_teacher": 11.06
+    },
+    {
+      "number": 24,
+      "images": {
+        "original": "assets/case-24-original.webp",
+        "teacher": "assets/case-24-teacher.webp",
+        "student": "assets/case-24-student.webp"
+      },
+      "delta_student": 3.6,
+      "delta_teacher": 7.19
+    }
+  ],
+  "research_only": true
+}
