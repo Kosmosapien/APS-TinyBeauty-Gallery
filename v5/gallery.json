@@ -1,0 +1,517 @@
+{
+  "title": "TinyBeauty V5 — testa e intensidade",
+  "style": "Social",
+  "model": "BeautyREC 85227",
+  "checkpoint_v1_step": 2500,
+  "checkpoint_v5_step": 2100,
+  "train_count": 687,
+  "validation_count": 94,
+  "cases": [
+    {
+      "i": 1,
+      "id": "SFHQ_pt3_00011865",
+      "images": {
+        "Original": "assets/01_original.webp",
+        "Teacher": "assets/01_teacher.webp",
+        "V1": "assets/01_v1.webp",
+        "V5_70": "assets/01_v5_70.webp",
+        "V5_100": "assets/01_v5_100.webp",
+        "V5_130": "assets/01_v5_130.webp",
+        "V5_150": "assets/01_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 15.97,
+        "V1": 4.55,
+        "V5_70": 4.26,
+        "V5_100": 6.09,
+        "V5_130": 7.92,
+        "V5_150": 9.14
+      }
+    },
+    {
+      "i": 2,
+      "id": "SFHQ_pt3_00040440",
+      "images": {
+        "Original": "assets/02_original.webp",
+        "Teacher": "assets/02_teacher.webp",
+        "V1": "assets/02_v1.webp",
+        "V5_70": "assets/02_v5_70.webp",
+        "V5_100": "assets/02_v5_100.webp",
+        "V5_130": "assets/02_v5_130.webp",
+        "V5_150": "assets/02_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 9.79,
+        "V1": 3.39,
+        "V5_70": 2.86,
+        "V5_100": 4.08,
+        "V5_130": 5.31,
+        "V5_150": 6.12
+      }
+    },
+    {
+      "i": 3,
+      "id": "SFHQ_pt3_00081041",
+      "images": {
+        "Original": "assets/03_original.webp",
+        "Teacher": "assets/03_teacher.webp",
+        "V1": "assets/03_v1.webp",
+        "V5_70": "assets/03_v5_70.webp",
+        "V5_100": "assets/03_v5_100.webp",
+        "V5_130": "assets/03_v5_130.webp",
+        "V5_150": "assets/03_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 7.55,
+        "V1": 3.16,
+        "V5_70": 2.64,
+        "V5_100": 3.77,
+        "V5_130": 4.9,
+        "V5_150": 5.66
+      }
+    },
+    {
+      "i": 4,
+      "id": "SFHQ_pt3_00092615",
+      "images": {
+        "Original": "assets/04_original.webp",
+        "Teacher": "assets/04_teacher.webp",
+        "V1": "assets/04_v1.webp",
+        "V5_70": "assets/04_v5_70.webp",
+        "V5_100": "assets/04_v5_100.webp",
+        "V5_130": "assets/04_v5_130.webp",
+        "V5_150": "assets/04_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 8.71,
+        "V1": 3.17,
+        "V5_70": 2.48,
+        "V5_100": 3.55,
+        "V5_130": 4.61,
+        "V5_150": 5.32
+      }
+    },
+    {
+      "i": 5,
+      "id": "SFHQ_pt3_00000073",
+      "images": {
+        "Original": "assets/05_original.webp",
+        "Teacher": "assets/05_teacher.webp",
+        "V1": "assets/05_v1.webp",
+        "V5_70": "assets/05_v5_70.webp",
+        "V5_100": "assets/05_v5_100.webp",
+        "V5_130": "assets/05_v5_130.webp",
+        "V5_150": "assets/05_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 9.52,
+        "V1": 3.89,
+        "V5_70": 3.21,
+        "V5_100": 4.59,
+        "V5_130": 5.97,
+        "V5_150": 6.89
+      }
+    },
+    {
+      "i": 6,
+      "id": "SFHQ_pt3_00063318",
+      "images": {
+        "Original": "assets/06_original.webp",
+        "Teacher": "assets/06_teacher.webp",
+        "V1": "assets/06_v1.webp",
+        "V5_70": "assets/06_v5_70.webp",
+        "V5_100": "assets/06_v5_100.webp",
+        "V5_130": "assets/06_v5_130.webp",
+        "V5_150": "assets/06_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 11.39,
+        "V1": 3.45,
+        "V5_70": 3.28,
+        "V5_100": 4.68,
+        "V5_130": 6.09,
+        "V5_150": 7.02
+      }
+    },
+    {
+      "i": 7,
+      "id": "SFHQ_pt3_00091939",
+      "images": {
+        "Original": "assets/07_original.webp",
+        "Teacher": "assets/07_teacher.webp",
+        "V1": "assets/07_v1.webp",
+        "V5_70": "assets/07_v5_70.webp",
+        "V5_100": "assets/07_v5_100.webp",
+        "V5_130": "assets/07_v5_130.webp",
+        "V5_150": "assets/07_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 11.09,
+        "V1": 3.39,
+        "V5_70": 2.7,
+        "V5_100": 3.86,
+        "V5_130": 5.02,
+        "V5_150": 5.79
+      }
+    },
+    {
+      "i": 8,
+      "id": "SFHQ_pt3_00086143",
+      "images": {
+        "Original": "assets/08_original.webp",
+        "Teacher": "assets/08_teacher.webp",
+        "V1": "assets/08_v1.webp",
+        "V5_70": "assets/08_v5_70.webp",
+        "V5_100": "assets/08_v5_100.webp",
+        "V5_130": "assets/08_v5_130.webp",
+        "V5_150": "assets/08_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 13.78,
+        "V1": 3.11,
+        "V5_70": 2.57,
+        "V5_100": 3.68,
+        "V5_130": 4.78,
+        "V5_150": 5.51
+      }
+    },
+    {
+      "i": 9,
+      "id": "SFHQ_pt3_00029366",
+      "images": {
+        "Original": "assets/09_original.webp",
+        "Teacher": "assets/09_teacher.webp",
+        "V1": "assets/09_v1.webp",
+        "V5_70": "assets/09_v5_70.webp",
+        "V5_100": "assets/09_v5_100.webp",
+        "V5_130": "assets/09_v5_130.webp",
+        "V5_150": "assets/09_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 9.22,
+        "V1": 3.35,
+        "V5_70": 2.71,
+        "V5_100": 3.87,
+        "V5_130": 5.02,
+        "V5_150": 5.78
+      }
+    },
+    {
+      "i": 10,
+      "id": "SFHQ_pt3_00027398",
+      "images": {
+        "Original": "assets/10_original.webp",
+        "Teacher": "assets/10_teacher.webp",
+        "V1": "assets/10_v1.webp",
+        "V5_70": "assets/10_v5_70.webp",
+        "V5_100": "assets/10_v5_100.webp",
+        "V5_130": "assets/10_v5_130.webp",
+        "V5_150": "assets/10_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 11.5,
+        "V1": 4.35,
+        "V5_70": 3.83,
+        "V5_100": 5.46,
+        "V5_130": 7.09,
+        "V5_150": 8.16
+      }
+    },
+    {
+      "i": 11,
+      "id": "SFHQ_pt3_00044372",
+      "images": {
+        "Original": "assets/11_original.webp",
+        "Teacher": "assets/11_teacher.webp",
+        "V1": "assets/11_v1.webp",
+        "V5_70": "assets/11_v5_70.webp",
+        "V5_100": "assets/11_v5_100.webp",
+        "V5_130": "assets/11_v5_130.webp",
+        "V5_150": "assets/11_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 8.02,
+        "V1": 2.25,
+        "V5_70": 2.08,
+        "V5_100": 2.97,
+        "V5_130": 3.86,
+        "V5_150": 4.44
+      }
+    },
+    {
+      "i": 12,
+      "id": "SFHQ_pt3_00082227",
+      "images": {
+        "Original": "assets/12_original.webp",
+        "Teacher": "assets/12_teacher.webp",
+        "V1": "assets/12_v1.webp",
+        "V5_70": "assets/12_v5_70.webp",
+        "V5_100": "assets/12_v5_100.webp",
+        "V5_130": "assets/12_v5_130.webp",
+        "V5_150": "assets/12_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 6.31,
+        "V1": 2.83,
+        "V5_70": 2.62,
+        "V5_100": 3.74,
+        "V5_130": 4.86,
+        "V5_150": 5.61
+      }
+    },
+    {
+      "i": 13,
+      "id": "SFHQ_pt3_00033750",
+      "images": {
+        "Original": "assets/13_original.webp",
+        "Teacher": "assets/13_teacher.webp",
+        "V1": "assets/13_v1.webp",
+        "V5_70": "assets/13_v5_70.webp",
+        "V5_100": "assets/13_v5_100.webp",
+        "V5_130": "assets/13_v5_130.webp",
+        "V5_150": "assets/13_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 6.36,
+        "V1": 3.01,
+        "V5_70": 2.14,
+        "V5_100": 3.07,
+        "V5_130": 3.99,
+        "V5_150": 4.6
+      }
+    },
+    {
+      "i": 14,
+      "id": "SFHQ_pt3_00010706",
+      "images": {
+        "Original": "assets/14_original.webp",
+        "Teacher": "assets/14_teacher.webp",
+        "V1": "assets/14_v1.webp",
+        "V5_70": "assets/14_v5_70.webp",
+        "V5_100": "assets/14_v5_100.webp",
+        "V5_130": "assets/14_v5_130.webp",
+        "V5_150": "assets/14_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 12.29,
+        "V1": 3.47,
+        "V5_70": 3.13,
+        "V5_100": 4.47,
+        "V5_130": 5.81,
+        "V5_150": 6.7
+      }
+    },
+    {
+      "i": 15,
+      "id": "SFHQ_pt3_00104060",
+      "images": {
+        "Original": "assets/15_original.webp",
+        "Teacher": "assets/15_teacher.webp",
+        "V1": "assets/15_v1.webp",
+        "V5_70": "assets/15_v5_70.webp",
+        "V5_100": "assets/15_v5_100.webp",
+        "V5_130": "assets/15_v5_130.webp",
+        "V5_150": "assets/15_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 16.6,
+        "V1": 3.7,
+        "V5_70": 3.29,
+        "V5_100": 4.7,
+        "V5_130": 6.11,
+        "V5_150": 7.04
+      }
+    },
+    {
+      "i": 16,
+      "id": "SFHQ_pt3_00020466",
+      "images": {
+        "Original": "assets/16_original.webp",
+        "Teacher": "assets/16_teacher.webp",
+        "V1": "assets/16_v1.webp",
+        "V5_70": "assets/16_v5_70.webp",
+        "V5_100": "assets/16_v5_100.webp",
+        "V5_130": "assets/16_v5_130.webp",
+        "V5_150": "assets/16_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 6.88,
+        "V1": 2.96,
+        "V5_70": 2.55,
+        "V5_100": 3.64,
+        "V5_130": 4.71,
+        "V5_150": 5.42
+      }
+    },
+    {
+      "i": 17,
+      "id": "SFHQ_pt3_00003289",
+      "images": {
+        "Original": "assets/17_original.webp",
+        "Teacher": "assets/17_teacher.webp",
+        "V1": "assets/17_v1.webp",
+        "V5_70": "assets/17_v5_70.webp",
+        "V5_100": "assets/17_v5_100.webp",
+        "V5_130": "assets/17_v5_130.webp",
+        "V5_150": "assets/17_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 10.43,
+        "V1": 3.38,
+        "V5_70": 3.0,
+        "V5_100": 4.28,
+        "V5_130": 5.57,
+        "V5_150": 6.42
+      }
+    },
+    {
+      "i": 18,
+      "id": "SFHQ_pt3_00008011",
+      "images": {
+        "Original": "assets/18_original.webp",
+        "Teacher": "assets/18_teacher.webp",
+        "V1": "assets/18_v1.webp",
+        "V5_70": "assets/18_v5_70.webp",
+        "V5_100": "assets/18_v5_100.webp",
+        "V5_130": "assets/18_v5_130.webp",
+        "V5_150": "assets/18_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 7.17,
+        "V1": 2.43,
+        "V5_70": 2.1,
+        "V5_100": 2.99,
+        "V5_130": 3.87,
+        "V5_150": 4.46
+      }
+    },
+    {
+      "i": 19,
+      "id": "SFHQ_pt3_00001690",
+      "images": {
+        "Original": "assets/19_original.webp",
+        "Teacher": "assets/19_teacher.webp",
+        "V1": "assets/19_v1.webp",
+        "V5_70": "assets/19_v5_70.webp",
+        "V5_100": "assets/19_v5_100.webp",
+        "V5_130": "assets/19_v5_130.webp",
+        "V5_150": "assets/19_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 10.09,
+        "V1": 2.81,
+        "V5_70": 2.34,
+        "V5_100": 3.34,
+        "V5_130": 4.34,
+        "V5_150": 5.01
+      }
+    },
+    {
+      "i": 20,
+      "id": "SFHQ_pt3_00052714",
+      "images": {
+        "Original": "assets/20_original.webp",
+        "Teacher": "assets/20_teacher.webp",
+        "V1": "assets/20_v1.webp",
+        "V5_70": "assets/20_v5_70.webp",
+        "V5_100": "assets/20_v5_100.webp",
+        "V5_130": "assets/20_v5_130.webp",
+        "V5_150": "assets/20_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 13.17,
+        "V1": 3.8,
+        "V5_70": 3.45,
+        "V5_100": 4.92,
+        "V5_130": 6.39,
+        "V5_150": 7.36
+      }
+    },
+    {
+      "i": 21,
+      "id": "SFHQ_pt3_00018415",
+      "images": {
+        "Original": "assets/21_original.webp",
+        "Teacher": "assets/21_teacher.webp",
+        "V1": "assets/21_v1.webp",
+        "V5_70": "assets/21_v5_70.webp",
+        "V5_100": "assets/21_v5_100.webp",
+        "V5_130": "assets/21_v5_130.webp",
+        "V5_150": "assets/21_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 7.95,
+        "V1": 2.94,
+        "V5_70": 2.16,
+        "V5_100": 3.09,
+        "V5_130": 4.02,
+        "V5_150": 4.63
+      }
+    },
+    {
+      "i": 22,
+      "id": "SFHQ_pt3_00017617",
+      "images": {
+        "Original": "assets/22_original.webp",
+        "Teacher": "assets/22_teacher.webp",
+        "V1": "assets/22_v1.webp",
+        "V5_70": "assets/22_v5_70.webp",
+        "V5_100": "assets/22_v5_100.webp",
+        "V5_130": "assets/22_v5_130.webp",
+        "V5_150": "assets/22_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 15.56,
+        "V1": 3.13,
+        "V5_70": 2.62,
+        "V5_100": 3.75,
+        "V5_130": 4.87,
+        "V5_150": 5.62
+      }
+    },
+    {
+      "i": 23,
+      "id": "SFHQ_pt3_00007250",
+      "images": {
+        "Original": "assets/23_original.webp",
+        "Teacher": "assets/23_teacher.webp",
+        "V1": "assets/23_v1.webp",
+        "V5_70": "assets/23_v5_70.webp",
+        "V5_100": "assets/23_v5_100.webp",
+        "V5_130": "assets/23_v5_130.webp",
+        "V5_150": "assets/23_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 10.48,
+        "V1": 2.57,
+        "V5_70": 2.18,
+        "V5_100": 3.11,
+        "V5_130": 4.05,
+        "V5_150": 4.67
+      }
+    },
+    {
+      "i": 24,
+      "id": "SFHQ_pt3_00050616",
+      "images": {
+        "Original": "assets/24_original.webp",
+        "Teacher": "assets/24_teacher.webp",
+        "V1": "assets/24_v1.webp",
+        "V5_70": "assets/24_v5_70.webp",
+        "V5_100": "assets/24_v5_100.webp",
+        "V5_130": "assets/24_v5_130.webp",
+        "V5_150": "assets/24_v5_150.webp"
+      },
+      "rgb_strength": {
+        "Teacher": 7.56,
+        "V1": 2.48,
+        "V5_70": 2.1,
+        "V5_100": 3.0,
+        "V5_130": 3.9,
+        "V5_150": 4.5
+      }
+    }
+  ],
+  "research_only": true,
+  "date": "2026-11-03T17:59:30.987692+00:00"
+}
