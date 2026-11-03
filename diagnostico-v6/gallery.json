@@ -1,0 +1,596 @@
+{
+  "cases": [
+    {
+      "index": 1,
+      "identity": "SFHQ_pt3_00005407",
+      "group": "Treino intenso",
+      "images": {
+        "Original": "assets/01_original.webp",
+        "Teacher": "assets/01_teacher.webp",
+        "V6": "assets/01_v6.webp",
+        "V6_retreino": "assets/01_v6_retreino.webp",
+        "L1_direta": "assets/01_l1_direta.webp",
+        "Contornos": "assets/01_contornos.webp",
+        "Maior": "assets/01_maior.webp"
+      },
+      "error": {
+        "Original": 20.56,
+        "V6": 16.03,
+        "V6_retreino": 13.52,
+        "L1_direta": 13.5,
+        "Contornos": 13.39,
+        "Maior": 12.97
+      }
+    },
+    {
+      "index": 2,
+      "identity": "SFHQ_pt3_00004843",
+      "group": "Treino intenso",
+      "images": {
+        "Original": "assets/02_original.webp",
+        "Teacher": "assets/02_teacher.webp",
+        "V6": "assets/02_v6.webp",
+        "V6_retreino": "assets/02_v6_retreino.webp",
+        "L1_direta": "assets/02_l1_direta.webp",
+        "Contornos": "assets/02_contornos.webp",
+        "Maior": "assets/02_maior.webp"
+      },
+      "error": {
+        "Original": 19.33,
+        "V6": 14.73,
+        "V6_retreino": 12.61,
+        "L1_direta": 12.26,
+        "Contornos": 12.45,
+        "Maior": 12.43
+      }
+    },
+    {
+      "index": 3,
+      "identity": "SFHQ_pt3_00015418",
+      "group": "Treino intenso",
+      "images": {
+        "Original": "assets/03_original.webp",
+        "Teacher": "assets/03_teacher.webp",
+        "V6": "assets/03_v6.webp",
+        "V6_retreino": "assets/03_v6_retreino.webp",
+        "L1_direta": "assets/03_l1_direta.webp",
+        "Contornos": "assets/03_contornos.webp",
+        "Maior": "assets/03_maior.webp"
+      },
+      "error": {
+        "Original": 18.74,
+        "V6": 15.28,
+        "V6_retreino": 12.9,
+        "L1_direta": 12.55,
+        "Contornos": 12.68,
+        "Maior": 13.0
+      }
+    },
+    {
+      "index": 4,
+      "identity": "SFHQ_pt3_00003202",
+      "group": "Treino intenso",
+      "images": {
+        "Original": "assets/04_original.webp",
+        "Teacher": "assets/04_teacher.webp",
+        "V6": "assets/04_v6.webp",
+        "V6_retreino": "assets/04_v6_retreino.webp",
+        "L1_direta": "assets/04_l1_direta.webp",
+        "Contornos": "assets/04_contornos.webp",
+        "Maior": "assets/04_maior.webp"
+      },
+      "error": {
+        "Original": 19.6,
+        "V6": 15.3,
+        "V6_retreino": 12.54,
+        "L1_direta": 12.64,
+        "Contornos": 12.54,
+        "Maior": 12.53
+      }
+    },
+    {
+      "index": 5,
+      "identity": "SFHQ_pt3_00018868",
+      "group": "Treino intenso",
+      "images": {
+        "Original": "assets/05_original.webp",
+        "Teacher": "assets/05_teacher.webp",
+        "V6": "assets/05_v6.webp",
+        "V6_retreino": "assets/05_v6_retreino.webp",
+        "L1_direta": "assets/05_l1_direta.webp",
+        "Contornos": "assets/05_contornos.webp",
+        "Maior": "assets/05_maior.webp"
+      },
+      "error": {
+        "Original": 17.12,
+        "V6": 13.54,
+        "V6_retreino": 12.95,
+        "L1_direta": 12.78,
+        "Contornos": 12.56,
+        "Maior": 11.63
+      }
+    },
+    {
+      "index": 6,
+      "identity": "SFHQ_pt3_00006984",
+      "group": "Treino intenso",
+      "images": {
+        "Original": "assets/06_original.webp",
+        "Teacher": "assets/06_teacher.webp",
+        "V6": "assets/06_v6.webp",
+        "V6_retreino": "assets/06_v6_retreino.webp",
+        "L1_direta": "assets/06_l1_direta.webp",
+        "Contornos": "assets/06_contornos.webp",
+        "Maior": "assets/06_maior.webp"
+      },
+      "error": {
+        "Original": 15.28,
+        "V6": 11.52,
+        "V6_retreino": 10.8,
+        "L1_direta": 10.64,
+        "Contornos": 10.53,
+        "Maior": 10.27
+      }
+    },
+    {
+      "index": 7,
+      "identity": "SFHQ_pt3_00002378",
+      "group": "Treino intenso",
+      "images": {
+        "Original": "assets/07_original.webp",
+        "Teacher": "assets/07_teacher.webp",
+        "V6": "assets/07_v6.webp",
+        "V6_retreino": "assets/07_v6_retreino.webp",
+        "L1_direta": "assets/07_l1_direta.webp",
+        "Contornos": "assets/07_contornos.webp",
+        "Maior": "assets/07_maior.webp"
+      },
+      "error": {
+        "Original": 16.03,
+        "V6": 11.88,
+        "V6_retreino": 9.67,
+        "L1_direta": 9.63,
+        "Contornos": 9.62,
+        "Maior": 9.29
+      }
+    },
+    {
+      "index": 8,
+      "identity": "SFHQ_pt3_00009399",
+      "group": "Treino intenso",
+      "images": {
+        "Original": "assets/08_original.webp",
+        "Teacher": "assets/08_teacher.webp",
+        "V6": "assets/08_v6.webp",
+        "V6_retreino": "assets/08_v6_retreino.webp",
+        "L1_direta": "assets/08_l1_direta.webp",
+        "Contornos": "assets/08_contornos.webp",
+        "Maior": "assets/08_maior.webp"
+      },
+      "error": {
+        "Original": 17.5,
+        "V6": 13.53,
+        "V6_retreino": 12.55,
+        "L1_direta": 12.49,
+        "Contornos": 12.45,
+        "Maior": 12.2
+      }
+    },
+    {
+      "index": 9,
+      "identity": "SFHQ_pt3_00018102",
+      "group": "Treino intenso",
+      "images": {
+        "Original": "assets/09_original.webp",
+        "Teacher": "assets/09_teacher.webp",
+        "V6": "assets/09_v6.webp",
+        "V6_retreino": "assets/09_v6_retreino.webp",
+        "L1_direta": "assets/09_l1_direta.webp",
+        "Contornos": "assets/09_contornos.webp",
+        "Maior": "assets/09_maior.webp"
+      },
+      "error": {
+        "Original": 16.57,
+        "V6": 13.98,
+        "V6_retreino": 12.74,
+        "L1_direta": 12.38,
+        "Contornos": 12.65,
+        "Maior": 11.75
+      }
+    },
+    {
+      "index": 10,
+      "identity": "SFHQ_pt3_00000108",
+      "group": "Treino intenso",
+      "images": {
+        "Original": "assets/10_original.webp",
+        "Teacher": "assets/10_teacher.webp",
+        "V6": "assets/10_v6.webp",
+        "V6_retreino": "assets/10_v6_retreino.webp",
+        "L1_direta": "assets/10_l1_direta.webp",
+        "Contornos": "assets/10_contornos.webp",
+        "Maior": "assets/10_maior.webp"
+      },
+      "error": {
+        "Original": 13.9,
+        "V6": 10.26,
+        "V6_retreino": 8.29,
+        "L1_direta": 8.42,
+        "Contornos": 8.24,
+        "Maior": 8.08
+      }
+    },
+    {
+      "index": 11,
+      "identity": "SFHQ_pt3_00009307",
+      "group": "Treino intenso",
+      "images": {
+        "Original": "assets/11_original.webp",
+        "Teacher": "assets/11_teacher.webp",
+        "V6": "assets/11_v6.webp",
+        "V6_retreino": "assets/11_v6_retreino.webp",
+        "L1_direta": "assets/11_l1_direta.webp",
+        "Contornos": "assets/11_contornos.webp",
+        "Maior": "assets/11_maior.webp"
+      },
+      "error": {
+        "Original": 14.63,
+        "V6": 11.99,
+        "V6_retreino": 9.29,
+        "L1_direta": 9.18,
+        "Contornos": 9.12,
+        "Maior": 8.53
+      }
+    },
+    {
+      "index": 12,
+      "identity": "SFHQ_pt3_00013581",
+      "group": "Treino intenso",
+      "images": {
+        "Original": "assets/12_original.webp",
+        "Teacher": "assets/12_teacher.webp",
+        "V6": "assets/12_v6.webp",
+        "V6_retreino": "assets/12_v6_retreino.webp",
+        "L1_direta": "assets/12_l1_direta.webp",
+        "Contornos": "assets/12_contornos.webp",
+        "Maior": "assets/12_maior.webp"
+      },
+      "error": {
+        "Original": 16.73,
+        "V6": 14.2,
+        "V6_retreino": 12.77,
+        "L1_direta": 12.58,
+        "Contornos": 13.1,
+        "Maior": 11.77
+      }
+    },
+    {
+      "index": 13,
+      "identity": "SFHQ_pt3_00000073",
+      "group": "Validação",
+      "images": {
+        "Original": "assets/13_original.webp",
+        "Teacher": "assets/13_teacher.webp",
+        "V6": "assets/13_v6.webp",
+        "V6_retreino": "assets/13_v6_retreino.webp",
+        "L1_direta": "assets/13_l1_direta.webp",
+        "Contornos": "assets/13_contornos.webp",
+        "Maior": "assets/13_maior.webp"
+      },
+      "error": {
+        "Original": 9.52,
+        "V6": 6.69,
+        "V6_retreino": 7.31,
+        "L1_direta": 7.42,
+        "Contornos": 7.25,
+        "Maior": 9.79
+      }
+    },
+    {
+      "index": 14,
+      "identity": "SFHQ_pt3_00007455",
+      "group": "Validação",
+      "images": {
+        "Original": "assets/14_original.webp",
+        "Teacher": "assets/14_teacher.webp",
+        "V6": "assets/14_v6.webp",
+        "V6_retreino": "assets/14_v6_retreino.webp",
+        "L1_direta": "assets/14_l1_direta.webp",
+        "Contornos": "assets/14_contornos.webp",
+        "Maior": "assets/14_maior.webp"
+      },
+      "error": {
+        "Original": 7.08,
+        "V6": 6.51,
+        "V6_retreino": 7.11,
+        "L1_direta": 7.27,
+        "Contornos": 7.08,
+        "Maior": 9.04
+      }
+    },
+    {
+      "index": 15,
+      "identity": "SFHQ_pt3_00014478",
+      "group": "Validação",
+      "images": {
+        "Original": "assets/15_original.webp",
+        "Teacher": "assets/15_teacher.webp",
+        "V6": "assets/15_v6.webp",
+        "V6_retreino": "assets/15_v6_retreino.webp",
+        "L1_direta": "assets/15_l1_direta.webp",
+        "Contornos": "assets/15_contornos.webp",
+        "Maior": "assets/15_maior.webp"
+      },
+      "error": {
+        "Original": 9.01,
+        "V6": 7.16,
+        "V6_retreino": 7.53,
+        "L1_direta": 7.4,
+        "Contornos": 7.7,
+        "Maior": 9.41
+      }
+    },
+    {
+      "index": 16,
+      "identity": "SFHQ_pt3_00023448",
+      "group": "Validação",
+      "images": {
+        "Original": "assets/16_original.webp",
+        "Teacher": "assets/16_teacher.webp",
+        "V6": "assets/16_v6.webp",
+        "V6_retreino": "assets/16_v6_retreino.webp",
+        "L1_direta": "assets/16_l1_direta.webp",
+        "Contornos": "assets/16_contornos.webp",
+        "Maior": "assets/16_maior.webp"
+      },
+      "error": {
+        "Original": 9.51,
+        "V6": 7.47,
+        "V6_retreino": 7.44,
+        "L1_direta": 7.64,
+        "Contornos": 7.71,
+        "Maior": 9.62
+      }
+    },
+    {
+      "index": 17,
+      "identity": "SFHQ_pt3_00031257",
+      "group": "Validação",
+      "images": {
+        "Original": "assets/17_original.webp",
+        "Teacher": "assets/17_teacher.webp",
+        "V6": "assets/17_v6.webp",
+        "V6_retreino": "assets/17_v6_retreino.webp",
+        "L1_direta": "assets/17_l1_direta.webp",
+        "Contornos": "assets/17_contornos.webp",
+        "Maior": "assets/17_maior.webp"
+      },
+      "error": {
+        "Original": 8.17,
+        "V6": 5.19,
+        "V6_retreino": 5.74,
+        "L1_direta": 5.88,
+        "Contornos": 5.75,
+        "Maior": 7.55
+      }
+    },
+    {
+      "index": 18,
+      "identity": "SFHQ_pt3_00040990",
+      "group": "Validação",
+      "images": {
+        "Original": "assets/18_original.webp",
+        "Teacher": "assets/18_teacher.webp",
+        "V6": "assets/18_v6.webp",
+        "V6_retreino": "assets/18_v6_retreino.webp",
+        "L1_direta": "assets/18_l1_direta.webp",
+        "Contornos": "assets/18_contornos.webp",
+        "Maior": "assets/18_maior.webp"
+      },
+      "error": {
+        "Original": 11.34,
+        "V6": 8.54,
+        "V6_retreino": 9.67,
+        "L1_direta": 9.57,
+        "Contornos": 9.41,
+        "Maior": 11.85
+      }
+    },
+    {
+      "index": 19,
+      "identity": "SFHQ_pt3_00051553",
+      "group": "Validação",
+      "images": {
+        "Original": "assets/19_original.webp",
+        "Teacher": "assets/19_teacher.webp",
+        "V6": "assets/19_v6.webp",
+        "V6_retreino": "assets/19_v6_retreino.webp",
+        "L1_direta": "assets/19_l1_direta.webp",
+        "Contornos": "assets/19_contornos.webp",
+        "Maior": "assets/19_maior.webp"
+      },
+      "error": {
+        "Original": 16.64,
+        "V6": 13.96,
+        "V6_retreino": 14.18,
+        "L1_direta": 14.0,
+        "Contornos": 14.01,
+        "Maior": 14.87
+      }
+    },
+    {
+      "index": 20,
+      "identity": "SFHQ_pt3_00063719",
+      "group": "Validação",
+      "images": {
+        "Original": "assets/20_original.webp",
+        "Teacher": "assets/20_teacher.webp",
+        "V6": "assets/20_v6.webp",
+        "V6_retreino": "assets/20_v6_retreino.webp",
+        "L1_direta": "assets/20_l1_direta.webp",
+        "Contornos": "assets/20_contornos.webp",
+        "Maior": "assets/20_maior.webp"
+      },
+      "error": {
+        "Original": 19.06,
+        "V6": 14.24,
+        "V6_retreino": 13.65,
+        "L1_direta": 13.58,
+        "Contornos": 13.47,
+        "Maior": 14.78
+      }
+    },
+    {
+      "index": 21,
+      "identity": "SFHQ_pt3_00074567",
+      "group": "Validação",
+      "images": {
+        "Original": "assets/21_original.webp",
+        "Teacher": "assets/21_teacher.webp",
+        "V6": "assets/21_v6.webp",
+        "V6_retreino": "assets/21_v6_retreino.webp",
+        "L1_direta": "assets/21_l1_direta.webp",
+        "Contornos": "assets/21_contornos.webp",
+        "Maior": "assets/21_maior.webp"
+      },
+      "error": {
+        "Original": 9.71,
+        "V6": 6.44,
+        "V6_retreino": 6.95,
+        "L1_direta": 7.03,
+        "Contornos": 7.2,
+        "Maior": 8.53
+      }
+    },
+    {
+      "index": 22,
+      "identity": "SFHQ_pt3_00082227",
+      "group": "Validação",
+      "images": {
+        "Original": "assets/22_original.webp",
+        "Teacher": "assets/22_teacher.webp",
+        "V6": "assets/22_v6.webp",
+        "V6_retreino": "assets/22_v6_retreino.webp",
+        "L1_direta": "assets/22_l1_direta.webp",
+        "Contornos": "assets/22_contornos.webp",
+        "Maior": "assets/22_maior.webp"
+      },
+      "error": {
+        "Original": 6.31,
+        "V6": 4.8,
+        "V6_retreino": 5.35,
+        "L1_direta": 5.96,
+        "Contornos": 5.42,
+        "Maior": 6.95
+      }
+    },
+    {
+      "index": 23,
+      "identity": "SFHQ_pt3_00091845",
+      "group": "Validação",
+      "images": {
+        "Original": "assets/23_original.webp",
+        "Teacher": "assets/23_teacher.webp",
+        "V6": "assets/23_v6.webp",
+        "V6_retreino": "assets/23_v6_retreino.webp",
+        "L1_direta": "assets/23_l1_direta.webp",
+        "Contornos": "assets/23_contornos.webp",
+        "Maior": "assets/23_maior.webp"
+      },
+      "error": {
+        "Original": 8.21,
+        "V6": 5.49,
+        "V6_retreino": 6.43,
+        "L1_direta": 6.84,
+        "Contornos": 6.13,
+        "Maior": 9.01
+      }
+    },
+    {
+      "index": 24,
+      "identity": "SFHQ_pt3_00101553",
+      "group": "Validação",
+      "images": {
+        "Original": "assets/24_original.webp",
+        "Teacher": "assets/24_teacher.webp",
+        "V6": "assets/24_v6.webp",
+        "V6_retreino": "assets/24_v6_retreino.webp",
+        "L1_direta": "assets/24_l1_direta.webp",
+        "Contornos": "assets/24_contornos.webp",
+        "Maior": "assets/24_maior.webp"
+      },
+      "error": {
+        "Original": 10.08,
+        "V6": 8.84,
+        "V6_retreino": 9.49,
+        "L1_direta": 8.7,
+        "Contornos": 9.87,
+        "Maior": 12.19
+      }
+    }
+  ],
+  "metrics": {
+    "V6_base": {
+      "train": [
+        0.0876,
+        0.63539
+      ],
+      "val": [
+        0.06763,
+        0.73302
+      ],
+      "params": 85227
+    },
+    "v6": {
+      "train": [
+        0.05112,
+        0.92694
+      ],
+      "val": [
+        0.07647,
+        0.89732
+      ],
+      "params": 85227,
+      "steps": 350
+    },
+    "direct": {
+      "train": [
+        0.05106,
+        0.90596
+      ],
+      "val": [
+        0.0782,
+        0.90773
+      ],
+      "params": 85227,
+      "steps": 350
+    },
+    "edges": {
+      "train": [
+        0.05029,
+        0.93354
+      ],
+      "val": [
+        0.07596,
+        0.88655
+      ],
+      "params": 85227,
+      "steps": 350
+    },
+    "wide_direct": {
+      "train": [
+        0.04065,
+        0.92894
+      ],
+      "val": [
+        0.10846,
+        0.85422
+      ],
+      "params": 289403,
+      "steps": 900
+    }
+  },
+  "research_only": true,
+  "warning": "Model variants tested on only 12 high-delta training samples. Better training fit is not evidence of generalization.",
+  "generated": "2026-11-03T22:06:37.119056+00:00"
+}
