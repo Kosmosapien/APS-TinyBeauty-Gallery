@@ -1,0 +1,66 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0d1520">
+<meta name="description" content="TinyBeauty 20 mil passos: comparação com e sem Albumentations após teacher V4 corrigido.">
+<title>TinyBeauty · Albumentations vs sem augmentations · 20k</title>
+<style>
+*{box-sizing:border-box}body{background:#0d1521;color:#edf3ff;margin:0;font:15px/1.5 system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+main{max-width:900px;margin:auto;padding:17px 12px 62px}h1{font-size:clamp(1.36rem,5vw,1.9rem);line-height:1.3;margin:8px 0}
+p{color:#adbed3}small{color:#9eb3cc}.chips{display:flex;gap:7px;flex-wrap:wrap;margin:8px 0 13px}
+.chips span{font-size:.74rem;background:#1c2b40;border:1px solid #3d5973;border-radius:50px;padding:5px 9px}
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.metric{padding:11px;background:#18273b;border:1px solid #34516b;border-radius:12px;text-align:center}
+.metric b{display:block;font-size:1.3rem}.metric span{color:#bad0e4;font-size:.76rem}
+nav{display:flex;gap:8px;align-items:center;position:sticky;top:0;z-index:4;padding:13px 0;background:#0d1521e9;backdrop-filter:blur(7px);border-bottom:1px solid #354e68}
+button,select,textarea{font:inherit;color:#e9f4ff;background:#1f3046;border:1px solid #54718c;border-radius:10px;padding:10px}
+button{cursor:pointer}button.active{border-color:#81deb7;background:#185f4e}
+nav select{flex:1;min-width:0}nav button{font-size:21px;min-width:44px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0}
+.item{background:#17263a;border:1px solid #344e6a;border-radius:12px;overflow:hidden}
+.item img{width:100%;aspect-ratio:1;object-fit:contain;display:block;cursor:zoom-in;background:#0a1019}
+.item strong{display:block;font-size:clamp(.73rem,2.4vw,.92rem);min-height:43px;padding:8px}
+.rating{background:#17263a;border:1px solid #344e6a;padding:13px;border-radius:12px;margin-top:18px}
+.rating h2{font-size:1.08rem;margin:0 0 8px}.choices{display:flex;gap:8px}.choices button{flex:1;font-size:.82rem}
+.flags{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.flags button{flex:1;min-width:110px;font-size:.78rem}
+textarea{width:100%;min-height:88px}a{color:#99d0ff}
+dialog{background:#101c2b;color:#ebf3fb;border:1px solid #62819d;border-radius:11px;max-width:95vw;padding:12px}
+dialog img{max-width:88vw;max-height:77vh;display:block;width:auto;height:auto;image-rendering:auto}
+dialog::backdrop{background:#000c}
+@media(max-width:375px){.grid{gap:6px}.item strong{font-size:.72rem;padding:7px}}
+</style></head><body><main>
+<div class="chips"><span>Social · maquiagem</span><span>20.000 passos</span><span>12 identidades de validação</span></div>
+<h1>TinyBeauty · Com ou sem Albumentations?</h1>
+<p>Resultados reais de dois treinamentos <strong>do zero</strong>, com a mesma arquitetura BeautyREC, o mesmo conjunto de dados do V4 corrigido por <strong>Tom contínuo + íris original</strong>, mesma divisão, losses e seed.</p>
+<div class="metrics"><div class="metric"><b>0,052172</b><span>Sem aug · erro ponderado</span></div><div class="metric"><b>0,052817</b><span>Com aug · erro ponderado</span></div></div>
+<nav><button id="prev" aria-label="Anterior">‹</button><select id="case" aria-label="Escolher identidade"></select><button id="next" aria-label="Próxima">›</button></nav>
+<p id="counter"></p><div class="grid" id="images"></div>
+<section class="rating"><h2>Qual resultado prefere?</h2>
+<div class="choices"><button id="vNo">Sem augmentation</button><button id="vAug">Com Albumentations</button><button id="vTie">Empate</button></div>
+<div class="flags" id="flags"></div>
+<textarea id="notes" placeholder="Diferença no delineador, batom, cobertura da testa, identidade..."></textarea>
+<button id="export">Exportar todas as avaliações (JSON)</button><p><small>As escolhas são salvas neste navegador. Exporte o arquivo para compartilhar suas avaliações.</small></p></section>
+<p><strong>Observação:</strong> as métricas favorecem ligeiramente a versão sem augmentation, mas ambas parecem manter a maquiagem mais fraca que o teacher em alguns casos. A decisão final deve considerar a inspeção visual.</p>
+<p><a href="../">Voltar às demais galerias do TinyBeauty</a></p>
+<dialog id="lightbox"><button id="close">Fechar</button><h3 id="bigTitle"></h3><img id="big" alt="Foto ampliada"></dialog>
+</main><script>
+const DB={"rows":[{"number":1,"source_id":"SFHQ_pt3_00001690","images":{"original":"assets/01_original.webp","teacher":"assets/01_teacher.webp","noaug":"assets/01_noaug.webp","albu":"assets/01_albu.webp"}},{"number":2,"source_id":"SFHQ_pt3_00002799","images":{"original":"assets/02_original.webp","teacher":"assets/02_teacher.webp","noaug":"assets/02_noaug.webp","albu":"assets/02_albu.webp"}},{"number":3,"source_id":"SFHQ_pt3_00005043","images":{"original":"assets/03_original.webp","teacher":"assets/03_teacher.webp","noaug":"assets/03_noaug.webp","albu":"assets/03_albu.webp"}},{"number":4,"source_id":"SFHQ_pt3_00005983","images":{"original":"assets/04_original.webp","teacher":"assets/04_teacher.webp","noaug":"assets/04_noaug.webp","albu":"assets/04_albu.webp"}},{"number":5,"source_id":"SFHQ_pt3_00006549","images":{"original":"assets/05_original.webp","teacher":"assets/05_teacher.webp","noaug":"assets/05_noaug.webp","albu":"assets/05_albu.webp"}},{"number":6,"source_id":"SFHQ_pt3_00006969","images":{"original":"assets/06_original.webp","teacher":"assets/06_teacher.webp","noaug":"assets/06_noaug.webp","albu":"assets/06_albu.webp"}},{"number":7,"source_id":"SFHQ_pt3_00007250","images":{"original":"assets/07_original.webp","teacher":"assets/07_teacher.webp","noaug":"assets/07_noaug.webp","albu":"assets/07_albu.webp"}},{"number":8,"source_id":"SFHQ_pt3_00007369","images":{"original":"assets/08_original.webp","teacher":"assets/08_teacher.webp","noaug":"assets/08_noaug.webp","albu":"assets/08_albu.webp"}},{"number":9,"source_id":"SFHQ_pt3_00007455","images":{"original":"assets/09_original.webp","teacher":"assets/09_teacher.webp","noaug":"assets/09_noaug.webp","albu":"assets/09_albu.webp"}},{"number":10,"source_id":"SFHQ_pt3_00008011","images":{"original":"assets/10_original.webp","teacher":"assets/10_teacher.webp","noaug":"assets/10_noaug.webp","albu":"assets/10_albu.webp"}},{"number":11,"source_id":"SFHQ_pt3_00009903","images":{"original":"assets/11_original.webp","teacher":"assets/11_teacher.webp","noaug":"assets/11_noaug.webp","albu":"assets/11_albu.webp"}},{"number":12,"source_id":"SFHQ_pt3_00010706","images":{"original":"assets/12_original.webp","teacher":"assets/12_teacher.webp","noaug":"assets/12_noaug.webp","albu":"assets/12_albu.webp"}}],"labels":{"original":"Original","teacher":"Teacher corrigido","noaug":"TinyBeauty sem augmentation","albu":"TinyBeauty com Albumentations"},"metrics":{"noaug":{"weighted":0.052172,"global":0.023697,"ratio":0.71933},"albu":{"weighted":0.052817,"global":0.023873,"ratio":0.66788}},"stage":"20000","styles":["social"],"created":"2026-11-04","source":"TinyBeautyExperiments","research_only":true},$=x=>document.getElementById(x),KEY='aps-v4-planeiris-20k-20261104';
+let state;try{state=JSON.parse(localStorage.getItem(KEY)||'{"votes":{},"flags":{},"notes":{}}')}catch{state={votes:{},flags:{},notes:{}}}
+let i=0;const flags=[['makeup','Maquiagem fraca'],['eyes','Olhos incorretos'],['identity','Identidade alterada'],['lips','Batom incorreto'],['artifacts','Artefatos']];
+function store(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}}
+DB.rows.forEach((r,j)=>{let o=document.createElement('option');o.value=j;o.textContent=(j+1)+' · '+r.source_id.replace('SFHQ_pt3_','');$('case').append(o)});
+function render(){let r=DB.rows[i],key=r.source_id;$('case').value=i;$('counter').textContent='Validação '+(i+1)+'/'+DB.rows.length+' · '+key;
+$('images').replaceChildren();for(let [name,title] of Object.entries(DB.labels)){let e=document.createElement('div');e.className='item';let h=document.createElement('strong');h.textContent=title;
+let img=document.createElement('img');img.loading='lazy';img.src=r.images[name];img.alt=title;img.onclick=()=>{$('big').src=img.src;$('bigTitle').textContent=title;$('lightbox').showModal()};
+e.append(h,img);$('images').append(e)}
+for(let [button,value] of [['vNo','noaug'],['vAug','albu'],['vTie','tie']]){$(button).className=state.votes[key]===value?'active':''}
+$('flags').replaceChildren();for(let [code,label] of flags){let b=document.createElement('button');b.textContent=label;b.className=(state.flags[key]||[]).includes(code)?'active':'';
+b.onclick=()=>{let t=new Set(state.flags[key]||[]);t.has(code)?t.delete(code):t.add(code);state.flags[key]=[...t];store();render()};$('flags').append(b)}
+$('notes').value=state.notes[key]||''}
+function vote(value){state.votes[DB.rows[i].source_id]=value;store();render()}
+$('vNo').onclick=()=>vote('noaug');$('vAug').onclick=()=>vote('albu');$('vTie').onclick=()=>vote('tie');
+$('notes').oninput=()=>{state.notes[DB.rows[i].source_id]=$('notes').value;store()}
+$('case').onchange=()=>{i=Number($('case').value);render()};$('prev').onclick=()=>{i=(i-1+DB.rows.length)%DB.rows.length;render()};$('next').onclick=()=>{i=(i+1)%DB.rows.length;render()};
+$('close').onclick=()=>$('lightbox').close();
+$('export').onclick=()=>{let blob=new Blob([JSON.stringify({experiment:'APS-TinyBeauty-V4-PlaneIris-20k',...state},null,2)],{type:'application/json'});
+let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='tinybeauty_20k_aug_vs_noaug_avaliacoes.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),2000)};
+render();
+</script></body></html>

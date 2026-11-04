@@ -1,0 +1,149 @@
+{
+  "rows": [
+    {
+      "number": 1,
+      "source_id": "SFHQ_pt3_00001690",
+      "images": {
+        "original": "assets/01_original.webp",
+        "teacher": "assets/01_teacher.webp",
+        "noaug": "assets/01_noaug.webp",
+        "albu": "assets/01_albu.webp"
+      }
+    },
+    {
+      "number": 2,
+      "source_id": "SFHQ_pt3_00002799",
+      "images": {
+        "original": "assets/02_original.webp",
+        "teacher": "assets/02_teacher.webp",
+        "noaug": "assets/02_noaug.webp",
+        "albu": "assets/02_albu.webp"
+      }
+    },
+    {
+      "number": 3,
+      "source_id": "SFHQ_pt3_00005043",
+      "images": {
+        "original": "assets/03_original.webp",
+        "teacher": "assets/03_teacher.webp",
+        "noaug": "assets/03_noaug.webp",
+        "albu": "assets/03_albu.webp"
+      }
+    },
+    {
+      "number": 4,
+      "source_id": "SFHQ_pt3_00005983",
+      "images": {
+        "original": "assets/04_original.webp",
+        "teacher": "assets/04_teacher.webp",
+        "noaug": "assets/04_noaug.webp",
+        "albu": "assets/04_albu.webp"
+      }
+    },
+    {
+      "number": 5,
+      "source_id": "SFHQ_pt3_00006549",
+      "images": {
+        "original": "assets/05_original.webp",
+        "teacher": "assets/05_teacher.webp",
+        "noaug": "assets/05_noaug.webp",
+        "albu": "assets/05_albu.webp"
+      }
+    },
+    {
+      "number": 6,
+      "source_id": "SFHQ_pt3_00006969",
+      "images": {
+        "original": "assets/06_original.webp",
+        "teacher": "assets/06_teacher.webp",
+        "noaug": "assets/06_noaug.webp",
+        "albu": "assets/06_albu.webp"
+      }
+    },
+    {
+      "number": 7,
+      "source_id": "SFHQ_pt3_00007250",
+      "images": {
+        "original": "assets/07_original.webp",
+        "teacher": "assets/07_teacher.webp",
+        "noaug": "assets/07_noaug.webp",
+        "albu": "assets/07_albu.webp"
+      }
+    },
+    {
+      "number": 8,
+      "source_id": "SFHQ_pt3_00007369",
+      "images": {
+        "original": "assets/08_original.webp",
+        "teacher": "assets/08_teacher.webp",
+        "noaug": "assets/08_noaug.webp",
+        "albu": "assets/08_albu.webp"
+      }
+    },
+    {
+      "number": 9,
+      "source_id": "SFHQ_pt3_00007455",
+      "images": {
+        "original": "assets/09_original.webp",
+        "teacher": "assets/09_teacher.webp",
+        "noaug": "assets/09_noaug.webp",
+        "albu": "assets/09_albu.webp"
+      }
+    },
+    {
+      "number": 10,
+      "source_id": "SFHQ_pt3_00008011",
+      "images": {
+        "original": "assets/10_original.webp",
+        "teacher": "assets/10_teacher.webp",
+        "noaug": "assets/10_noaug.webp",
+        "albu": "assets/10_albu.webp"
+      }
+    },
+    {
+      "number": 11,
+      "source_id": "SFHQ_pt3_00009903",
+      "images": {
+        "original": "assets/11_original.webp",
+        "teacher": "assets/11_teacher.webp",
+        "noaug": "assets/11_noaug.webp",
+        "albu": "assets/11_albu.webp"
+      }
+    },
+    {
+      "number": 12,
+      "source_id": "SFHQ_pt3_00010706",
+      "images": {
+        "original": "assets/12_original.webp",
+        "teacher": "assets/12_teacher.webp",
+        "noaug": "assets/12_noaug.webp",
+        "albu": "assets/12_albu.webp"
+      }
+    }
+  ],
+  "labels": {
+    "original": "Original",
+    "teacher": "Teacher corrigido",
+    "noaug": "TinyBeauty sem augmentation",
+    "albu": "TinyBeauty com Albumentations"
+  },
+  "metrics": {
+    "noaug": {
+      "weighted": 0.052172,
+      "global": 0.023697,
+      "ratio": 0.71933
+    },
+    "albu": {
+      "weighted": 0.052817,
+      "global": 0.023873,
+      "ratio": 0.66788
+    }
+  },
+  "stage": "20000",
+  "styles": [
+    "social"
+  ],
+  "created": "2026-11-04",
+  "source": "TinyBeautyExperiments",
+  "research_only": true
+}
