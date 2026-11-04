@@ -1,0 +1,421 @@
+{
+  "cases": [
+    {
+      "id": "SFHQ_pt3_00001690",
+      "images": {
+        "original": "assets/01_original.webp",
+        "teacher": "assets/01_teacher.webp",
+        "tiny24_raw": "assets/01_tiny24_raw.webp",
+        "tiny24_masked": "assets/01_tiny24_masked.webp",
+        "wide48_20k_raw": "assets/01_wide48_20k_raw.webp",
+        "wide48_20k_masked": "assets/01_wide48_20k_masked.webp",
+        "wide48_continue_raw": "assets/01_wide48_continue_raw.webp",
+        "wide48_continue_masked": "assets/01_wide48_continue_masked.webp",
+        "wide48_grad_raw": "assets/01_wide48_grad_raw.webp",
+        "wide48_grad_masked": "assets/01_wide48_grad_masked.webp",
+        "wide48_highpass_raw": "assets/01_wide48_highpass_raw.webp",
+        "wide48_highpass_masked": "assets/01_wide48_highpass_masked.webp",
+        "wide48_background_raw": "assets/01_wide48_background_raw.webp",
+        "wide48_background_masked": "assets/01_wide48_background_masked.webp",
+        "mid32_roi_raw": "assets/01_mid32_roi_raw.webp",
+        "mid32_roi_masked": "assets/01_mid32_roi_masked.webp",
+        "large64_roi_raw": "assets/01_large64_roi_raw.webp",
+        "large64_roi_masked": "assets/01_large64_roi_masked.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00002799",
+      "images": {
+        "original": "assets/02_original.webp",
+        "teacher": "assets/02_teacher.webp",
+        "tiny24_raw": "assets/02_tiny24_raw.webp",
+        "tiny24_masked": "assets/02_tiny24_masked.webp",
+        "wide48_20k_raw": "assets/02_wide48_20k_raw.webp",
+        "wide48_20k_masked": "assets/02_wide48_20k_masked.webp",
+        "wide48_continue_raw": "assets/02_wide48_continue_raw.webp",
+        "wide48_continue_masked": "assets/02_wide48_continue_masked.webp",
+        "wide48_grad_raw": "assets/02_wide48_grad_raw.webp",
+        "wide48_grad_masked": "assets/02_wide48_grad_masked.webp",
+        "wide48_highpass_raw": "assets/02_wide48_highpass_raw.webp",
+        "wide48_highpass_masked": "assets/02_wide48_highpass_masked.webp",
+        "wide48_background_raw": "assets/02_wide48_background_raw.webp",
+        "wide48_background_masked": "assets/02_wide48_background_masked.webp",
+        "mid32_roi_raw": "assets/02_mid32_roi_raw.webp",
+        "mid32_roi_masked": "assets/02_mid32_roi_masked.webp",
+        "large64_roi_raw": "assets/02_large64_roi_raw.webp",
+        "large64_roi_masked": "assets/02_large64_roi_masked.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00005043",
+      "images": {
+        "original": "assets/03_original.webp",
+        "teacher": "assets/03_teacher.webp",
+        "tiny24_raw": "assets/03_tiny24_raw.webp",
+        "tiny24_masked": "assets/03_tiny24_masked.webp",
+        "wide48_20k_raw": "assets/03_wide48_20k_raw.webp",
+        "wide48_20k_masked": "assets/03_wide48_20k_masked.webp",
+        "wide48_continue_raw": "assets/03_wide48_continue_raw.webp",
+        "wide48_continue_masked": "assets/03_wide48_continue_masked.webp",
+        "wide48_grad_raw": "assets/03_wide48_grad_raw.webp",
+        "wide48_grad_masked": "assets/03_wide48_grad_masked.webp",
+        "wide48_highpass_raw": "assets/03_wide48_highpass_raw.webp",
+        "wide48_highpass_masked": "assets/03_wide48_highpass_masked.webp",
+        "wide48_background_raw": "assets/03_wide48_background_raw.webp",
+        "wide48_background_masked": "assets/03_wide48_background_masked.webp",
+        "mid32_roi_raw": "assets/03_mid32_roi_raw.webp",
+        "mid32_roi_masked": "assets/03_mid32_roi_masked.webp",
+        "large64_roi_raw": "assets/03_large64_roi_raw.webp",
+        "large64_roi_masked": "assets/03_large64_roi_masked.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00005983",
+      "images": {
+        "original": "assets/04_original.webp",
+        "teacher": "assets/04_teacher.webp",
+        "tiny24_raw": "assets/04_tiny24_raw.webp",
+        "tiny24_masked": "assets/04_tiny24_masked.webp",
+        "wide48_20k_raw": "assets/04_wide48_20k_raw.webp",
+        "wide48_20k_masked": "assets/04_wide48_20k_masked.webp",
+        "wide48_continue_raw": "assets/04_wide48_continue_raw.webp",
+        "wide48_continue_masked": "assets/04_wide48_continue_masked.webp",
+        "wide48_grad_raw": "assets/04_wide48_grad_raw.webp",
+        "wide48_grad_masked": "assets/04_wide48_grad_masked.webp",
+        "wide48_highpass_raw": "assets/04_wide48_highpass_raw.webp",
+        "wide48_highpass_masked": "assets/04_wide48_highpass_masked.webp",
+        "wide48_background_raw": "assets/04_wide48_background_raw.webp",
+        "wide48_background_masked": "assets/04_wide48_background_masked.webp",
+        "mid32_roi_raw": "assets/04_mid32_roi_raw.webp",
+        "mid32_roi_masked": "assets/04_mid32_roi_masked.webp",
+        "large64_roi_raw": "assets/04_large64_roi_raw.webp",
+        "large64_roi_masked": "assets/04_large64_roi_masked.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00006549",
+      "images": {
+        "original": "assets/05_original.webp",
+        "teacher": "assets/05_teacher.webp",
+        "tiny24_raw": "assets/05_tiny24_raw.webp",
+        "tiny24_masked": "assets/05_tiny24_masked.webp",
+        "wide48_20k_raw": "assets/05_wide48_20k_raw.webp",
+        "wide48_20k_masked": "assets/05_wide48_20k_masked.webp",
+        "wide48_continue_raw": "assets/05_wide48_continue_raw.webp",
+        "wide48_continue_masked": "assets/05_wide48_continue_masked.webp",
+        "wide48_grad_raw": "assets/05_wide48_grad_raw.webp",
+        "wide48_grad_masked": "assets/05_wide48_grad_masked.webp",
+        "wide48_highpass_raw": "assets/05_wide48_highpass_raw.webp",
+        "wide48_highpass_masked": "assets/05_wide48_highpass_masked.webp",
+        "wide48_background_raw": "assets/05_wide48_background_raw.webp",
+        "wide48_background_masked": "assets/05_wide48_background_masked.webp",
+        "mid32_roi_raw": "assets/05_mid32_roi_raw.webp",
+        "mid32_roi_masked": "assets/05_mid32_roi_masked.webp",
+        "large64_roi_raw": "assets/05_large64_roi_raw.webp",
+        "large64_roi_masked": "assets/05_large64_roi_masked.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00006969",
+      "images": {
+        "original": "assets/06_original.webp",
+        "teacher": "assets/06_teacher.webp",
+        "tiny24_raw": "assets/06_tiny24_raw.webp",
+        "tiny24_masked": "assets/06_tiny24_masked.webp",
+        "wide48_20k_raw": "assets/06_wide48_20k_raw.webp",
+        "wide48_20k_masked": "assets/06_wide48_20k_masked.webp",
+        "wide48_continue_raw": "assets/06_wide48_continue_raw.webp",
+        "wide48_continue_masked": "assets/06_wide48_continue_masked.webp",
+        "wide48_grad_raw": "assets/06_wide48_grad_raw.webp",
+        "wide48_grad_masked": "assets/06_wide48_grad_masked.webp",
+        "wide48_highpass_raw": "assets/06_wide48_highpass_raw.webp",
+        "wide48_highpass_masked": "assets/06_wide48_highpass_masked.webp",
+        "wide48_background_raw": "assets/06_wide48_background_raw.webp",
+        "wide48_background_masked": "assets/06_wide48_background_masked.webp",
+        "mid32_roi_raw": "assets/06_mid32_roi_raw.webp",
+        "mid32_roi_masked": "assets/06_mid32_roi_masked.webp",
+        "large64_roi_raw": "assets/06_large64_roi_raw.webp",
+        "large64_roi_masked": "assets/06_large64_roi_masked.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00007250",
+      "images": {
+        "original": "assets/07_original.webp",
+        "teacher": "assets/07_teacher.webp",
+        "tiny24_raw": "assets/07_tiny24_raw.webp",
+        "tiny24_masked": "assets/07_tiny24_masked.webp",
+        "wide48_20k_raw": "assets/07_wide48_20k_raw.webp",
+        "wide48_20k_masked": "assets/07_wide48_20k_masked.webp",
+        "wide48_continue_raw": "assets/07_wide48_continue_raw.webp",
+        "wide48_continue_masked": "assets/07_wide48_continue_masked.webp",
+        "wide48_grad_raw": "assets/07_wide48_grad_raw.webp",
+        "wide48_grad_masked": "assets/07_wide48_grad_masked.webp",
+        "wide48_highpass_raw": "assets/07_wide48_highpass_raw.webp",
+        "wide48_highpass_masked": "assets/07_wide48_highpass_masked.webp",
+        "wide48_background_raw": "assets/07_wide48_background_raw.webp",
+        "wide48_background_masked": "assets/07_wide48_background_masked.webp",
+        "mid32_roi_raw": "assets/07_mid32_roi_raw.webp",
+        "mid32_roi_masked": "assets/07_mid32_roi_masked.webp",
+        "large64_roi_raw": "assets/07_large64_roi_raw.webp",
+        "large64_roi_masked": "assets/07_large64_roi_masked.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00007369",
+      "images": {
+        "original": "assets/08_original.webp",
+        "teacher": "assets/08_teacher.webp",
+        "tiny24_raw": "assets/08_tiny24_raw.webp",
+        "tiny24_masked": "assets/08_tiny24_masked.webp",
+        "wide48_20k_raw": "assets/08_wide48_20k_raw.webp",
+        "wide48_20k_masked": "assets/08_wide48_20k_masked.webp",
+        "wide48_continue_raw": "assets/08_wide48_continue_raw.webp",
+        "wide48_continue_masked": "assets/08_wide48_continue_masked.webp",
+        "wide48_grad_raw": "assets/08_wide48_grad_raw.webp",
+        "wide48_grad_masked": "assets/08_wide48_grad_masked.webp",
+        "wide48_highpass_raw": "assets/08_wide48_highpass_raw.webp",
+        "wide48_highpass_masked": "assets/08_wide48_highpass_masked.webp",
+        "wide48_background_raw": "assets/08_wide48_background_raw.webp",
+        "wide48_background_masked": "assets/08_wide48_background_masked.webp",
+        "mid32_roi_raw": "assets/08_mid32_roi_raw.webp",
+        "mid32_roi_masked": "assets/08_mid32_roi_masked.webp",
+        "large64_roi_raw": "assets/08_large64_roi_raw.webp",
+        "large64_roi_masked": "assets/08_large64_roi_masked.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00007455",
+      "images": {
+        "original": "assets/09_original.webp",
+        "teacher": "assets/09_teacher.webp",
+        "tiny24_raw": "assets/09_tiny24_raw.webp",
+        "tiny24_masked": "assets/09_tiny24_masked.webp",
+        "wide48_20k_raw": "assets/09_wide48_20k_raw.webp",
+        "wide48_20k_masked": "assets/09_wide48_20k_masked.webp",
+        "wide48_continue_raw": "assets/09_wide48_continue_raw.webp",
+        "wide48_continue_masked": "assets/09_wide48_continue_masked.webp",
+        "wide48_grad_raw": "assets/09_wide48_grad_raw.webp",
+        "wide48_grad_masked": "assets/09_wide48_grad_masked.webp",
+        "wide48_highpass_raw": "assets/09_wide48_highpass_raw.webp",
+        "wide48_highpass_masked": "assets/09_wide48_highpass_masked.webp",
+        "wide48_background_raw": "assets/09_wide48_background_raw.webp",
+        "wide48_background_masked": "assets/09_wide48_background_masked.webp",
+        "mid32_roi_raw": "assets/09_mid32_roi_raw.webp",
+        "mid32_roi_masked": "assets/09_mid32_roi_masked.webp",
+        "large64_roi_raw": "assets/09_large64_roi_raw.webp",
+        "large64_roi_masked": "assets/09_large64_roi_masked.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00008011",
+      "images": {
+        "original": "assets/10_original.webp",
+        "teacher": "assets/10_teacher.webp",
+        "tiny24_raw": "assets/10_tiny24_raw.webp",
+        "tiny24_masked": "assets/10_tiny24_masked.webp",
+        "wide48_20k_raw": "assets/10_wide48_20k_raw.webp",
+        "wide48_20k_masked": "assets/10_wide48_20k_masked.webp",
+        "wide48_continue_raw": "assets/10_wide48_continue_raw.webp",
+        "wide48_continue_masked": "assets/10_wide48_continue_masked.webp",
+        "wide48_grad_raw": "assets/10_wide48_grad_raw.webp",
+        "wide48_grad_masked": "assets/10_wide48_grad_masked.webp",
+        "wide48_highpass_raw": "assets/10_wide48_highpass_raw.webp",
+        "wide48_highpass_masked": "assets/10_wide48_highpass_masked.webp",
+        "wide48_background_raw": "assets/10_wide48_background_raw.webp",
+        "wide48_background_masked": "assets/10_wide48_background_masked.webp",
+        "mid32_roi_raw": "assets/10_mid32_roi_raw.webp",
+        "mid32_roi_masked": "assets/10_mid32_roi_masked.webp",
+        "large64_roi_raw": "assets/10_large64_roi_raw.webp",
+        "large64_roi_masked": "assets/10_large64_roi_masked.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00009903",
+      "images": {
+        "original": "assets/11_original.webp",
+        "teacher": "assets/11_teacher.webp",
+        "tiny24_raw": "assets/11_tiny24_raw.webp",
+        "tiny24_masked": "assets/11_tiny24_masked.webp",
+        "wide48_20k_raw": "assets/11_wide48_20k_raw.webp",
+        "wide48_20k_masked": "assets/11_wide48_20k_masked.webp",
+        "wide48_continue_raw": "assets/11_wide48_continue_raw.webp",
+        "wide48_continue_masked": "assets/11_wide48_continue_masked.webp",
+        "wide48_grad_raw": "assets/11_wide48_grad_raw.webp",
+        "wide48_grad_masked": "assets/11_wide48_grad_masked.webp",
+        "wide48_highpass_raw": "assets/11_wide48_highpass_raw.webp",
+        "wide48_highpass_masked": "assets/11_wide48_highpass_masked.webp",
+        "wide48_background_raw": "assets/11_wide48_background_raw.webp",
+        "wide48_background_masked": "assets/11_wide48_background_masked.webp",
+        "mid32_roi_raw": "assets/11_mid32_roi_raw.webp",
+        "mid32_roi_masked": "assets/11_mid32_roi_masked.webp",
+        "large64_roi_raw": "assets/11_large64_roi_raw.webp",
+        "large64_roi_masked": "assets/11_large64_roi_masked.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00010706",
+      "images": {
+        "original": "assets/12_original.webp",
+        "teacher": "assets/12_teacher.webp",
+        "tiny24_raw": "assets/12_tiny24_raw.webp",
+        "tiny24_masked": "assets/12_tiny24_masked.webp",
+        "wide48_20k_raw": "assets/12_wide48_20k_raw.webp",
+        "wide48_20k_masked": "assets/12_wide48_20k_masked.webp",
+        "wide48_continue_raw": "assets/12_wide48_continue_raw.webp",
+        "wide48_continue_masked": "assets/12_wide48_continue_masked.webp",
+        "wide48_grad_raw": "assets/12_wide48_grad_raw.webp",
+        "wide48_grad_masked": "assets/12_wide48_grad_masked.webp",
+        "wide48_highpass_raw": "assets/12_wide48_highpass_raw.webp",
+        "wide48_highpass_masked": "assets/12_wide48_highpass_masked.webp",
+        "wide48_background_raw": "assets/12_wide48_background_raw.webp",
+        "wide48_background_masked": "assets/12_wide48_background_masked.webp",
+        "mid32_roi_raw": "assets/12_mid32_roi_raw.webp",
+        "mid32_roi_masked": "assets/12_mid32_roi_masked.webp",
+        "large64_roi_raw": "assets/12_large64_roi_raw.webp",
+        "large64_roi_masked": "assets/12_large64_roi_masked.webp"
+      }
+    }
+  ],
+  "model_order": [
+    "tiny24",
+    "wide48_20k",
+    "wide48_continue",
+    "wide48_grad",
+    "wide48_highpass",
+    "wide48_background",
+    "mid32_roi",
+    "large64_roi"
+  ],
+  "scores": {
+    "tiny24": {
+      "raw": {
+        "intensity_face": 0.691827,
+        "intensity_detail": 0.753688,
+        "weighted": 0.053935,
+        "detail_error": 0.089495,
+        "background_delta": 0.002444
+      },
+      "masked": {
+        "intensity_face": 0.68676,
+        "intensity_detail": 0.75262,
+        "weighted": 0.053525,
+        "detail_error": 0.089483,
+        "background_delta": 0.000272
+      }
+    },
+    "wide48_20k": {
+      "raw": {
+        "intensity_face": 0.844443,
+        "intensity_detail": 0.918862,
+        "weighted": 0.047551,
+        "detail_error": 0.073592,
+        "background_delta": 0.008389
+      },
+      "masked": {
+        "intensity_face": 0.831517,
+        "intensity_detail": 0.917432,
+        "weighted": 0.046033,
+        "detail_error": 0.073596,
+        "background_delta": 0.000709
+      }
+    },
+    "wide48_continue": {
+      "raw": {
+        "intensity_face": 0.761418,
+        "intensity_detail": 0.809367,
+        "weighted": 0.047428,
+        "detail_error": 0.07356,
+        "background_delta": 0.007837
+      },
+      "masked": {
+        "intensity_face": 0.750053,
+        "intensity_detail": 0.808131,
+        "weighted": 0.046126,
+        "detail_error": 0.073587,
+        "background_delta": 0.000632
+      }
+    },
+    "wide48_grad": {
+      "raw": {
+        "intensity_face": 0.756797,
+        "intensity_detail": 0.81126,
+        "weighted": 0.047188,
+        "detail_error": 0.073661,
+        "background_delta": 0.006729
+      },
+      "masked": {
+        "intensity_face": 0.746069,
+        "intensity_detail": 0.810054,
+        "weighted": 0.046129,
+        "detail_error": 0.073689,
+        "background_delta": 0.000597
+      }
+    },
+    "wide48_highpass": {
+      "raw": {
+        "intensity_face": 0.762101,
+        "intensity_detail": 0.809002,
+        "weighted": 0.047412,
+        "detail_error": 0.073551,
+        "background_delta": 0.007826
+      },
+      "masked": {
+        "intensity_face": 0.750673,
+        "intensity_detail": 0.807763,
+        "weighted": 0.046105,
+        "detail_error": 0.073578,
+        "background_delta": 0.000634
+      }
+    },
+    "wide48_background": {
+      "raw": {
+        "intensity_face": 0.736979,
+        "intensity_detail": 0.802749,
+        "weighted": 0.047188,
+        "detail_error": 0.074432,
+        "background_delta": 0.004308
+      },
+      "masked": {
+        "intensity_face": 0.728494,
+        "intensity_detail": 0.80161,
+        "weighted": 0.046576,
+        "detail_error": 0.074459,
+        "background_delta": 0.000471
+      }
+    },
+    "mid32_roi": {
+      "raw": {
+        "intensity_face": 0.669858,
+        "intensity_detail": 0.763776,
+        "weighted": 0.056681,
+        "detail_error": 0.087477,
+        "background_delta": 0.011495
+      },
+      "masked": {
+        "intensity_face": 0.659242,
+        "intensity_detail": 0.762924,
+        "weighted": 0.054488,
+        "detail_error": 0.087487,
+        "background_delta": 0.000561
+      }
+    },
+    "large64_roi": {
+      "raw": {
+        "intensity_face": 0.752587,
+        "intensity_detail": 0.841519,
+        "weighted": 0.050522,
+        "detail_error": 0.074846,
+        "background_delta": 0.011065
+      },
+      "masked": {
+        "intensity_face": 0.74082,
+        "intensity_detail": 0.840067,
+        "weighted": 0.048484,
+        "detail_error": 0.074854,
+        "background_delta": 0.000629
+      }
+    }
+  },
+  "warning": "Identical images, same mask, same extraction and scale, model inputs unaugmented. Teacher is masked composition target used during training."
+}
