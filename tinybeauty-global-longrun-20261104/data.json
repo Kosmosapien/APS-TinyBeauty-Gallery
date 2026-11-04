@@ -12,7 +12,9 @@
         "directional_continue_10000": "assets/01_directional_continue_10000.webp",
         "directional_continue_15000": "assets/01_directional_continue_15000.webp",
         "directional_continue_20000": "assets/01_directional_continue_20000.webp",
-        "directional_continue_24000": "assets/01_directional_continue_24000.webp"
+        "directional_continue_24000": "assets/01_directional_continue_24000.webp",
+        "multiscale_texture_02000": "assets/01_multiscale_texture_02000.webp",
+        "multiscale_texture_05000": "assets/01_multiscale_texture_05000.webp"
       }
     },
     {
@@ -27,7 +29,9 @@
         "directional_continue_10000": "assets/02_directional_continue_10000.webp",
         "directional_continue_15000": "assets/02_directional_continue_15000.webp",
         "directional_continue_20000": "assets/02_directional_continue_20000.webp",
-        "directional_continue_24000": "assets/02_directional_continue_24000.webp"
+        "directional_continue_24000": "assets/02_directional_continue_24000.webp",
+        "multiscale_texture_02000": "assets/02_multiscale_texture_02000.webp",
+        "multiscale_texture_05000": "assets/02_multiscale_texture_05000.webp"
       }
     },
     {
@@ -42,7 +46,9 @@
         "directional_continue_10000": "assets/03_directional_continue_10000.webp",
         "directional_continue_15000": "assets/03_directional_continue_15000.webp",
         "directional_continue_20000": "assets/03_directional_continue_20000.webp",
-        "directional_continue_24000": "assets/03_directional_continue_24000.webp"
+        "directional_continue_24000": "assets/03_directional_continue_24000.webp",
+        "multiscale_texture_02000": "assets/03_multiscale_texture_02000.webp",
+        "multiscale_texture_05000": "assets/03_multiscale_texture_05000.webp"
       }
     },
     {
@@ -57,7 +63,9 @@
         "directional_continue_10000": "assets/04_directional_continue_10000.webp",
         "directional_continue_15000": "assets/04_directional_continue_15000.webp",
         "directional_continue_20000": "assets/04_directional_continue_20000.webp",
-        "directional_continue_24000": "assets/04_directional_continue_24000.webp"
+        "directional_continue_24000": "assets/04_directional_continue_24000.webp",
+        "multiscale_texture_02000": "assets/04_multiscale_texture_02000.webp",
+        "multiscale_texture_05000": "assets/04_multiscale_texture_05000.webp"
       }
     },
     {
@@ -72,7 +80,9 @@
         "directional_continue_10000": "assets/05_directional_continue_10000.webp",
         "directional_continue_15000": "assets/05_directional_continue_15000.webp",
         "directional_continue_20000": "assets/05_directional_continue_20000.webp",
-        "directional_continue_24000": "assets/05_directional_continue_24000.webp"
+        "directional_continue_24000": "assets/05_directional_continue_24000.webp",
+        "multiscale_texture_02000": "assets/05_multiscale_texture_02000.webp",
+        "multiscale_texture_05000": "assets/05_multiscale_texture_05000.webp"
       }
     },
     {
@@ -87,7 +97,9 @@
         "directional_continue_10000": "assets/06_directional_continue_10000.webp",
         "directional_continue_15000": "assets/06_directional_continue_15000.webp",
         "directional_continue_20000": "assets/06_directional_continue_20000.webp",
-        "directional_continue_24000": "assets/06_directional_continue_24000.webp"
+        "directional_continue_24000": "assets/06_directional_continue_24000.webp",
+        "multiscale_texture_02000": "assets/06_multiscale_texture_02000.webp",
+        "multiscale_texture_05000": "assets/06_multiscale_texture_05000.webp"
       }
     },
     {
@@ -102,7 +114,9 @@
         "directional_continue_10000": "assets/07_directional_continue_10000.webp",
         "directional_continue_15000": "assets/07_directional_continue_15000.webp",
         "directional_continue_20000": "assets/07_directional_continue_20000.webp",
-        "directional_continue_24000": "assets/07_directional_continue_24000.webp"
+        "directional_continue_24000": "assets/07_directional_continue_24000.webp",
+        "multiscale_texture_02000": "assets/07_multiscale_texture_02000.webp",
+        "multiscale_texture_05000": "assets/07_multiscale_texture_05000.webp"
       }
     },
     {
@@ -117,7 +131,9 @@
         "directional_continue_10000": "assets/08_directional_continue_10000.webp",
         "directional_continue_15000": "assets/08_directional_continue_15000.webp",
         "directional_continue_20000": "assets/08_directional_continue_20000.webp",
-        "directional_continue_24000": "assets/08_directional_continue_24000.webp"
+        "directional_continue_24000": "assets/08_directional_continue_24000.webp",
+        "multiscale_texture_02000": "assets/08_multiscale_texture_02000.webp",
+        "multiscale_texture_05000": "assets/08_multiscale_texture_05000.webp"
       }
     },
     {
@@ -132,7 +148,9 @@
         "directional_continue_10000": "assets/09_directional_continue_10000.webp",
         "directional_continue_15000": "assets/09_directional_continue_15000.webp",
         "directional_continue_20000": "assets/09_directional_continue_20000.webp",
-        "directional_continue_24000": "assets/09_directional_continue_24000.webp"
+        "directional_continue_24000": "assets/09_directional_continue_24000.webp",
+        "multiscale_texture_02000": "assets/09_multiscale_texture_02000.webp",
+        "multiscale_texture_05000": "assets/09_multiscale_texture_05000.webp"
       }
     },
     {
@@ -147,7 +165,9 @@
         "directional_continue_10000": "assets/10_directional_continue_10000.webp",
         "directional_continue_15000": "assets/10_directional_continue_15000.webp",
         "directional_continue_20000": "assets/10_directional_continue_20000.webp",
-        "directional_continue_24000": "assets/10_directional_continue_24000.webp"
+        "directional_continue_24000": "assets/10_directional_continue_24000.webp",
+        "multiscale_texture_02000": "assets/10_multiscale_texture_02000.webp",
+        "multiscale_texture_05000": "assets/10_multiscale_texture_05000.webp"
       }
     }
   ],
@@ -161,7 +181,9 @@
     "directional_continue_10000": "Continuação direcional · +10,000 passos",
     "directional_continue_15000": "Continuação direcional · +15,000 passos",
     "directional_continue_20000": "Continuação direcional · +20,000 passos",
-    "directional_continue_24000": "Continuação direcional · +24,000 passos"
+    "directional_continue_24000": "Continuação direcional · +24,000 passos",
+    "multiscale_texture_02000": "Textura multiescala · +2,000 passos",
+    "multiscale_texture_05000": "Textura multiescala · +5,000 passos"
   },
   "scores": {
     "directional_continue": [
@@ -333,6 +355,73 @@
         },
         "train_loss": 0.046456,
         "elapsed_seconds": 1086.1
+      }
+    ],
+    "multiscale_texture": [
+      {
+        "step": 100,
+        "metrics": {
+          "MAE": 0.029621,
+          "highpass_error": 0.010358,
+          "highpass_energy_ratio": 0.947469,
+          "direction_cosine": 0.652549,
+          "amplitude_ratio": 0.77651,
+          "directional_loss": 0.065507
+        },
+        "train_loss": 0.078735,
+        "elapsed_seconds": 6.2
+      },
+      {
+        "step": 500,
+        "metrics": {
+          "MAE": 0.028927,
+          "highpass_error": 0.010295,
+          "highpass_energy_ratio": 0.937251,
+          "direction_cosine": 0.667909,
+          "amplitude_ratio": 0.774889,
+          "directional_loss": 0.063974
+        },
+        "train_loss": 0.078757,
+        "elapsed_seconds": 26.3
+      },
+      {
+        "step": 2000,
+        "metrics": {
+          "MAE": 0.027219,
+          "highpass_error": 0.009974,
+          "highpass_energy_ratio": 0.92863,
+          "direction_cosine": 0.699083,
+          "amplitude_ratio": 0.759393,
+          "directional_loss": 0.060374
+        },
+        "train_loss": 0.069319,
+        "elapsed_seconds": 97.6
+      },
+      {
+        "step": 2500,
+        "metrics": {
+          "MAE": 0.026715,
+          "highpass_error": 0.009922,
+          "highpass_energy_ratio": 0.928396,
+          "direction_cosine": 0.71523,
+          "amplitude_ratio": 0.770395,
+          "directional_loss": 0.05895
+        },
+        "train_loss": 0.069331,
+        "elapsed_seconds": 122.7
+      },
+      {
+        "step": 5000,
+        "metrics": {
+          "MAE": 0.026279,
+          "highpass_error": 0.009734,
+          "highpass_energy_ratio": 0.914226,
+          "direction_cosine": 0.741478,
+          "amplitude_ratio": 0.896655,
+          "directional_loss": 0.055612
+        },
+        "train_loss": 0.062168,
+        "elapsed_seconds": 240.5
       }
     ]
   },
