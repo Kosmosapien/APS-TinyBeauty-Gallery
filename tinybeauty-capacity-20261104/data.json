@@ -1,0 +1,224 @@
+{
+  "cases": [
+    {
+      "id": "SFHQ_pt3_00001690",
+      "images": {
+        "original": "assets/01_original.webp",
+        "teacher": "assets/01_teacher.webp",
+        "small20k": "assets/01_small20k.webp",
+        "wide20k": "assets/01_wide20k.webp",
+        "wide_mask": "assets/01_wide_mask.webp",
+        "wide_mask2": "assets/01_wide_mask2.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00002799",
+      "images": {
+        "original": "assets/02_original.webp",
+        "teacher": "assets/02_teacher.webp",
+        "small20k": "assets/02_small20k.webp",
+        "wide20k": "assets/02_wide20k.webp",
+        "wide_mask": "assets/02_wide_mask.webp",
+        "wide_mask2": "assets/02_wide_mask2.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00005043",
+      "images": {
+        "original": "assets/03_original.webp",
+        "teacher": "assets/03_teacher.webp",
+        "small20k": "assets/03_small20k.webp",
+        "wide20k": "assets/03_wide20k.webp",
+        "wide_mask": "assets/03_wide_mask.webp",
+        "wide_mask2": "assets/03_wide_mask2.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00005983",
+      "images": {
+        "original": "assets/04_original.webp",
+        "teacher": "assets/04_teacher.webp",
+        "small20k": "assets/04_small20k.webp",
+        "wide20k": "assets/04_wide20k.webp",
+        "wide_mask": "assets/04_wide_mask.webp",
+        "wide_mask2": "assets/04_wide_mask2.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00006549",
+      "images": {
+        "original": "assets/05_original.webp",
+        "teacher": "assets/05_teacher.webp",
+        "small20k": "assets/05_small20k.webp",
+        "wide20k": "assets/05_wide20k.webp",
+        "wide_mask": "assets/05_wide_mask.webp",
+        "wide_mask2": "assets/05_wide_mask2.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00006969",
+      "images": {
+        "original": "assets/06_original.webp",
+        "teacher": "assets/06_teacher.webp",
+        "small20k": "assets/06_small20k.webp",
+        "wide20k": "assets/06_wide20k.webp",
+        "wide_mask": "assets/06_wide_mask.webp",
+        "wide_mask2": "assets/06_wide_mask2.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00007250",
+      "images": {
+        "original": "assets/07_original.webp",
+        "teacher": "assets/07_teacher.webp",
+        "small20k": "assets/07_small20k.webp",
+        "wide20k": "assets/07_wide20k.webp",
+        "wide_mask": "assets/07_wide_mask.webp",
+        "wide_mask2": "assets/07_wide_mask2.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00007369",
+      "images": {
+        "original": "assets/08_original.webp",
+        "teacher": "assets/08_teacher.webp",
+        "small20k": "assets/08_small20k.webp",
+        "wide20k": "assets/08_wide20k.webp",
+        "wide_mask": "assets/08_wide_mask.webp",
+        "wide_mask2": "assets/08_wide_mask2.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00007455",
+      "images": {
+        "original": "assets/09_original.webp",
+        "teacher": "assets/09_teacher.webp",
+        "small20k": "assets/09_small20k.webp",
+        "wide20k": "assets/09_wide20k.webp",
+        "wide_mask": "assets/09_wide_mask.webp",
+        "wide_mask2": "assets/09_wide_mask2.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00008011",
+      "images": {
+        "original": "assets/10_original.webp",
+        "teacher": "assets/10_teacher.webp",
+        "small20k": "assets/10_small20k.webp",
+        "wide20k": "assets/10_wide20k.webp",
+        "wide_mask": "assets/10_wide_mask.webp",
+        "wide_mask2": "assets/10_wide_mask2.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00009903",
+      "images": {
+        "original": "assets/11_original.webp",
+        "teacher": "assets/11_teacher.webp",
+        "small20k": "assets/11_small20k.webp",
+        "wide20k": "assets/11_wide20k.webp",
+        "wide_mask": "assets/11_wide_mask.webp",
+        "wide_mask2": "assets/11_wide_mask2.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00010706",
+      "images": {
+        "original": "assets/12_original.webp",
+        "teacher": "assets/12_teacher.webp",
+        "small20k": "assets/12_small20k.webp",
+        "wide20k": "assets/12_wide20k.webp",
+        "wide_mask": "assets/12_wide_mask.webp",
+        "wide_mask2": "assets/12_wide_mask2.webp"
+      }
+    }
+  ],
+  "metrics": [
+    {
+      "utc": "2026-11-04T11:05:16.766853+00:00",
+      "stage": "validation",
+      "step": 20000,
+      "val_global": 0.023697,
+      "val_weighted": 0.052172,
+      "baseline_weighted": 0.081868
+    },
+    {
+      "utc": "2026-11-04T13:29:49.279564+00:00",
+      "stage": "validation",
+      "step": 20000,
+      "val_global": 0.024073,
+      "val_weighted": 0.046749,
+      "baseline_weighted": 0.081868
+    }
+  ],
+  "pilots": [
+    {
+      "run": "small_original",
+      "params": 85227,
+      "train_detail": 0.068952,
+      "val_detail": 0.131907,
+      "val_amplitude": 0.633302
+    },
+    {
+      "run": "small_roi",
+      "params": 85227,
+      "train_detail": 0.053726,
+      "val_detail": 0.12549,
+      "val_amplitude": 0.728575
+    },
+    {
+      "run": "wide_original",
+      "params": 331731,
+      "train_detail": 0.052154,
+      "val_detail": 0.119287,
+      "val_amplitude": 0.569115
+    },
+    {
+      "run": "wide_roi",
+      "params": 331731,
+      "train_detail": 0.042314,
+      "val_detail": 0.117424,
+      "val_amplitude": 0.649083
+    },
+    {
+      "run": "no_instance_norm24_roi",
+      "params": 85227,
+      "train_detail": 0.061535,
+      "val_detail": 0.122355,
+      "val_amplitude": 0.854682
+    },
+    {
+      "run": "skip24_roi",
+      "params": 95667,
+      "train_detail": 0.048342,
+      "val_detail": 0.125167,
+      "val_amplitude": 0.729421
+    }
+  ],
+  "mask_audit": {
+    "wide_raw": {
+      "weighted": 0.046749,
+      "global": 0.024073,
+      "detail_mae": 0.072163,
+      "face_mae": 0.049829,
+      "background_leak": 0.008066,
+      "detail_amp": 0.924238
+    },
+    "wide_mask": {
+      "weighted": 0.04532,
+      "global": 0.020134,
+      "detail_mae": 0.072152,
+      "face_mae": 0.049744,
+      "background_leak": 0.000699,
+      "detail_amp": 0.922458
+    },
+    "wide_mask_2x": {
+      "weighted": 0.045301,
+      "global": 0.020105,
+      "detail_mae": 0.072148,
+      "face_mae": 0.049736,
+      "background_leak": 0.001124,
+      "detail_amp": 0.923926
+    }
+  }
+}

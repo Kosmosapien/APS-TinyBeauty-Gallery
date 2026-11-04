@@ -1,0 +1,3 @@
+# TinyBeauty: capacidade e função de perda
+
+Comparação da arquitetura BeautyREC original (85.227 parâmetros, perda original) com largura 48 (331.731 parâmetros e perda focada nas regiões cosméticas), usando exatamente os mesmos 1.000 pares de treinamento, 136 identidades de validação e 20.000 passos. Ablações separadas em oito rostos estão incluídas nos dados; custo mobile ainda não validado. Pesquisa, não aprovado para produção.

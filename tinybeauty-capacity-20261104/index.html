@@ -1,0 +1,59 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0f1928">
+<title>TinyBeauty | Diagnóstico de capacidade | 20k</title>
+<style>
+*{box-sizing:border-box}body{font:15px/1.5 system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:#0e1724;color:#eef5ff;margin:0}
+main{max-width:900px;margin:auto;padding:15px 12px 55px}h1{font-size:1.65rem;line-height:1.2}
+p{color:#b8c9dd}.muted{font-size:.8rem;color:#afc1d5}
+nav{display:flex;gap:8px;position:sticky;top:0;background:#0e1724ed;padding:12px 0;border-bottom:1px solid #40556c}
+button,select,textarea{background:#1f334a;color:#eef7ff;border:1px solid #607c98;border-radius:10px;padding:10px;font:inherit;cursor:pointer}
+nav select{flex:1;min-width:0}button.active{background:#145f4d;border-color:#81dcb6}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.item{background:#18283b;border:1px solid #39536a;border-radius:10px;overflow:hidden}
+.item img{width:100%;display:block;aspect-ratio:1;object-fit:contain;cursor:zoom-in}
+.item b{display:block;font-size:.78rem;padding:8px;min-height:49px}
+.review{padding:14px;background:#17283b;border:1px solid #3b566d;border-radius:10px;margin:18px 0}
+.votes{display:flex;gap:7px}.votes button{flex:1;font-size:.75rem}textarea{width:100%;min-height:80px;margin:12px 0}
+table{width:100%;border-collapse:collapse;font-size:.82rem}th,td{border-bottom:1px solid #456078;padding:8px;text-align:right}
+th:first-child,td:first-child{text-align:left}a{color:#a0d1ff}
+dialog{max-width:96vw;max-height:96vh;background:#101c2b;border:1px solid #50728a;border-radius:12px;color:white}
+dialog img{max-width:86vw;max-height:76vh;display:block}dialog::backdrop{background:#000d}
+</style></head><body><main>
+<h1>Por que o TinyBeauty gera maquiagem fraca?</h1>
+<p>Compare 12 rostos de validação: fotografia original, teacher corrigido, TinyBeauty original e rede ampliada, com e sem recomposição que protege o fundo. Os dois estudantes foram treinados por 20.000 passos no mesmo dataset.</p>
+<p id="metrics"></p>
+<nav><button id="prev">‹</button><select id="select"></select><button id="next">›</button></nav>
+<p class="muted" id="counter"></p><div class="grid" id="grid"></div>
+<section class="review"><strong>Qual student ficou melhor?</strong><div class="votes">
+<button id="voteSmall">Original</button><button id="voteWide">Ampliado bruto</button><button id="voteMask">Ampliado protegido</button><button id="voteTie">Empate</button></div>
+<textarea id="note" placeholder="Batom, delineador, identidade, intensidade, artefatos..."></textarea>
+<button id="export">Exportar avaliações JSON</button><p class="muted">As avaliações ficam salvas somente neste navegador até exportá-las.</p></section>
+<details><summary>Resultados dos testes isolados (8 imagens treino / 16 validação)</summary>
+<div style="overflow:auto"><table><thead><tr><th>Método</th><th>Parâmetros</th><th>Erro detalhe treino</th><th>Erro detalhe validação</th></tr></thead><tbody id="pilots"></tbody></table></div>
+<p class="muted">Esses testes foram overfit deliberado: não demonstram generalização.</p></details>
+<p class="muted">A máscara preservou 99,6% das alterações medidas na região de detalhes cosméticos. A redução de 512 para 256 pixels removeu muita informação de alta frequência na auditoria. A latência mobile continua não medida.</p>
+<p><a href="../v4-plane-iris-20k-ablation/">Ver comparação anterior com Albumentations</a></p>
+<dialog id="zoom"><button id="close">Fechar</button><h3 id="caption"></h3><img id="large"></dialog>
+</main><script>
+const DB={"cases":[{"id":"SFHQ_pt3_00001690","images":{"original":"assets/01_original.webp","teacher":"assets/01_teacher.webp","small20k":"assets/01_small20k.webp","wide20k":"assets/01_wide20k.webp","wide_mask":"assets/01_wide_mask.webp","wide_mask2":"assets/01_wide_mask2.webp"}},{"id":"SFHQ_pt3_00002799","images":{"original":"assets/02_original.webp","teacher":"assets/02_teacher.webp","small20k":"assets/02_small20k.webp","wide20k":"assets/02_wide20k.webp","wide_mask":"assets/02_wide_mask.webp","wide_mask2":"assets/02_wide_mask2.webp"}},{"id":"SFHQ_pt3_00005043","images":{"original":"assets/03_original.webp","teacher":"assets/03_teacher.webp","small20k":"assets/03_small20k.webp","wide20k":"assets/03_wide20k.webp","wide_mask":"assets/03_wide_mask.webp","wide_mask2":"assets/03_wide_mask2.webp"}},{"id":"SFHQ_pt3_00005983","images":{"original":"assets/04_original.webp","teacher":"assets/04_teacher.webp","small20k":"assets/04_small20k.webp","wide20k":"assets/04_wide20k.webp","wide_mask":"assets/04_wide_mask.webp","wide_mask2":"assets/04_wide_mask2.webp"}},{"id":"SFHQ_pt3_00006549","images":{"original":"assets/05_original.webp","teacher":"assets/05_teacher.webp","small20k":"assets/05_small20k.webp","wide20k":"assets/05_wide20k.webp","wide_mask":"assets/05_wide_mask.webp","wide_mask2":"assets/05_wide_mask2.webp"}},{"id":"SFHQ_pt3_00006969","images":{"original":"assets/06_original.webp","teacher":"assets/06_teacher.webp","small20k":"assets/06_small20k.webp","wide20k":"assets/06_wide20k.webp","wide_mask":"assets/06_wide_mask.webp","wide_mask2":"assets/06_wide_mask2.webp"}},{"id":"SFHQ_pt3_00007250","images":{"original":"assets/07_original.webp","teacher":"assets/07_teacher.webp","small20k":"assets/07_small20k.webp","wide20k":"assets/07_wide20k.webp","wide_mask":"assets/07_wide_mask.webp","wide_mask2":"assets/07_wide_mask2.webp"}},{"id":"SFHQ_pt3_00007369","images":{"original":"assets/08_original.webp","teacher":"assets/08_teacher.webp","small20k":"assets/08_small20k.webp","wide20k":"assets/08_wide20k.webp","wide_mask":"assets/08_wide_mask.webp","wide_mask2":"assets/08_wide_mask2.webp"}},{"id":"SFHQ_pt3_00007455","images":{"original":"assets/09_original.webp","teacher":"assets/09_teacher.webp","small20k":"assets/09_small20k.webp","wide20k":"assets/09_wide20k.webp","wide_mask":"assets/09_wide_mask.webp","wide_mask2":"assets/09_wide_mask2.webp"}},{"id":"SFHQ_pt3_00008011","images":{"original":"assets/10_original.webp","teacher":"assets/10_teacher.webp","small20k":"assets/10_small20k.webp","wide20k":"assets/10_wide20k.webp","wide_mask":"assets/10_wide_mask.webp","wide_mask2":"assets/10_wide_mask2.webp"}},{"id":"SFHQ_pt3_00009903","images":{"original":"assets/11_original.webp","teacher":"assets/11_teacher.webp","small20k":"assets/11_small20k.webp","wide20k":"assets/11_wide20k.webp","wide_mask":"assets/11_wide_mask.webp","wide_mask2":"assets/11_wide_mask2.webp"}},{"id":"SFHQ_pt3_00010706","images":{"original":"assets/12_original.webp","teacher":"assets/12_teacher.webp","small20k":"assets/12_small20k.webp","wide20k":"assets/12_wide20k.webp","wide_mask":"assets/12_wide_mask.webp","wide_mask2":"assets/12_wide_mask2.webp"}}],"metrics":[{"utc":"2026-11-04T11:05:16.766853+00:00","stage":"validation","step":20000,"val_global":0.023697,"val_weighted":0.052172,"baseline_weighted":0.081868},{"utc":"2026-11-04T13:29:49.279564+00:00","stage":"validation","step":20000,"val_global":0.024073,"val_weighted":0.046749,"baseline_weighted":0.081868}],"pilots":[{"run":"small_original","params":85227,"train_detail":0.068952,"val_detail":0.131907,"val_amplitude":0.633302},{"run":"small_roi","params":85227,"train_detail":0.053726,"val_detail":0.12549,"val_amplitude":0.728575},{"run":"wide_original","params":331731,"train_detail":0.052154,"val_detail":0.119287,"val_amplitude":0.569115},{"run":"wide_roi","params":331731,"train_detail":0.042314,"val_detail":0.117424,"val_amplitude":0.649083},{"run":"no_instance_norm24_roi","params":85227,"train_detail":0.061535,"val_detail":0.122355,"val_amplitude":0.854682},{"run":"skip24_roi","params":95667,"train_detail":0.048342,"val_detail":0.125167,"val_amplitude":0.729421}],"mask_audit":{"wide_raw":{"weighted":0.046749,"global":0.024073,"detail_mae":0.072163,"face_mae":0.049829,"background_leak":0.008066,"detail_amp":0.924238},"wide_mask":{"weighted":0.04532,"global":0.020134,"detail_mae":0.072152,"face_mae":0.049744,"background_leak":0.000699,"detail_amp":0.922458},"wide_mask_2x":{"weighted":0.045301,"global":0.020105,"detail_mae":0.072148,"face_mae":0.049736,"background_leak":0.001124,"detail_amp":0.923926}}}, $=id=>document.getElementById(id), KEY='tinybeauty-capacity-20261104';
+const names={original:'Fotografia original',teacher:'Teacher corrigido',small20k:'BeautyREC original · 85 mil · 20k',wide20k:'BeautyREC ampliado · sem proteção',wide_mask:'Ampliado · máscara facial original',wide_mask2:'Ampliado · máscara reforçada 2×'};
+let state;try{state=JSON.parse(localStorage.getItem(KEY)||'{"votes":{},"notes":{}}')}catch{state={votes:{},notes:{}}}
+let i=0;
+DB.cases.forEach((r,j)=>{let o=document.createElement('option');o.value=j;o.textContent=(j+1)+' · '+r.id.replace('SFHQ_pt3_','');$('select').append(o)});
+$('metrics').textContent='Erro ponderado: original '+DB.metrics[0].val_weighted.toFixed(6)+' · ampliado bruto '+DB.metrics[1].val_weighted.toFixed(6)+' · ampliado com proteção '+DB.mask_audit.wide_mask.weighted.toFixed(6);
+function store(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}}
+function render(){let c=DB.cases[i];$('select').value=i;$('counter').textContent='Caso '+(i+1)+' / '+DB.cases.length+' · '+c.id;$('grid').replaceChildren();
+for(let [tag,name] of Object.entries(names)){let e=document.createElement('div');e.className='item';let b=document.createElement('b');b.textContent=name;let img=document.createElement('img');img.src=c.images[tag];img.alt=name;img.loading='lazy';
+img.onclick=()=>{$('large').src=img.src;$('caption').textContent=name;$('zoom').showModal()};e.append(b,img);$('grid').append(e)}
+for(let [id,val] of [['voteSmall','small'],['voteWide','wide'],['voteMask','mask'],['voteTie','tie']])$(id).className=state.votes[c.id]===val?'active':'';
+$('note').value=state.notes[c.id]||''}
+$('prev').onclick=()=>{i=(i+DB.cases.length-1)%DB.cases.length;render()};
+$('next').onclick=()=>{i=(i+1)%DB.cases.length;render()};
+$('select').onchange=()=>{i=Number($('select').value);render()};
+for(let [id,val] of [['voteSmall','small'],['voteWide','wide'],['voteMask','mask'],['voteTie','tie']])$(id).onclick=()=>{state.votes[DB.cases[i].id]=val;store();render()};
+$('note').oninput=()=>{state.notes[DB.cases[i].id]=$('note').value;store()};
+$('close').onclick=()=>$('zoom').close();
+$('export').onclick=()=>{let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(state,null,2)],{type:'application/json'}));a.download='tinybeauty_capacity_review.json';a.click()};
+for(let p of DB.pilots){let tr=document.createElement('tr');for(let v of [p.run,p.params,p.train_detail,p.val_detail]){let td=document.createElement('td');td.textContent=v;tr.append(td)}$('pilots').append(tr)}
+render();
+</script></body></html>
