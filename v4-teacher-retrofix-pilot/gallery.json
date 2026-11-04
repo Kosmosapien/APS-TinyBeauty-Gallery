@@ -1,0 +1,662 @@
+{
+  "title": "APS-44: recuperação dos targets Stable-Makeup V4",
+  "cases": [
+    {
+      "id": "SFHQ_pt3_00072699",
+      "style": "natural",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/01_original_face.webp",
+          "eyes": "assets/01_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/01_stable-makeup_face.webp",
+          "eyes": "assets/01_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/01_corrigido_face.webp",
+          "eyes": "assets/01_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00091461",
+      "style": "natural",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/02_original_face.webp",
+          "eyes": "assets/02_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/02_stable-makeup_face.webp",
+          "eyes": "assets/02_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/02_corrigido_face.webp",
+          "eyes": "assets/02_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00022663",
+      "style": "natural",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/03_original_face.webp",
+          "eyes": "assets/03_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/03_stable-makeup_face.webp",
+          "eyes": "assets/03_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/03_corrigido_face.webp",
+          "eyes": "assets/03_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00038336",
+      "style": "natural",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/04_original_face.webp",
+          "eyes": "assets/04_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/04_stable-makeup_face.webp",
+          "eyes": "assets/04_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/04_corrigido_face.webp",
+          "eyes": "assets/04_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00107217",
+      "style": "natural",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/05_original_face.webp",
+          "eyes": "assets/05_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/05_stable-makeup_face.webp",
+          "eyes": "assets/05_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/05_corrigido_face.webp",
+          "eyes": "assets/05_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00075422",
+      "style": "natural",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/06_original_face.webp",
+          "eyes": "assets/06_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/06_stable-makeup_face.webp",
+          "eyes": "assets/06_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/06_corrigido_face.webp",
+          "eyes": "assets/06_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00006549",
+      "style": "natural",
+      "gate": "open",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/07_original_face.webp",
+          "eyes": "assets/07_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/07_stable-makeup_face.webp",
+          "eyes": "assets/07_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/07_corrigido_face.webp",
+          "eyes": "assets/07_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00028291",
+      "style": "natural",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/08_original_face.webp",
+          "eyes": "assets/08_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/08_stable-makeup_face.webp",
+          "eyes": "assets/08_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/08_corrigido_face.webp",
+          "eyes": "assets/08_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00116501",
+      "style": "social",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/09_original_face.webp",
+          "eyes": "assets/09_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/09_stable-makeup_face.webp",
+          "eyes": "assets/09_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/09_corrigido_face.webp",
+          "eyes": "assets/09_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00035247",
+      "style": "social",
+      "gate": "closed",
+      "warnings": [
+        "wing_reaches_limit"
+      ],
+      "images": {
+        "Original": {
+          "face": "assets/10_original_face.webp",
+          "eyes": "assets/10_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/10_stable-makeup_face.webp",
+          "eyes": "assets/10_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/10_corrigido_face.webp",
+          "eyes": "assets/10_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00099347",
+      "style": "social",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/11_original_face.webp",
+          "eyes": "assets/11_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/11_stable-makeup_face.webp",
+          "eyes": "assets/11_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/11_corrigido_face.webp",
+          "eyes": "assets/11_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00024171",
+      "style": "social",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/12_original_face.webp",
+          "eyes": "assets/12_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/12_stable-makeup_face.webp",
+          "eyes": "assets/12_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/12_corrigido_face.webp",
+          "eyes": "assets/12_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00026516",
+      "style": "social",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/13_original_face.webp",
+          "eyes": "assets/13_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/13_stable-makeup_face.webp",
+          "eyes": "assets/13_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/13_corrigido_face.webp",
+          "eyes": "assets/13_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00068536",
+      "style": "social",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/14_original_face.webp",
+          "eyes": "assets/14_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/14_stable-makeup_face.webp",
+          "eyes": "assets/14_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/14_corrigido_face.webp",
+          "eyes": "assets/14_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00075342",
+      "style": "social",
+      "gate": "closed",
+      "warnings": [
+        "wing_reaches_limit"
+      ],
+      "images": {
+        "Original": {
+          "face": "assets/15_original_face.webp",
+          "eyes": "assets/15_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/15_stable-makeup_face.webp",
+          "eyes": "assets/15_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/15_corrigido_face.webp",
+          "eyes": "assets/15_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00066862",
+      "style": "social",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/16_original_face.webp",
+          "eyes": "assets/16_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/16_stable-makeup_face.webp",
+          "eyes": "assets/16_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/16_corrigido_face.webp",
+          "eyes": "assets/16_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00064670",
+      "style": "noite",
+      "gate": "closed",
+      "warnings": [
+        "wing_reaches_limit",
+        "outer_corner_shift"
+      ],
+      "images": {
+        "Original": {
+          "face": "assets/17_original_face.webp",
+          "eyes": "assets/17_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/17_stable-makeup_face.webp",
+          "eyes": "assets/17_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/17_corrigido_face.webp",
+          "eyes": "assets/17_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00113142",
+      "style": "noite",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/18_original_face.webp",
+          "eyes": "assets/18_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/18_stable-makeup_face.webp",
+          "eyes": "assets/18_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/18_corrigido_face.webp",
+          "eyes": "assets/18_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00080669",
+      "style": "noite",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/19_original_face.webp",
+          "eyes": "assets/19_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/19_stable-makeup_face.webp",
+          "eyes": "assets/19_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/19_corrigido_face.webp",
+          "eyes": "assets/19_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00021553",
+      "style": "noite",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/20_original_face.webp",
+          "eyes": "assets/20_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/20_stable-makeup_face.webp",
+          "eyes": "assets/20_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/20_corrigido_face.webp",
+          "eyes": "assets/20_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00096251",
+      "style": "noite",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/21_original_face.webp",
+          "eyes": "assets/21_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/21_stable-makeup_face.webp",
+          "eyes": "assets/21_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/21_corrigido_face.webp",
+          "eyes": "assets/21_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00076089",
+      "style": "noite",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/22_original_face.webp",
+          "eyes": "assets/22_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/22_stable-makeup_face.webp",
+          "eyes": "assets/22_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/22_corrigido_face.webp",
+          "eyes": "assets/22_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00057683",
+      "style": "noite",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/23_original_face.webp",
+          "eyes": "assets/23_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/23_stable-makeup_face.webp",
+          "eyes": "assets/23_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/23_corrigido_face.webp",
+          "eyes": "assets/23_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00081940",
+      "style": "noite",
+      "gate": "open",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/24_original_face.webp",
+          "eyes": "assets/24_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/24_stable-makeup_face.webp",
+          "eyes": "assets/24_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/24_corrigido_face.webp",
+          "eyes": "assets/24_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00103147",
+      "style": "contraste",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/25_original_face.webp",
+          "eyes": "assets/25_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/25_stable-makeup_face.webp",
+          "eyes": "assets/25_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/25_corrigido_face.webp",
+          "eyes": "assets/25_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00117450",
+      "style": "contraste",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/26_original_face.webp",
+          "eyes": "assets/26_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/26_stable-makeup_face.webp",
+          "eyes": "assets/26_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/26_corrigido_face.webp",
+          "eyes": "assets/26_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00018868",
+      "style": "contraste",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/27_original_face.webp",
+          "eyes": "assets/27_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/27_stable-makeup_face.webp",
+          "eyes": "assets/27_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/27_corrigido_face.webp",
+          "eyes": "assets/27_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00018943",
+      "style": "contraste",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/28_original_face.webp",
+          "eyes": "assets/28_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/28_stable-makeup_face.webp",
+          "eyes": "assets/28_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/28_corrigido_face.webp",
+          "eyes": "assets/28_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00007227",
+      "style": "contraste",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/29_original_face.webp",
+          "eyes": "assets/29_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/29_stable-makeup_face.webp",
+          "eyes": "assets/29_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/29_corrigido_face.webp",
+          "eyes": "assets/29_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00085188",
+      "style": "contraste",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/30_original_face.webp",
+          "eyes": "assets/30_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/30_stable-makeup_face.webp",
+          "eyes": "assets/30_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/30_corrigido_face.webp",
+          "eyes": "assets/30_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00108713",
+      "style": "contraste",
+      "gate": "closed",
+      "warnings": [],
+      "images": {
+        "Original": {
+          "face": "assets/31_original_face.webp",
+          "eyes": "assets/31_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/31_stable-makeup_face.webp",
+          "eyes": "assets/31_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/31_corrigido_face.webp",
+          "eyes": "assets/31_corrigido_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00083138",
+      "style": "contraste",
+      "gate": "closed",
+      "warnings": [
+        "wing_reaches_limit"
+      ],
+      "images": {
+        "Original": {
+          "face": "assets/32_original_face.webp",
+          "eyes": "assets/32_original_eyes.webp"
+        },
+        "Stable-Makeup": {
+          "face": "assets/32_stable-makeup_face.webp",
+          "eyes": "assets/32_stable-makeup_eyes.webp"
+        },
+        "Corrigido": {
+          "face": "assets/32_corrigido_face.webp",
+          "eyes": "assets/32_corrigido_eyes.webp"
+        }
+      }
+    }
+  ],
+  "names": [
+    "Original",
+    "Stable-Makeup",
+    "Corrigido"
+  ],
+  "research_only": true,
+  "complete_batch_processing_separate": true,
+  "created_utc": "2026-11-04T01:22:22.690990+00:00"
+}
