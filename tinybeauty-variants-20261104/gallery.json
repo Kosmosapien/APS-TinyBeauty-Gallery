@@ -231,10 +231,10 @@
       "init": "wide",
       "steps_added": 2500,
       "loss": "roi",
-      "weighted": 0.046139,
-      "detail": 0.071793,
-      "background": 0.008086,
-      "amplitude_detail": 0.817151
+      "weighted": 0.044783,
+      "detail": 0.071795,
+      "background": 0.000658,
+      "amplitude_detail": 0.815431
     },
     {
       "id": "wide48_grad",
@@ -243,10 +243,10 @@
       "init": "wide",
       "steps_added": 2500,
       "loss": "gradient",
-      "weighted": 0.045964,
-      "detail": 0.071676,
-      "background": 0.007045,
-      "amplitude_detail": 0.818659
+      "weighted": 0.044834,
+      "detail": 0.071679,
+      "background": 0.000626,
+      "amplitude_detail": 0.81697
     },
     {
       "id": "wide48_highpass",
@@ -255,10 +255,10 @@
       "init": "wide",
       "steps_added": 2500,
       "loss": "highpass",
-      "weighted": 0.046175,
-      "detail": 0.071714,
-      "background": 0.008113,
-      "amplitude_detail": 0.817001
+      "weighted": 0.044809,
+      "detail": 0.071716,
+      "background": 0.000659,
+      "amplitude_detail": 0.81528
     },
     {
       "id": "wide48_background",
@@ -267,10 +267,10 @@
       "init": "wide",
       "steps_added": 2500,
       "loss": "background",
-      "weighted": 0.045969,
-      "detail": 0.07211,
-      "background": 0.004333,
-      "amplitude_detail": 0.811542
+      "weighted": 0.045338,
+      "detail": 0.072116,
+      "background": 0.000488,
+      "amplitude_detail": 0.810014
     },
     {
       "id": "mid32_roi",
@@ -279,10 +279,10 @@
       "init": "scratch",
       "steps_added": 5000,
       "loss": "roi",
-      "weighted": 0.055003,
-      "detail": 0.084161,
-      "background": 0.011457,
-      "amplitude_detail": 0.771663
+      "weighted": 0.052852,
+      "detail": 0.08417,
+      "background": 0.000586,
+      "amplitude_detail": 0.770302
     },
     {
       "id": "large64_roi",
@@ -291,15 +291,15 @@
       "init": "scratch",
       "steps_added": 5000,
       "loss": "roi",
-      "weighted": 0.049673,
-      "detail": 0.075422,
-      "background": 0.010867,
-      "amplitude_detail": 0.841731
+      "weighted": 0.047715,
+      "detail": 0.075413,
+      "background": 0.000654,
+      "amplitude_detail": 0.840068
     }
   ],
   "baseline": {
     "beauty24_weighted": 0.052172,
-    "beauty48_weighted": 0.046749,
-    "beauty48_masked_weighted": 0.04532
-  }
+    "beauty48_weighted": 0.04532
+  },
+  "metrics_stage": "After identical source-face recomposition across all six candidate networks"
 }
