@@ -11,7 +11,8 @@
         "directional_continue_05000": "assets/01_directional_continue_05000.webp",
         "directional_continue_10000": "assets/01_directional_continue_10000.webp",
         "directional_continue_15000": "assets/01_directional_continue_15000.webp",
-        "directional_continue_20000": "assets/01_directional_continue_20000.webp"
+        "directional_continue_20000": "assets/01_directional_continue_20000.webp",
+        "directional_continue_24000": "assets/01_directional_continue_24000.webp"
       }
     },
     {
@@ -25,7 +26,8 @@
         "directional_continue_05000": "assets/02_directional_continue_05000.webp",
         "directional_continue_10000": "assets/02_directional_continue_10000.webp",
         "directional_continue_15000": "assets/02_directional_continue_15000.webp",
-        "directional_continue_20000": "assets/02_directional_continue_20000.webp"
+        "directional_continue_20000": "assets/02_directional_continue_20000.webp",
+        "directional_continue_24000": "assets/02_directional_continue_24000.webp"
       }
     },
     {
@@ -39,7 +41,8 @@
         "directional_continue_05000": "assets/03_directional_continue_05000.webp",
         "directional_continue_10000": "assets/03_directional_continue_10000.webp",
         "directional_continue_15000": "assets/03_directional_continue_15000.webp",
-        "directional_continue_20000": "assets/03_directional_continue_20000.webp"
+        "directional_continue_20000": "assets/03_directional_continue_20000.webp",
+        "directional_continue_24000": "assets/03_directional_continue_24000.webp"
       }
     },
     {
@@ -53,7 +56,8 @@
         "directional_continue_05000": "assets/04_directional_continue_05000.webp",
         "directional_continue_10000": "assets/04_directional_continue_10000.webp",
         "directional_continue_15000": "assets/04_directional_continue_15000.webp",
-        "directional_continue_20000": "assets/04_directional_continue_20000.webp"
+        "directional_continue_20000": "assets/04_directional_continue_20000.webp",
+        "directional_continue_24000": "assets/04_directional_continue_24000.webp"
       }
     },
     {
@@ -67,7 +71,8 @@
         "directional_continue_05000": "assets/05_directional_continue_05000.webp",
         "directional_continue_10000": "assets/05_directional_continue_10000.webp",
         "directional_continue_15000": "assets/05_directional_continue_15000.webp",
-        "directional_continue_20000": "assets/05_directional_continue_20000.webp"
+        "directional_continue_20000": "assets/05_directional_continue_20000.webp",
+        "directional_continue_24000": "assets/05_directional_continue_24000.webp"
       }
     },
     {
@@ -81,7 +86,8 @@
         "directional_continue_05000": "assets/06_directional_continue_05000.webp",
         "directional_continue_10000": "assets/06_directional_continue_10000.webp",
         "directional_continue_15000": "assets/06_directional_continue_15000.webp",
-        "directional_continue_20000": "assets/06_directional_continue_20000.webp"
+        "directional_continue_20000": "assets/06_directional_continue_20000.webp",
+        "directional_continue_24000": "assets/06_directional_continue_24000.webp"
       }
     },
     {
@@ -95,7 +101,8 @@
         "directional_continue_05000": "assets/07_directional_continue_05000.webp",
         "directional_continue_10000": "assets/07_directional_continue_10000.webp",
         "directional_continue_15000": "assets/07_directional_continue_15000.webp",
-        "directional_continue_20000": "assets/07_directional_continue_20000.webp"
+        "directional_continue_20000": "assets/07_directional_continue_20000.webp",
+        "directional_continue_24000": "assets/07_directional_continue_24000.webp"
       }
     },
     {
@@ -109,7 +116,8 @@
         "directional_continue_05000": "assets/08_directional_continue_05000.webp",
         "directional_continue_10000": "assets/08_directional_continue_10000.webp",
         "directional_continue_15000": "assets/08_directional_continue_15000.webp",
-        "directional_continue_20000": "assets/08_directional_continue_20000.webp"
+        "directional_continue_20000": "assets/08_directional_continue_20000.webp",
+        "directional_continue_24000": "assets/08_directional_continue_24000.webp"
       }
     },
     {
@@ -123,7 +131,8 @@
         "directional_continue_05000": "assets/09_directional_continue_05000.webp",
         "directional_continue_10000": "assets/09_directional_continue_10000.webp",
         "directional_continue_15000": "assets/09_directional_continue_15000.webp",
-        "directional_continue_20000": "assets/09_directional_continue_20000.webp"
+        "directional_continue_20000": "assets/09_directional_continue_20000.webp",
+        "directional_continue_24000": "assets/09_directional_continue_24000.webp"
       }
     },
     {
@@ -137,7 +146,8 @@
         "directional_continue_05000": "assets/10_directional_continue_05000.webp",
         "directional_continue_10000": "assets/10_directional_continue_10000.webp",
         "directional_continue_15000": "assets/10_directional_continue_15000.webp",
-        "directional_continue_20000": "assets/10_directional_continue_20000.webp"
+        "directional_continue_20000": "assets/10_directional_continue_20000.webp",
+        "directional_continue_24000": "assets/10_directional_continue_24000.webp"
       }
     }
   ],
@@ -150,7 +160,8 @@
     "directional_continue_05000": "Continuação direcional · +5,000 passos",
     "directional_continue_10000": "Continuação direcional · +10,000 passos",
     "directional_continue_15000": "Continuação direcional · +15,000 passos",
-    "directional_continue_20000": "Continuação direcional · +20,000 passos"
+    "directional_continue_20000": "Continuação direcional · +20,000 passos",
+    "directional_continue_24000": "Continuação direcional · +24,000 passos"
   },
   "scores": {
     "directional_continue": [
@@ -296,6 +307,32 @@
         },
         "train_loss": 0.039707,
         "elapsed_seconds": 901.0
+      },
+      {
+        "step": 22500,
+        "metrics": {
+          "MAE": 0.021758,
+          "highpass_error": 0.009304,
+          "highpass_energy_ratio": 0.907153,
+          "direction_cosine": 0.819121,
+          "amplitude_ratio": 0.889886,
+          "directional_loss": 0.046088
+        },
+        "train_loss": 0.054397,
+        "elapsed_seconds": 1017.5
+      },
+      {
+        "step": 24000,
+        "metrics": {
+          "MAE": 0.022089,
+          "highpass_error": 0.009256,
+          "highpass_energy_ratio": 0.914369,
+          "direction_cosine": 0.812693,
+          "amplitude_ratio": 0.916304,
+          "directional_loss": 0.046507
+        },
+        "train_loss": 0.046456,
+        "elapsed_seconds": 1086.1
       }
     ]
   },
