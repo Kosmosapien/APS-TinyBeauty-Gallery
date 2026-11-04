@@ -8,7 +8,8 @@
         "tiny24": "assets/01_tiny24.webp",
         "global_modulated_directional": "assets/01_global_modulated_directional.webp",
         "directional_continue_02000": "assets/01_directional_continue_02000.webp",
-        "directional_continue_05000": "assets/01_directional_continue_05000.webp"
+        "directional_continue_05000": "assets/01_directional_continue_05000.webp",
+        "directional_continue_10000": "assets/01_directional_continue_10000.webp"
       }
     },
     {
@@ -19,7 +20,8 @@
         "tiny24": "assets/02_tiny24.webp",
         "global_modulated_directional": "assets/02_global_modulated_directional.webp",
         "directional_continue_02000": "assets/02_directional_continue_02000.webp",
-        "directional_continue_05000": "assets/02_directional_continue_05000.webp"
+        "directional_continue_05000": "assets/02_directional_continue_05000.webp",
+        "directional_continue_10000": "assets/02_directional_continue_10000.webp"
       }
     },
     {
@@ -30,7 +32,8 @@
         "tiny24": "assets/03_tiny24.webp",
         "global_modulated_directional": "assets/03_global_modulated_directional.webp",
         "directional_continue_02000": "assets/03_directional_continue_02000.webp",
-        "directional_continue_05000": "assets/03_directional_continue_05000.webp"
+        "directional_continue_05000": "assets/03_directional_continue_05000.webp",
+        "directional_continue_10000": "assets/03_directional_continue_10000.webp"
       }
     },
     {
@@ -41,7 +44,8 @@
         "tiny24": "assets/04_tiny24.webp",
         "global_modulated_directional": "assets/04_global_modulated_directional.webp",
         "directional_continue_02000": "assets/04_directional_continue_02000.webp",
-        "directional_continue_05000": "assets/04_directional_continue_05000.webp"
+        "directional_continue_05000": "assets/04_directional_continue_05000.webp",
+        "directional_continue_10000": "assets/04_directional_continue_10000.webp"
       }
     },
     {
@@ -52,7 +56,8 @@
         "tiny24": "assets/05_tiny24.webp",
         "global_modulated_directional": "assets/05_global_modulated_directional.webp",
         "directional_continue_02000": "assets/05_directional_continue_02000.webp",
-        "directional_continue_05000": "assets/05_directional_continue_05000.webp"
+        "directional_continue_05000": "assets/05_directional_continue_05000.webp",
+        "directional_continue_10000": "assets/05_directional_continue_10000.webp"
       }
     },
     {
@@ -63,7 +68,8 @@
         "tiny24": "assets/06_tiny24.webp",
         "global_modulated_directional": "assets/06_global_modulated_directional.webp",
         "directional_continue_02000": "assets/06_directional_continue_02000.webp",
-        "directional_continue_05000": "assets/06_directional_continue_05000.webp"
+        "directional_continue_05000": "assets/06_directional_continue_05000.webp",
+        "directional_continue_10000": "assets/06_directional_continue_10000.webp"
       }
     },
     {
@@ -74,7 +80,8 @@
         "tiny24": "assets/07_tiny24.webp",
         "global_modulated_directional": "assets/07_global_modulated_directional.webp",
         "directional_continue_02000": "assets/07_directional_continue_02000.webp",
-        "directional_continue_05000": "assets/07_directional_continue_05000.webp"
+        "directional_continue_05000": "assets/07_directional_continue_05000.webp",
+        "directional_continue_10000": "assets/07_directional_continue_10000.webp"
       }
     },
     {
@@ -85,7 +92,8 @@
         "tiny24": "assets/08_tiny24.webp",
         "global_modulated_directional": "assets/08_global_modulated_directional.webp",
         "directional_continue_02000": "assets/08_directional_continue_02000.webp",
-        "directional_continue_05000": "assets/08_directional_continue_05000.webp"
+        "directional_continue_05000": "assets/08_directional_continue_05000.webp",
+        "directional_continue_10000": "assets/08_directional_continue_10000.webp"
       }
     },
     {
@@ -96,7 +104,8 @@
         "tiny24": "assets/09_tiny24.webp",
         "global_modulated_directional": "assets/09_global_modulated_directional.webp",
         "directional_continue_02000": "assets/09_directional_continue_02000.webp",
-        "directional_continue_05000": "assets/09_directional_continue_05000.webp"
+        "directional_continue_05000": "assets/09_directional_continue_05000.webp",
+        "directional_continue_10000": "assets/09_directional_continue_10000.webp"
       }
     },
     {
@@ -107,7 +116,8 @@
         "tiny24": "assets/10_tiny24.webp",
         "global_modulated_directional": "assets/10_global_modulated_directional.webp",
         "directional_continue_02000": "assets/10_directional_continue_02000.webp",
-        "directional_continue_05000": "assets/10_directional_continue_05000.webp"
+        "directional_continue_05000": "assets/10_directional_continue_05000.webp",
+        "directional_continue_10000": "assets/10_directional_continue_10000.webp"
       }
     }
   ],
@@ -117,7 +127,8 @@
     "tiny24": "TinyBeauty sem Albumentations · 20k",
     "global_modulated_directional": "U-Net modulada · ponto de partida 1.800",
     "directional_continue_02000": "Continuação direcional · +2,000 passos",
-    "directional_continue_05000": "Continuação direcional · +5,000 passos"
+    "directional_continue_05000": "Continuação direcional · +5,000 passos",
+    "directional_continue_10000": "Continuação direcional · +10,000 passos"
   },
   "scores": {
     "directional_continue": [
@@ -185,6 +196,32 @@
         },
         "train_loss": 0.05076,
         "elapsed_seconds": 223.3
+      },
+      {
+        "step": 7500,
+        "metrics": {
+          "MAE": 0.025227,
+          "highpass_error": 0.009718,
+          "highpass_energy_ratio": 0.915284,
+          "direction_cosine": 0.762457,
+          "amplitude_ratio": 0.916684,
+          "directional_loss": 0.053167
+        },
+        "train_loss": 0.061274,
+        "elapsed_seconds": 336.3
+      },
+      {
+        "step": 10000,
+        "metrics": {
+          "MAE": 0.024051,
+          "highpass_error": 0.009601,
+          "highpass_energy_ratio": 0.918672,
+          "direction_cosine": 0.77364,
+          "amplitude_ratio": 0.817767,
+          "directional_loss": 0.052236
+        },
+        "train_loss": 0.057697,
+        "elapsed_seconds": 447.5
       }
     ]
   },
