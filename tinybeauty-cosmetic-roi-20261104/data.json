@@ -310,50 +310,44 @@
     },
     "tiny24": {
       "raw": {
-        "intensity_face": 0.691827,
-        "intensity_detail": 0.753688,
-        "weighted": 0.053935,
-        "detail_error": 0.089495,
-        "background_delta": 0.002444
+        "weighted": 0.051894,
+        "intensity_detail": 0.78691,
+        "detail_error": 0.085751,
+        "intensity_face": 0.723726
       },
       "masked": {
-        "intensity_face": 0.68676,
-        "intensity_detail": 0.75262,
-        "weighted": 0.053525,
-        "detail_error": 0.089483,
-        "background_delta": 0.000272
+        "weighted": 0.051894,
+        "intensity_detail": 0.78691,
+        "detail_error": 0.085751,
+        "intensity_face": 0.723726
       }
     },
     "wide48_20k": {
       "raw": {
-        "intensity_face": 0.844443,
-        "intensity_detail": 0.918862,
-        "weighted": 0.047551,
-        "detail_error": 0.073592,
-        "background_delta": 0.008389
+        "weighted": 0.04532,
+        "intensity_detail": 0.92241,
+        "detail_error": 0.072301,
+        "intensity_face": 0.860444
       },
       "masked": {
-        "intensity_face": 0.831517,
-        "intensity_detail": 0.917432,
-        "weighted": 0.046033,
-        "detail_error": 0.073596,
-        "background_delta": 0.000709
+        "weighted": 0.04532,
+        "intensity_detail": 0.92241,
+        "detail_error": 0.072301,
+        "intensity_face": 0.860444
       }
     },
     "wide48_continue": {
       "raw": {
-        "intensity_face": 0.761418,
-        "intensity_detail": 0.809367,
-        "weighted": 0.047428,
-        "detail_error": 0.07356,
-        "background_delta": 0.007837
+        "weighted": 0.044783,
+        "intensity_detail": 0.815126,
+        "detail_error": 0.07196,
+        "intensity_face": 0.775506
       },
       "masked": {
-        "intensity_face": 0.750053,
-        "intensity_detail": 0.808131,
-        "weighted": 0.046126,
-        "detail_error": 0.073587,
-        "background_delta": 0.000632
+        "weighted": 0.044783,
+        "intensity_detail": 0.815126,
+        "detail_error": 0.07196,
+        "intensity_face": 0.775506
       }
     }
   },
