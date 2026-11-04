@@ -1,0 +1,478 @@
+{
+  "title": "APS-44: recuperação de maquiagem olhos e lábios",
+  "cases": [
+    {
+      "index": 1,
+      "identity": "SFHQ_pt3_00002799",
+      "images": {
+        "Original": "assets/01_original.webp",
+        "Teacher": "assets/01_teacher.webp",
+        "V8": "assets/01_v8.webp",
+        "V9": "assets/01_v9.webp",
+        "V10_eye": "assets/01_v10_eye.webp",
+        "V10_full": "assets/01_v10_full.webp",
+        "V10_safe": "assets/01_v10_safe.webp"
+      },
+      "eye_v8": 38.12,
+      "eye_v9": 34.64,
+      "eye_v10": 35.68,
+      "lip_v8": 27.92,
+      "lip_v9": 26.65,
+      "lip_v10": 28.67,
+      "warp_displacement": [
+        3.42,
+        1.7
+      ]
+    },
+    {
+      "index": 2,
+      "identity": "SFHQ_pt3_00013312",
+      "images": {
+        "Original": "assets/02_original.webp",
+        "Teacher": "assets/02_teacher.webp",
+        "V8": "assets/02_v8.webp",
+        "V9": "assets/02_v9.webp",
+        "V10_eye": "assets/02_v10_eye.webp",
+        "V10_full": "assets/02_v10_full.webp",
+        "V10_safe": "assets/02_v10_safe.webp"
+      },
+      "eye_v8": 23.77,
+      "eye_v9": 25.16,
+      "eye_v10": 24.43,
+      "lip_v8": 19.29,
+      "lip_v9": 19.1,
+      "lip_v10": 20.56,
+      "warp_displacement": [
+        2.65,
+        1.68
+      ]
+    },
+    {
+      "index": 3,
+      "identity": "SFHQ_pt3_00016032",
+      "images": {
+        "Original": "assets/03_original.webp",
+        "Teacher": "assets/03_teacher.webp",
+        "V8": "assets/03_v8.webp",
+        "V9": "assets/03_v9.webp",
+        "V10_eye": "assets/03_v10_eye.webp",
+        "V10_full": "assets/03_v10_full.webp",
+        "V10_safe": "assets/03_v10_safe.webp"
+      },
+      "eye_v8": 12.23,
+      "eye_v9": 14.71,
+      "eye_v10": 14.23,
+      "lip_v8": 16.85,
+      "lip_v9": 15.57,
+      "lip_v10": 16.72,
+      "warp_displacement": [
+        0.92,
+        1.15
+      ]
+    },
+    {
+      "index": 4,
+      "identity": "SFHQ_pt3_00016161",
+      "images": {
+        "Original": "assets/04_original.webp",
+        "Teacher": "assets/04_teacher.webp",
+        "V8": "assets/04_v8.webp",
+        "V9": "assets/04_v9.webp",
+        "V10_eye": "assets/04_v10_eye.webp",
+        "V10_full": "assets/04_v10_full.webp",
+        "V10_safe": "assets/04_v10_safe.webp"
+      },
+      "eye_v8": 16.17,
+      "eye_v9": 21.17,
+      "eye_v10": 21.82,
+      "lip_v8": 15.33,
+      "lip_v9": 16.85,
+      "lip_v10": 18.57,
+      "warp_displacement": [
+        3.17,
+        3.92
+      ]
+    },
+    {
+      "index": 5,
+      "identity": "SFHQ_pt3_00020270",
+      "images": {
+        "Original": "assets/05_original.webp",
+        "Teacher": "assets/05_teacher.webp",
+        "V8": "assets/05_v8.webp",
+        "V9": "assets/05_v9.webp",
+        "V10_eye": "assets/05_v10_eye.webp",
+        "V10_full": "assets/05_v10_full.webp",
+        "V10_safe": "assets/05_v10_safe.webp"
+      },
+      "eye_v8": 22.69,
+      "eye_v9": 24.78,
+      "eye_v10": 27.02,
+      "lip_v8": 29.72,
+      "lip_v9": 28.5,
+      "lip_v10": 30.79,
+      "warp_displacement": [
+        2.17,
+        4.01
+      ]
+    },
+    {
+      "index": 6,
+      "identity": "SFHQ_pt3_00025479",
+      "images": {
+        "Original": "assets/06_original.webp",
+        "Teacher": "assets/06_teacher.webp",
+        "V8": "assets/06_v8.webp",
+        "V9": "assets/06_v9.webp",
+        "V10_eye": "assets/06_v10_eye.webp",
+        "V10_full": "assets/06_v10_full.webp",
+        "V10_safe": "assets/06_v10_safe.webp"
+      },
+      "eye_v8": 22.17,
+      "eye_v9": 18.19,
+      "eye_v10": 18.82,
+      "lip_v8": 23.1,
+      "lip_v9": 27.42,
+      "lip_v10": 29.59,
+      "warp_displacement": [
+        1.95,
+        2.53
+      ]
+    },
+    {
+      "index": 7,
+      "identity": "SFHQ_pt3_00038799",
+      "images": {
+        "Original": "assets/07_original.webp",
+        "Teacher": "assets/07_teacher.webp",
+        "V8": "assets/07_v8.webp",
+        "V9": "assets/07_v9.webp",
+        "V10_eye": "assets/07_v10_eye.webp",
+        "V10_full": "assets/07_v10_full.webp",
+        "V10_safe": "assets/07_v10_safe.webp"
+      },
+      "eye_v8": 18.15,
+      "eye_v9": 20.45,
+      "eye_v10": 17.79,
+      "lip_v8": 20.71,
+      "lip_v9": 21.23,
+      "lip_v10": 23.36,
+      "warp_displacement": [
+        2.05,
+        3.13
+      ]
+    },
+    {
+      "index": 8,
+      "identity": "SFHQ_pt3_00056451",
+      "images": {
+        "Original": "assets/08_original.webp",
+        "Teacher": "assets/08_teacher.webp",
+        "V8": "assets/08_v8.webp",
+        "V9": "assets/08_v9.webp",
+        "V10_eye": "assets/08_v10_eye.webp",
+        "V10_full": "assets/08_v10_full.webp",
+        "V10_safe": "assets/08_v10_safe.webp"
+      },
+      "eye_v8": 21.19,
+      "eye_v9": 25.13,
+      "eye_v10": 22.88,
+      "lip_v8": 22.96,
+      "lip_v9": 23.93,
+      "lip_v10": 25.37,
+      "warp_displacement": [
+        4.14,
+        1.96
+      ]
+    },
+    {
+      "index": 9,
+      "identity": "SFHQ_pt3_00063632",
+      "images": {
+        "Original": "assets/09_original.webp",
+        "Teacher": "assets/09_teacher.webp",
+        "V8": "assets/09_v8.webp",
+        "V9": "assets/09_v9.webp",
+        "V10_eye": "assets/09_v10_eye.webp",
+        "V10_full": "assets/09_v10_full.webp",
+        "V10_safe": "assets/09_v10_safe.webp"
+      },
+      "eye_v8": 19.05,
+      "eye_v9": 20.64,
+      "eye_v10": 19.41,
+      "lip_v8": 13.35,
+      "lip_v9": 13.84,
+      "lip_v10": 14.9,
+      "warp_displacement": [
+        1.95,
+        3.53
+      ]
+    },
+    {
+      "index": 10,
+      "identity": "SFHQ_pt3_00063811",
+      "images": {
+        "Original": "assets/10_original.webp",
+        "Teacher": "assets/10_teacher.webp",
+        "V8": "assets/10_v8.webp",
+        "V9": "assets/10_v9.webp",
+        "V10_eye": "assets/10_v10_eye.webp",
+        "V10_full": "assets/10_v10_full.webp",
+        "V10_safe": "assets/10_v10_safe.webp"
+      },
+      "eye_v8": 29.55,
+      "eye_v9": 29.62,
+      "eye_v10": 28.36,
+      "lip_v8": 21.43,
+      "lip_v9": 20.57,
+      "lip_v10": 21.53,
+      "warp_displacement": [
+        2.6,
+        2.86
+      ]
+    },
+    {
+      "index": 11,
+      "identity": "SFHQ_pt3_00064670",
+      "images": {
+        "Original": "assets/11_original.webp",
+        "Teacher": "assets/11_teacher.webp",
+        "V8": "assets/11_v8.webp",
+        "V9": "assets/11_v9.webp",
+        "V10_eye": "assets/11_v10_eye.webp",
+        "V10_full": "assets/11_v10_full.webp",
+        "V10_safe": "assets/11_v10_safe.webp"
+      },
+      "eye_v8": 17.98,
+      "eye_v9": 20.79,
+      "eye_v10": 20.79,
+      "lip_v8": 15.22,
+      "lip_v9": 14.1,
+      "lip_v10": 15.21,
+      "warp_displacement": [
+        7.89,
+        6.62
+      ]
+    },
+    {
+      "index": 12,
+      "identity": "SFHQ_pt3_00074567",
+      "images": {
+        "Original": "assets/12_original.webp",
+        "Teacher": "assets/12_teacher.webp",
+        "V8": "assets/12_v8.webp",
+        "V9": "assets/12_v9.webp",
+        "V10_eye": "assets/12_v10_eye.webp",
+        "V10_full": "assets/12_v10_full.webp",
+        "V10_safe": "assets/12_v10_safe.webp"
+      },
+      "eye_v8": 18.75,
+      "eye_v9": 19.37,
+      "eye_v10": 19.11,
+      "lip_v8": 23.42,
+      "lip_v9": 25.11,
+      "lip_v10": 26.78,
+      "warp_displacement": [
+        2.34,
+        2.1
+      ]
+    },
+    {
+      "index": 13,
+      "identity": "SFHQ_pt3_00078711",
+      "images": {
+        "Original": "assets/13_original.webp",
+        "Teacher": "assets/13_teacher.webp",
+        "V8": "assets/13_v8.webp",
+        "V9": "assets/13_v9.webp",
+        "V10_eye": "assets/13_v10_eye.webp",
+        "V10_full": "assets/13_v10_full.webp",
+        "V10_safe": "assets/13_v10_safe.webp"
+      },
+      "eye_v8": 14.68,
+      "eye_v9": 18.68,
+      "eye_v10": 17.19,
+      "lip_v8": 14.76,
+      "lip_v9": 13.14,
+      "lip_v10": 14.0,
+      "warp_displacement": [
+        2.59,
+        3.69
+      ]
+    },
+    {
+      "index": 14,
+      "identity": "SFHQ_pt3_00080947",
+      "images": {
+        "Original": "assets/14_original.webp",
+        "Teacher": "assets/14_teacher.webp",
+        "V8": "assets/14_v8.webp",
+        "V9": "assets/14_v9.webp",
+        "V10_eye": "assets/14_v10_eye.webp",
+        "V10_full": "assets/14_v10_full.webp",
+        "V10_safe": "assets/14_v10_safe.webp"
+      },
+      "eye_v8": 23.67,
+      "eye_v9": 23.57,
+      "eye_v10": 24.67,
+      "lip_v8": 22.38,
+      "lip_v9": 20.2,
+      "lip_v10": 21.53,
+      "warp_displacement": [
+        2.51,
+        3.61
+      ]
+    },
+    {
+      "index": 15,
+      "identity": "SFHQ_pt3_00091939",
+      "images": {
+        "Original": "assets/15_original.webp",
+        "Teacher": "assets/15_teacher.webp",
+        "V8": "assets/15_v8.webp",
+        "V9": "assets/15_v9.webp",
+        "V10_eye": "assets/15_v10_eye.webp",
+        "V10_full": "assets/15_v10_full.webp",
+        "V10_safe": "assets/15_v10_safe.webp"
+      },
+      "eye_v8": 18.05,
+      "eye_v9": 21.04,
+      "eye_v10": 20.17,
+      "lip_v8": 23.05,
+      "lip_v9": 23.99,
+      "lip_v10": 25.97,
+      "warp_displacement": [
+        2.69,
+        2.46
+      ]
+    },
+    {
+      "index": 16,
+      "identity": "SFHQ_pt3_00101075",
+      "images": {
+        "Original": "assets/16_original.webp",
+        "Teacher": "assets/16_teacher.webp",
+        "V8": "assets/16_v8.webp",
+        "V9": "assets/16_v9.webp",
+        "V10_eye": "assets/16_v10_eye.webp",
+        "V10_full": "assets/16_v10_full.webp",
+        "V10_safe": "assets/16_v10_safe.webp"
+      },
+      "eye_v8": 29.47,
+      "eye_v9": 28.65,
+      "eye_v10": 25.62,
+      "lip_v8": 29.15,
+      "lip_v9": 27.5,
+      "lip_v10": 29.58,
+      "warp_displacement": [
+        3.0,
+        5.55
+      ]
+    },
+    {
+      "index": 17,
+      "identity": "SFHQ_pt3_00104060",
+      "images": {
+        "Original": "assets/17_original.webp",
+        "Teacher": "assets/17_teacher.webp",
+        "V8": "assets/17_v8.webp",
+        "V9": "assets/17_v9.webp",
+        "V10_eye": "assets/17_v10_eye.webp",
+        "V10_full": "assets/17_v10_full.webp",
+        "V10_safe": "assets/17_v10_safe.webp"
+      },
+      "eye_v8": 34.4,
+      "eye_v9": 30.75,
+      "eye_v10": 31.26,
+      "lip_v8": 26.19,
+      "lip_v9": 24.57,
+      "lip_v10": 25.59,
+      "warp_displacement": [
+        4.83,
+        4.46
+      ]
+    },
+    {
+      "index": 18,
+      "identity": "SFHQ_pt3_00104310",
+      "images": {
+        "Original": "assets/18_original.webp",
+        "Teacher": "assets/18_teacher.webp",
+        "V8": "assets/18_v8.webp",
+        "V9": "assets/18_v9.webp",
+        "V10_eye": "assets/18_v10_eye.webp",
+        "V10_full": "assets/18_v10_full.webp",
+        "V10_safe": "assets/18_v10_safe.webp"
+      },
+      "eye_v8": 33.71,
+      "eye_v9": 36.18,
+      "eye_v10": 36.18,
+      "lip_v8": 23.86,
+      "lip_v9": 25.49,
+      "lip_v10": 27.67,
+      "warp_displacement": [
+        8.05,
+        6.78
+      ]
+    },
+    {
+      "index": 19,
+      "identity": "SFHQ_pt3_00111628",
+      "images": {
+        "Original": "assets/19_original.webp",
+        "Teacher": "assets/19_teacher.webp",
+        "V8": "assets/19_v8.webp",
+        "V9": "assets/19_v9.webp",
+        "V10_eye": "assets/19_v10_eye.webp",
+        "V10_full": "assets/19_v10_full.webp",
+        "V10_safe": "assets/19_v10_safe.webp"
+      },
+      "eye_v8": 39.15,
+      "eye_v9": 43.7,
+      "eye_v10": 43.7,
+      "lip_v8": 22.55,
+      "lip_v9": 24.41,
+      "lip_v10": 26.45,
+      "warp_displacement": [
+        6.25,
+        6.24
+      ]
+    },
+    {
+      "index": 20,
+      "identity": "SFHQ_pt3_00115256",
+      "images": {
+        "Original": "assets/20_original.webp",
+        "Teacher": "assets/20_teacher.webp",
+        "V8": "assets/20_v8.webp",
+        "V9": "assets/20_v9.webp",
+        "V10_eye": "assets/20_v10_eye.webp",
+        "V10_full": "assets/20_v10_full.webp",
+        "V10_safe": "assets/20_v10_safe.webp"
+      },
+      "eye_v8": 20.01,
+      "eye_v9": 20.89,
+      "eye_v10": 20.79,
+      "lip_v8": 20.06,
+      "lip_v9": 20.27,
+      "lip_v10": 21.78,
+      "warp_displacement": [
+        3.65,
+        3.42
+      ]
+    }
+  ],
+  "versions": [
+    "Original",
+    "Teacher",
+    "V8",
+    "V9",
+    "V10_eye",
+    "V10_full",
+    "V10_safe"
+  ],
+  "research_only": true,
+  "validation_only": true,
+  "not_student_training": true,
+  "generated_utc": "2026-11-04T00:10:03.230975+00:00"
+}
