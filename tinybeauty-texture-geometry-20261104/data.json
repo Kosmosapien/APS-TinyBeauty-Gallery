@@ -9,7 +9,10 @@
         "texture512": "assets/01_texture512.webp",
         "flow_texture512": "assets/01_flow_texture512.webp",
         "l1_continue": "assets/01_l1_continue.webp",
-        "patchgan": "assets/01_patchgan.webp"
+        "patchgan": "assets/01_patchgan.webp",
+        "flow_no_landmarks": "assets/01_flow_no_landmarks.webp",
+        "flow_landmark_guided": "assets/01_flow_landmark_guided.webp",
+        "flow_landmark_strong": "assets/01_flow_landmark_strong.webp"
       }
     },
     {
@@ -21,7 +24,10 @@
         "texture512": "assets/02_texture512.webp",
         "flow_texture512": "assets/02_flow_texture512.webp",
         "l1_continue": "assets/02_l1_continue.webp",
-        "patchgan": "assets/02_patchgan.webp"
+        "patchgan": "assets/02_patchgan.webp",
+        "flow_no_landmarks": "assets/02_flow_no_landmarks.webp",
+        "flow_landmark_guided": "assets/02_flow_landmark_guided.webp",
+        "flow_landmark_strong": "assets/02_flow_landmark_strong.webp"
       }
     },
     {
@@ -33,7 +39,10 @@
         "texture512": "assets/03_texture512.webp",
         "flow_texture512": "assets/03_flow_texture512.webp",
         "l1_continue": "assets/03_l1_continue.webp",
-        "patchgan": "assets/03_patchgan.webp"
+        "patchgan": "assets/03_patchgan.webp",
+        "flow_no_landmarks": "assets/03_flow_no_landmarks.webp",
+        "flow_landmark_guided": "assets/03_flow_landmark_guided.webp",
+        "flow_landmark_strong": "assets/03_flow_landmark_strong.webp"
       }
     },
     {
@@ -45,7 +54,10 @@
         "texture512": "assets/04_texture512.webp",
         "flow_texture512": "assets/04_flow_texture512.webp",
         "l1_continue": "assets/04_l1_continue.webp",
-        "patchgan": "assets/04_patchgan.webp"
+        "patchgan": "assets/04_patchgan.webp",
+        "flow_no_landmarks": "assets/04_flow_no_landmarks.webp",
+        "flow_landmark_guided": "assets/04_flow_landmark_guided.webp",
+        "flow_landmark_strong": "assets/04_flow_landmark_strong.webp"
       }
     },
     {
@@ -57,7 +69,10 @@
         "texture512": "assets/05_texture512.webp",
         "flow_texture512": "assets/05_flow_texture512.webp",
         "l1_continue": "assets/05_l1_continue.webp",
-        "patchgan": "assets/05_patchgan.webp"
+        "patchgan": "assets/05_patchgan.webp",
+        "flow_no_landmarks": "assets/05_flow_no_landmarks.webp",
+        "flow_landmark_guided": "assets/05_flow_landmark_guided.webp",
+        "flow_landmark_strong": "assets/05_flow_landmark_strong.webp"
       }
     },
     {
@@ -69,7 +84,10 @@
         "texture512": "assets/06_texture512.webp",
         "flow_texture512": "assets/06_flow_texture512.webp",
         "l1_continue": "assets/06_l1_continue.webp",
-        "patchgan": "assets/06_patchgan.webp"
+        "patchgan": "assets/06_patchgan.webp",
+        "flow_no_landmarks": "assets/06_flow_no_landmarks.webp",
+        "flow_landmark_guided": "assets/06_flow_landmark_guided.webp",
+        "flow_landmark_strong": "assets/06_flow_landmark_strong.webp"
       }
     },
     {
@@ -81,7 +99,10 @@
         "texture512": "assets/07_texture512.webp",
         "flow_texture512": "assets/07_flow_texture512.webp",
         "l1_continue": "assets/07_l1_continue.webp",
-        "patchgan": "assets/07_patchgan.webp"
+        "patchgan": "assets/07_patchgan.webp",
+        "flow_no_landmarks": "assets/07_flow_no_landmarks.webp",
+        "flow_landmark_guided": "assets/07_flow_landmark_guided.webp",
+        "flow_landmark_strong": "assets/07_flow_landmark_strong.webp"
       }
     },
     {
@@ -93,7 +114,10 @@
         "texture512": "assets/08_texture512.webp",
         "flow_texture512": "assets/08_flow_texture512.webp",
         "l1_continue": "assets/08_l1_continue.webp",
-        "patchgan": "assets/08_patchgan.webp"
+        "patchgan": "assets/08_patchgan.webp",
+        "flow_no_landmarks": "assets/08_flow_no_landmarks.webp",
+        "flow_landmark_guided": "assets/08_flow_landmark_guided.webp",
+        "flow_landmark_strong": "assets/08_flow_landmark_strong.webp"
       }
     }
   ],
@@ -104,7 +128,10 @@
     "texture512": "Refinador de textura 512 (+1100)",
     "flow_texture512": "Refinador textura + deformação local 512 (+1100)",
     "l1_continue": "Refinador +800 controle (sem GAN)",
-    "patchgan": "Refinador +800 com PatchGAN regional"
+    "patchgan": "Refinador +800 com PatchGAN regional",
+    "flow_no_landmarks": "Flow +900 passos · controle sem landmarks",
+    "flow_landmark_guided": "Flow +900 passos · com supervisão geométrica",
+    "flow_landmark_strong": "Flow +900 passos · supervisão geométrica 10×"
   },
   "results": [
     {
@@ -196,6 +223,51 @@
         "background": 0.001014
       },
       "steps": 1900
+    },
+    {
+      "id": "flow_no_landmarks",
+      "parameters": 44717,
+      "final": {
+        "pixel": 0.090362,
+        "detail": 0.073847,
+        "highpass": 0.03611,
+        "contrast_ratio": 0.502537,
+        "amplitude": 0.878751,
+        "background": 0.001005,
+        "flow_landmark_mae": 1.95224,
+        "flow_amp_at_landmarks": 0.16474
+      },
+      "steps": 2000
+    },
+    {
+      "id": "flow_landmark_guided",
+      "parameters": 44717,
+      "final": {
+        "pixel": 0.090624,
+        "detail": 0.074173,
+        "highpass": 0.036288,
+        "contrast_ratio": 0.506539,
+        "amplitude": 0.889551,
+        "background": 0.000998,
+        "flow_landmark_mae": 1.899869,
+        "flow_amp_at_landmarks": 0.17159
+      },
+      "steps": 2000
+    },
+    {
+      "id": "flow_landmark_strong",
+      "parameters": 44717,
+      "final": {
+        "pixel": 0.095497,
+        "detail": 0.080189,
+        "highpass": 0.038377,
+        "contrast_ratio": 0.520568,
+        "amplitude": 0.937465,
+        "background": 0.000997,
+        "flow_landmark_mae": 1.783324,
+        "flow_amp_at_landmarks": 0.498004
+      },
+      "steps": 2000
     }
   ],
   "metadata": {
@@ -204,6 +276,7 @@
     "training_count": 1000,
     "previews": 8,
     "patchgan_steps": 800,
+    "landmark_flow_steps": 900,
     "reference": "BeautyREC48 20k with 512 upsample + same source mask",
     "research_only": true
   }
