@@ -1,0 +1,49 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TinyBeauty · treinamento longo U-Net global</title>
+ <style>*{box-sizing:border-box}body{background:#101a29;color:#f0f6ff;font:15px/1.45 system-ui,-apple-system,Segoe UI,Arial;margin:0}
+ main{max-width:900px;margin:auto;padding:16px 12px 80px}h1{font-size:clamp(1.45rem,4.5vw,2rem);line-height:1.2}
+ p{color:#b8cade}.note{border-top:1px solid #36546a;padding:10px 0}
+ select,button,textarea{font:inherit;background:#21364e;border:1px solid #607d9b;color:white;border-radius:10px;padding:10px}
+ button{cursor:pointer}button.active{background:#17604c;border-color:#75dcb3}
+ nav{display:flex;gap:8px;align-items:center;position:sticky;top:0;background:#101a29ef;padding:10px 0;z-index:2}
+ nav select{flex:1;min-width:0}.select{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:12px 0}
+ label{font-size:.8rem;display:flex;flex-direction:column;gap:5px;min-width:0}
+ label select{min-width:0;width:100%;font-size:.79rem}.compare{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+ .card{background:#172b3e;border:1px solid #405f78;border-radius:10px;overflow:hidden}.card strong{display:block;min-height:45px;padding:8px;font-size:.8rem}
+ .card img{display:block;width:100%;aspect-ratio:1;object-fit:contain;cursor:zoom-in}
+ section{border:1px solid #46617a;border-radius:10px;padding:13px;margin:15px 0}.votes{display:flex;gap:8px}.votes button{flex:1}
+ textarea{display:block;width:100%;min-height:78px;margin:10px 0}
+ dialog{border:1px solid #708ba2;border-radius:12px;background:#162436;color:white;max-width:96vw}
+ dialog img{max-width:90vw;max-height:80vh;display:block}dialog::backdrop{background:#000d}
+ a{color:#a6d8ff}</style></head><body><main>
+ <h1>Treinamento longo — U-Net global modulada</h1>
+ <p>Compare o teacher, o TinyBeauty sem Albumentations e dois treinamentos continuados da mesma U-Net, diferenciados apenas pela supervisão de textura multiescala. A fotografia inteira recebe o mesmo tratamento, sem máscaras cosméticas locais.</p>
+ <p><strong>Etapa exibida:</strong> +N passos significa N novos passos além do checkpoint original de 1.800. O treino pode estar em andamento; as versões disponíveis são checkpoints realmente gravados.</p>
+ <nav><button id="prev">‹</button><select id="person"></select><button id="next">›</button></nav>
+ <div class="select"><label>Esquerda<select id="left"></select></label><label>Direita<select id="right"></select></label></div>
+ <div class="compare"><div class="card"><strong id="leftLabel"></strong><img id="leftImg" alt="Esquerda"></div>
+ <div class="card"><strong id="rightLabel"></strong><img id="rightImg" alt="Direita"></div></div>
+ <section><strong>Qual versão reproduz melhor o teacher?</strong><div class="votes"><button id="voteL">Esquerda</button><button id="voteR">Direita</button><button id="voteT">Empate</button></div>
+ <textarea id="note" placeholder="Delineador, pigmento, textura, rosto, diferenças na pele..."></textarea><button id="export">Exportar avaliação JSON</button>
+ <p>Se uma variante apresentar halos, mudança de identidade ou maquiagem artificial, registre nos comentários.</p></section>
+ <p><a href="../tinybeauty-global-coherent-20261104/">Estudo global inicial (4 arquiteturas)</a></p>
+ <dialog id="zoom"><button id="close">Fechar</button><h3 id="zoomTitle"></h3><img id="zoomImg" alt="Foto ampliada"></dialog>
+ </main><script>
+ const db={"cases":[{"id":"SFHQ_pt3_00001690","images":{"original":"assets/01_original.webp","teacher":"assets/01_teacher.webp","tiny24":"assets/01_tiny24.webp","global_modulated_directional":"assets/01_global_modulated_directional.webp","directional_continue_02000":"assets/01_directional_continue_02000.webp"}},{"id":"SFHQ_pt3_00002799","images":{"original":"assets/02_original.webp","teacher":"assets/02_teacher.webp","tiny24":"assets/02_tiny24.webp","global_modulated_directional":"assets/02_global_modulated_directional.webp","directional_continue_02000":"assets/02_directional_continue_02000.webp"}},{"id":"SFHQ_pt3_00005043","images":{"original":"assets/03_original.webp","teacher":"assets/03_teacher.webp","tiny24":"assets/03_tiny24.webp","global_modulated_directional":"assets/03_global_modulated_directional.webp","directional_continue_02000":"assets/03_directional_continue_02000.webp"}},{"id":"SFHQ_pt3_00005983","images":{"original":"assets/04_original.webp","teacher":"assets/04_teacher.webp","tiny24":"assets/04_tiny24.webp","global_modulated_directional":"assets/04_global_modulated_directional.webp","directional_continue_02000":"assets/04_directional_continue_02000.webp"}},{"id":"SFHQ_pt3_00006549","images":{"original":"assets/05_original.webp","teacher":"assets/05_teacher.webp","tiny24":"assets/05_tiny24.webp","global_modulated_directional":"assets/05_global_modulated_directional.webp","directional_continue_02000":"assets/05_directional_continue_02000.webp"}},{"id":"SFHQ_pt3_00006969","images":{"original":"assets/06_original.webp","teacher":"assets/06_teacher.webp","tiny24":"assets/06_tiny24.webp","global_modulated_directional":"assets/06_global_modulated_directional.webp","directional_continue_02000":"assets/06_directional_continue_02000.webp"}},{"id":"SFHQ_pt3_00007250","images":{"original":"assets/07_original.webp","teacher":"assets/07_teacher.webp","tiny24":"assets/07_tiny24.webp","global_modulated_directional":"assets/07_global_modulated_directional.webp","directional_continue_02000":"assets/07_directional_continue_02000.webp"}},{"id":"SFHQ_pt3_00007369","images":{"original":"assets/08_original.webp","teacher":"assets/08_teacher.webp","tiny24":"assets/08_tiny24.webp","global_modulated_directional":"assets/08_global_modulated_directional.webp","directional_continue_02000":"assets/08_directional_continue_02000.webp"}},{"id":"SFHQ_pt3_00007455","images":{"original":"assets/09_original.webp","teacher":"assets/09_teacher.webp","tiny24":"assets/09_tiny24.webp","global_modulated_directional":"assets/09_global_modulated_directional.webp","directional_continue_02000":"assets/09_directional_continue_02000.webp"}},{"id":"SFHQ_pt3_00008011","images":{"original":"assets/10_original.webp","teacher":"assets/10_teacher.webp","tiny24":"assets/10_tiny24.webp","global_modulated_directional":"assets/10_global_modulated_directional.webp","directional_continue_02000":"assets/10_directional_continue_02000.webp"}}],"choices":{"original":"Original","teacher":"Teacher corrigido · Social","tiny24":"TinyBeauty sem Albumentations · 20k","global_modulated_directional":"U-Net modulada · ponto de partida 1.800","directional_continue_02000":"Continuação direcional · +2,000 passos"},"scores":{"directional_continue":[{"step":100,"metrics":{"MAE":0.029815,"highpass_error":0.010403,"highpass_energy_ratio":0.944744,"direction_cosine":0.653342,"amplitude_ratio":0.798729,"directional_loss":0.065467},"train_loss":0.064942,"elapsed_seconds":7.1},{"step":500,"metrics":{"MAE":0.028941,"highpass_error":0.01038,"highpass_energy_ratio":0.935117,"direction_cosine":0.667913,"amplitude_ratio":0.776032,"directional_loss":0.064029},"train_loss":0.064841,"elapsed_seconds":25.5},{"step":2000,"metrics":{"MAE":0.02729,"highpass_error":0.01011,"highpass_energy_ratio":0.928945,"direction_cosine":0.700575,"amplitude_ratio":0.773867,"directional_loss":0.060332},"train_loss":0.058433,"elapsed_seconds":91.0}]},"disclaimer":"Both arms start from SAME checkpoint at original step 1,800; +steps are additional training. All images RAW without local region compositing."},$=x=>document.getElementById(x),KEY='global-longrun-20261104';let v;try{v=JSON.parse(localStorage.getItem(KEY)||'{"votes":{},"notes":{}}')}catch{v={votes:{},notes:{}}}
+ let ix=0;db.cases.forEach((x,i)=>{let o=document.createElement('option');o.value=i;o.textContent=(i+1)+' · '+x.id;$('person').append(o)});
+ for(let [id,title] of Object.entries(db.choices))for(let side of ['left','right']){let o=document.createElement('option');o.value=id;o.textContent=title;$(side).append(o)}
+ $('left').value='tiny24';$('right').value=Object.keys(db.choices).at(-1);
+ function key(){return db.cases[ix].id+'|'+$('left').value+'|'+$('right').value}
+ function save(){try{localStorage.setItem(KEY,JSON.stringify(v))}catch{}}
+ function render(){let c=db.cases[ix];$('person').value=ix;for(let side of ['left','right']){let model=$(side).value;$(side+'Label').textContent=db.choices[model];$(side+'Img').src=c.images[model]}
+ for(let [id,a] of [['voteL','L'],['voteR','R'],['voteT','T']])$(id).className=v.votes[key()]===a?'active':'';
+ $('note').value=v.notes[key()]||''}
+ $('person').onchange=()=>{ix=Number($('person').value);render()};
+ $('prev').onclick=()=>{ix=(ix+db.cases.length-1)%db.cases.length;render()};
+ $('next').onclick=()=>{ix=(ix+1)%db.cases.length;render()};
+ for(let side of ['left','right'])$(side).onchange=render;
+ for(let [id,a] of [['voteL','L'],['voteR','R'],['voteT','T']])$(id).onclick=()=>{v.votes[key()]=a;save();render()};
+ $('note').oninput=()=>{v.notes[key()]=$('note').value;save()};
+ $('export').onclick=()=>{let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(v,null,2)],{type:'application/json'}));a.download='global_longrun_votes.json';a.click()};
+ for(let side of ['left','right'])$(side+'Img').onclick=()=>{$('zoomImg').src=$(side+'Img').src;$('zoomTitle').textContent=$(side+'Label').textContent;$('zoom').showModal()};
+ $('close').onclick=()=>$('zoom').close();render();
+ </script></body></html>

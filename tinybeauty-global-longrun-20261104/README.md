@@ -1,0 +1,1 @@
+Global modulated U-Net long training. Two arms trained from same 1.8k checkpoint, with identical data/sample sequence; control directional loss vs multiscale Laplacian loss. No semantic eye/lip masks, no Albumentations. The gallery contains real checkpoint outputs and labels +steps after 1800. Neither arm is a production model.
