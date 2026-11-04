@@ -1,0 +1,210 @@
+{
+  "cases": [
+    {
+      "id": "SFHQ_pt3_00001690",
+      "images": {
+        "original": "assets/01_original.webp",
+        "teacher": "assets/01_teacher.webp",
+        "base": "assets/01_base.webp",
+        "texture512": "assets/01_texture512.webp",
+        "flow_texture512": "assets/01_flow_texture512.webp",
+        "l1_continue": "assets/01_l1_continue.webp",
+        "patchgan": "assets/01_patchgan.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00002799",
+      "images": {
+        "original": "assets/02_original.webp",
+        "teacher": "assets/02_teacher.webp",
+        "base": "assets/02_base.webp",
+        "texture512": "assets/02_texture512.webp",
+        "flow_texture512": "assets/02_flow_texture512.webp",
+        "l1_continue": "assets/02_l1_continue.webp",
+        "patchgan": "assets/02_patchgan.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00005043",
+      "images": {
+        "original": "assets/03_original.webp",
+        "teacher": "assets/03_teacher.webp",
+        "base": "assets/03_base.webp",
+        "texture512": "assets/03_texture512.webp",
+        "flow_texture512": "assets/03_flow_texture512.webp",
+        "l1_continue": "assets/03_l1_continue.webp",
+        "patchgan": "assets/03_patchgan.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00005983",
+      "images": {
+        "original": "assets/04_original.webp",
+        "teacher": "assets/04_teacher.webp",
+        "base": "assets/04_base.webp",
+        "texture512": "assets/04_texture512.webp",
+        "flow_texture512": "assets/04_flow_texture512.webp",
+        "l1_continue": "assets/04_l1_continue.webp",
+        "patchgan": "assets/04_patchgan.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00006549",
+      "images": {
+        "original": "assets/05_original.webp",
+        "teacher": "assets/05_teacher.webp",
+        "base": "assets/05_base.webp",
+        "texture512": "assets/05_texture512.webp",
+        "flow_texture512": "assets/05_flow_texture512.webp",
+        "l1_continue": "assets/05_l1_continue.webp",
+        "patchgan": "assets/05_patchgan.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00006969",
+      "images": {
+        "original": "assets/06_original.webp",
+        "teacher": "assets/06_teacher.webp",
+        "base": "assets/06_base.webp",
+        "texture512": "assets/06_texture512.webp",
+        "flow_texture512": "assets/06_flow_texture512.webp",
+        "l1_continue": "assets/06_l1_continue.webp",
+        "patchgan": "assets/06_patchgan.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00007250",
+      "images": {
+        "original": "assets/07_original.webp",
+        "teacher": "assets/07_teacher.webp",
+        "base": "assets/07_base.webp",
+        "texture512": "assets/07_texture512.webp",
+        "flow_texture512": "assets/07_flow_texture512.webp",
+        "l1_continue": "assets/07_l1_continue.webp",
+        "patchgan": "assets/07_patchgan.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00007369",
+      "images": {
+        "original": "assets/08_original.webp",
+        "teacher": "assets/08_teacher.webp",
+        "base": "assets/08_base.webp",
+        "texture512": "assets/08_texture512.webp",
+        "flow_texture512": "assets/08_flow_texture512.webp",
+        "l1_continue": "assets/08_l1_continue.webp",
+        "patchgan": "assets/08_patchgan.webp"
+      }
+    }
+  ],
+  "labels": {
+    "original": "Foto original",
+    "teacher": "Teacher corrigido (V4)",
+    "base": "BeautyREC48 · 20k (256→512)",
+    "texture512": "Refinador de textura 512 (+1100)",
+    "flow_texture512": "Refinador textura + deformação local 512 (+1100)",
+    "l1_continue": "Refinador +800 controle (sem GAN)",
+    "patchgan": "Refinador +800 com PatchGAN regional"
+  },
+  "results": [
+    {
+      "id": "texture512",
+      "flow": false,
+      "parameters": 44283,
+      "steps": 1100,
+      "baseline": {
+        "pixel": 0.092739,
+        "detail": 0.075855,
+        "highpass": 0.036955,
+        "contrast_ratio": 0.539595,
+        "amplitude": 0.920875,
+        "background": 0.000982
+      },
+      "initial": {
+        "pixel": 0.092739,
+        "detail": 0.075855,
+        "highpass": 0.036955,
+        "contrast_ratio": 0.539595,
+        "amplitude": 0.920875,
+        "background": 0.000982
+      },
+      "final": {
+        "pixel": 0.091067,
+        "detail": 0.074586,
+        "highpass": 0.036674,
+        "contrast_ratio": 0.512892,
+        "amplitude": 0.887128,
+        "background": 0.001022
+      },
+      "best_detail_step": 750,
+      "best_highpass_step": 1100
+    },
+    {
+      "id": "flow_texture512",
+      "flow": true,
+      "parameters": 44717,
+      "steps": 1100,
+      "baseline": {
+        "pixel": 0.092739,
+        "detail": 0.075855,
+        "highpass": 0.036955,
+        "contrast_ratio": 0.539595,
+        "amplitude": 0.920875,
+        "background": 0.000982
+      },
+      "initial": {
+        "pixel": 0.092739,
+        "detail": 0.075855,
+        "highpass": 0.036955,
+        "contrast_ratio": 0.539595,
+        "amplitude": 0.920875,
+        "background": 0.000982
+      },
+      "final": {
+        "pixel": 0.090634,
+        "detail": 0.074166,
+        "highpass": 0.036247,
+        "contrast_ratio": 0.509984,
+        "amplitude": 0.8907,
+        "background": 0.001006
+      },
+      "best_detail_step": 1000,
+      "best_highpass_step": 1000
+    },
+    {
+      "id": "l1_continue",
+      "parameters": 44283,
+      "final": {
+        "pixel": 0.090846,
+        "detail": 0.074369,
+        "highpass": 0.036639,
+        "contrast_ratio": 0.509166,
+        "amplitude": 0.878519,
+        "background": 0.001022
+      },
+      "steps": 1900
+    },
+    {
+      "id": "patchgan",
+      "parameters": 44283,
+      "final": {
+        "pixel": 0.091033,
+        "detail": 0.074493,
+        "highpass": 0.036665,
+        "contrast_ratio": 0.512742,
+        "amplitude": 0.891875,
+        "background": 0.001014
+      },
+      "steps": 1900
+    }
+  ],
+  "metadata": {
+    "resolution": 512,
+    "val_count": 32,
+    "training_count": 1000,
+    "previews": 8,
+    "patchgan_steps": 800,
+    "reference": "BeautyREC48 20k with 512 upsample + same source mask",
+    "research_only": true
+  }
+}

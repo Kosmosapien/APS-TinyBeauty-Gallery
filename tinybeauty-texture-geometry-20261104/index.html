@@ -1,0 +1,62 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101b29"><title>TinyBeauty · Textura, geometria e PatchGAN em 512</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0e1826;color:#eef5ff;font:15px/1.5 system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+main{max-width:960px;margin:auto;padding:15px 12px 65px}h1{font-size:clamp(1.45rem,5vw,2rem);line-height:1.2}
+p{color:#b6cadd}.tag{font-size:.76rem;display:inline-block;padding:5px 10px;border-radius:30px;background:#21384c;color:#c9e5fc}
+nav{display:flex;gap:8px;align-items:center;position:sticky;top:0;z-index:3;background:#0e1826ec;padding:11px 0;border-bottom:1px solid #38546f}
+button,select,textarea{font:inherit;border:1px solid #56748f;border-radius:10px;background:#1e344a;color:#eff6ff;padding:10px;cursor:pointer}
+select{min-width:0}nav select{flex:1}.selectors{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:13px 0}
+.selectors label{display:flex;flex-direction:column;gap:5px;font-size:.83rem;color:#b8c8db}.selectors select{width:100%}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.card{border:1px solid #39546b;border-radius:11px;overflow:hidden;background:#192a3c}
+.card b{display:block;font-size:.82rem;min-height:44px;padding:8px}.card img{display:block;width:100%;aspect-ratio:1;object-fit:contain;cursor:zoom-in}
+.vote{margin:15px 0;padding:13px;border:1px solid #3a5b71;border-radius:12px;background:#192b40}
+.buttons{display:flex;gap:9px}.buttons button{flex:1}.buttons button.active{background:#186047;border-color:#86e3b7}
+textarea{display:block;margin:11px 0;min-height:82px;width:100%}
+table{border-collapse:collapse;width:100%;font-size:.8rem}th,td{text-align:right;border-bottom:1px solid #3c5064;padding:7px}th:first-child,td:first-child{text-align:left}
+dialog{max-width:96vw;max-height:96vh;background:#132235;border:1px solid #58738b;border-radius:12px;color:#f4f7ff}
+dialog img{display:block;max-height:80vh;max-width:90vw}dialog::backdrop{background:#000e}
+a{color:#a1d7ff}
+</style></head><body><main>
+<span class="tag">Experimento · Arquitetura em duas etapas · 512 × 512</span>
+<h1>Textura, geometria e PatchGAN: conseguimos reproduzir o teacher?</h1>
+<p>Todos os resultados são renderizados dos checkpoints em <strong>512 × 512</strong>. Compare o teacher corrigido, o BeautyREC anterior e dois refinadores: um só de textura, outro com deslocamentos geométricos e a comparação controlada de um refinador com e sem PatchGAN de olhos e lábios. A foto original é utilizada para proteger pixels externos à face.</p>
+<p style="font-size:.82rem">Este é um piloto com os primeiros 32 rostos de validação e 8 disponíveis na galeria. Não representa avaliação de produção ou latência Android.</p>
+<nav><button id="previous">‹</button><select id="person"></select><button id="next">›</button></nav>
+<div class="selectors"><label>Versão à esquerda<select id="left"></select></label><label>Versão à direita<select id="right"></select></label></div>
+<div class="grid"><div class="card"><b id="leftTitle"></b><img id="leftImg" alt="Comparação esquerda"></div>
+<div class="card"><b id="rightTitle"></b><img id="rightImg" alt="Comparação direita"></div></div>
+<section class="vote"><strong>Qual versão é visualmente mais próxima ao teacher?</strong>
+<div class="buttons"><button id="vLeft">Esquerda</button><button id="vRight">Direita</button><button id="vTie">Empate</button></div>
+<textarea id="comment" placeholder="Textura dos olhos, sobrancelhas, delineado, batom, geometria, identidade..."></textarea>
+<button id="export">Exportar avaliações JSON</button></section>
+<details><summary>Métricas de validação e parâmetros</summary><div style="overflow:auto"><table><thead><tr><th>Modelo</th><th>Parâmetros</th><th>Erro detalhe</th><th>Erro textura</th><th>Textura relativa</th></tr></thead><tbody id="scores"></tbody></table></div>
+<p style="font-size:.8rem">Erros menores são melhores. Textura relativa mede energia de altas frequências em relação ao teacher e não garante similaridade perceptual.</p></details>
+<p><a href="../tinybeauty-cosmetic-roi-20261104/">Estudo anterior de máscaras cosméticas</a></p>
+<dialog id="zoom"><button id="close">Fechar</button><h3 id="zoomTitle"></h3><img id="zoomImg" alt="Ampliação"></dialog>
+</main><script>
+const db={"cases":[{"id":"SFHQ_pt3_00001690","images":{"original":"assets/01_original.webp","teacher":"assets/01_teacher.webp","base":"assets/01_base.webp","texture512":"assets/01_texture512.webp","flow_texture512":"assets/01_flow_texture512.webp","l1_continue":"assets/01_l1_continue.webp","patchgan":"assets/01_patchgan.webp"}},{"id":"SFHQ_pt3_00002799","images":{"original":"assets/02_original.webp","teacher":"assets/02_teacher.webp","base":"assets/02_base.webp","texture512":"assets/02_texture512.webp","flow_texture512":"assets/02_flow_texture512.webp","l1_continue":"assets/02_l1_continue.webp","patchgan":"assets/02_patchgan.webp"}},{"id":"SFHQ_pt3_00005043","images":{"original":"assets/03_original.webp","teacher":"assets/03_teacher.webp","base":"assets/03_base.webp","texture512":"assets/03_texture512.webp","flow_texture512":"assets/03_flow_texture512.webp","l1_continue":"assets/03_l1_continue.webp","patchgan":"assets/03_patchgan.webp"}},{"id":"SFHQ_pt3_00005983","images":{"original":"assets/04_original.webp","teacher":"assets/04_teacher.webp","base":"assets/04_base.webp","texture512":"assets/04_texture512.webp","flow_texture512":"assets/04_flow_texture512.webp","l1_continue":"assets/04_l1_continue.webp","patchgan":"assets/04_patchgan.webp"}},{"id":"SFHQ_pt3_00006549","images":{"original":"assets/05_original.webp","teacher":"assets/05_teacher.webp","base":"assets/05_base.webp","texture512":"assets/05_texture512.webp","flow_texture512":"assets/05_flow_texture512.webp","l1_continue":"assets/05_l1_continue.webp","patchgan":"assets/05_patchgan.webp"}},{"id":"SFHQ_pt3_00006969","images":{"original":"assets/06_original.webp","teacher":"assets/06_teacher.webp","base":"assets/06_base.webp","texture512":"assets/06_texture512.webp","flow_texture512":"assets/06_flow_texture512.webp","l1_continue":"assets/06_l1_continue.webp","patchgan":"assets/06_patchgan.webp"}},{"id":"SFHQ_pt3_00007250","images":{"original":"assets/07_original.webp","teacher":"assets/07_teacher.webp","base":"assets/07_base.webp","texture512":"assets/07_texture512.webp","flow_texture512":"assets/07_flow_texture512.webp","l1_continue":"assets/07_l1_continue.webp","patchgan":"assets/07_patchgan.webp"}},{"id":"SFHQ_pt3_00007369","images":{"original":"assets/08_original.webp","teacher":"assets/08_teacher.webp","base":"assets/08_base.webp","texture512":"assets/08_texture512.webp","flow_texture512":"assets/08_flow_texture512.webp","l1_continue":"assets/08_l1_continue.webp","patchgan":"assets/08_patchgan.webp"}}],"labels":{"original":"Foto original","teacher":"Teacher corrigido (V4)","base":"BeautyREC48 · 20k (256→512)","texture512":"Refinador de textura 512 (+1100)","flow_texture512":"Refinador textura + deformação local 512 (+1100)","l1_continue":"Refinador +800 controle (sem GAN)","patchgan":"Refinador +800 com PatchGAN regional"},"results":[{"id":"texture512","flow":false,"parameters":44283,"steps":1100,"baseline":{"pixel":0.092739,"detail":0.075855,"highpass":0.036955,"contrast_ratio":0.539595,"amplitude":0.920875,"background":0.000982},"initial":{"pixel":0.092739,"detail":0.075855,"highpass":0.036955,"contrast_ratio":0.539595,"amplitude":0.920875,"background":0.000982},"final":{"pixel":0.091067,"detail":0.074586,"highpass":0.036674,"contrast_ratio":0.512892,"amplitude":0.887128,"background":0.001022},"best_detail_step":750,"best_highpass_step":1100},{"id":"flow_texture512","flow":true,"parameters":44717,"steps":1100,"baseline":{"pixel":0.092739,"detail":0.075855,"highpass":0.036955,"contrast_ratio":0.539595,"amplitude":0.920875,"background":0.000982},"initial":{"pixel":0.092739,"detail":0.075855,"highpass":0.036955,"contrast_ratio":0.539595,"amplitude":0.920875,"background":0.000982},"final":{"pixel":0.090634,"detail":0.074166,"highpass":0.036247,"contrast_ratio":0.509984,"amplitude":0.8907,"background":0.001006},"best_detail_step":1000,"best_highpass_step":1000},{"id":"l1_continue","parameters":44283,"final":{"pixel":0.090846,"detail":0.074369,"highpass":0.036639,"contrast_ratio":0.509166,"amplitude":0.878519,"background":0.001022},"steps":1900},{"id":"patchgan","parameters":44283,"final":{"pixel":0.091033,"detail":0.074493,"highpass":0.036665,"contrast_ratio":0.512742,"amplitude":0.891875,"background":0.001014},"steps":1900}],"metadata":{"resolution":512,"val_count":32,"training_count":1000,"previews":8,"patchgan_steps":800,"reference":"BeautyREC48 20k with 512 upsample + same source mask","research_only":true}},$=id=>document.getElementById(id),KEY='texturegeometry512_20261104';
+let store;try{store=JSON.parse(localStorage.getItem(KEY)||'{"votes":{},"comments":{}}')}catch{store={votes:{},comments:{}}}
+let ix=0;
+db.cases.forEach((x,i)=>{let o=document.createElement('option');o.value=i;o.textContent=(i+1)+' · '+x.id;$('person').append(o)});
+for(let [key,name] of Object.entries(db.labels))for(let dest of ['left','right']){let o=document.createElement('option');o.value=key;o.textContent=name;$(dest).append(o)}
+$('left').value='base';$('right').value='flow_texture512';
+function save(){try{localStorage.setItem(KEY,JSON.stringify(store))}catch(e){}}
+function voteKey(){return db.cases[ix].id+'|'+$('left').value+'|'+$('right').value}
+function render(){
+let c=db.cases[ix];$('person').value=ix;
+for(let side of ['left','right']){let id=$(side).value;$(side+'Title').textContent=db.labels[id];$(side+'Img').src=c.images[id]}
+for(let [id,v] of [['vLeft','L'],['vRight','R'],['vTie','T']])$(id).className=store.votes[voteKey()]===v?'active':'';
+$('comment').value=store.comments[voteKey()]||''}
+$('previous').onclick=()=>{ix=(ix+db.cases.length-1)%db.cases.length;render()};
+$('next').onclick=()=>{ix=(ix+1)%db.cases.length;render()};
+$('person').onchange=()=>{ix=Number($('person').value);render()};
+for(let side of ['left','right'])$(side).onchange=render;
+for(let [id,v] of [['vLeft','L'],['vRight','R'],['vTie','T']])$(id).onclick=()=>{store.votes[voteKey()]=v;save();render()};
+$('comment').oninput=()=>{store.comments[voteKey()]=$('comment').value;save()};
+$('export').onclick=()=>{let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(store,null,2)],{type:'application/json'}));a.download='texture_geometry_512_review.json';a.click()};
+for(let side of ['left','right'])$(side+'Img').onclick=()=>{$('zoomImg').src=$(side+'Img').src;$('zoomTitle').textContent=$(side+'Title').textContent;$('zoom').showModal()};
+$('close').onclick=()=>$('zoom').close();
+for(let r of db.results){let row=document.createElement('tr');for(let v of [r.id,r.parameters,r.final.detail,r.final.highpass,r.final.contrast_ratio]){let cell=document.createElement('td');cell.textContent=v;row.append(cell)}$('scores').append(row)}
+render();
+</script></body></html>
