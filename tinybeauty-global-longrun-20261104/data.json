@@ -17,7 +17,8 @@
         "multiscale_texture_05000": "assets/01_multiscale_texture_05000.webp",
         "multiscale_texture_10000": "assets/01_multiscale_texture_10000.webp",
         "multiscale_texture_15000": "assets/01_multiscale_texture_15000.webp",
-        "multiscale_texture_20000": "assets/01_multiscale_texture_20000.webp"
+        "multiscale_texture_20000": "assets/01_multiscale_texture_20000.webp",
+        "multiscale_texture_24000": "assets/01_multiscale_texture_24000.webp"
       }
     },
     {
@@ -37,7 +38,8 @@
         "multiscale_texture_05000": "assets/02_multiscale_texture_05000.webp",
         "multiscale_texture_10000": "assets/02_multiscale_texture_10000.webp",
         "multiscale_texture_15000": "assets/02_multiscale_texture_15000.webp",
-        "multiscale_texture_20000": "assets/02_multiscale_texture_20000.webp"
+        "multiscale_texture_20000": "assets/02_multiscale_texture_20000.webp",
+        "multiscale_texture_24000": "assets/02_multiscale_texture_24000.webp"
       }
     },
     {
@@ -57,7 +59,8 @@
         "multiscale_texture_05000": "assets/03_multiscale_texture_05000.webp",
         "multiscale_texture_10000": "assets/03_multiscale_texture_10000.webp",
         "multiscale_texture_15000": "assets/03_multiscale_texture_15000.webp",
-        "multiscale_texture_20000": "assets/03_multiscale_texture_20000.webp"
+        "multiscale_texture_20000": "assets/03_multiscale_texture_20000.webp",
+        "multiscale_texture_24000": "assets/03_multiscale_texture_24000.webp"
       }
     },
     {
@@ -77,7 +80,8 @@
         "multiscale_texture_05000": "assets/04_multiscale_texture_05000.webp",
         "multiscale_texture_10000": "assets/04_multiscale_texture_10000.webp",
         "multiscale_texture_15000": "assets/04_multiscale_texture_15000.webp",
-        "multiscale_texture_20000": "assets/04_multiscale_texture_20000.webp"
+        "multiscale_texture_20000": "assets/04_multiscale_texture_20000.webp",
+        "multiscale_texture_24000": "assets/04_multiscale_texture_24000.webp"
       }
     },
     {
@@ -97,7 +101,8 @@
         "multiscale_texture_05000": "assets/05_multiscale_texture_05000.webp",
         "multiscale_texture_10000": "assets/05_multiscale_texture_10000.webp",
         "multiscale_texture_15000": "assets/05_multiscale_texture_15000.webp",
-        "multiscale_texture_20000": "assets/05_multiscale_texture_20000.webp"
+        "multiscale_texture_20000": "assets/05_multiscale_texture_20000.webp",
+        "multiscale_texture_24000": "assets/05_multiscale_texture_24000.webp"
       }
     },
     {
@@ -117,7 +122,8 @@
         "multiscale_texture_05000": "assets/06_multiscale_texture_05000.webp",
         "multiscale_texture_10000": "assets/06_multiscale_texture_10000.webp",
         "multiscale_texture_15000": "assets/06_multiscale_texture_15000.webp",
-        "multiscale_texture_20000": "assets/06_multiscale_texture_20000.webp"
+        "multiscale_texture_20000": "assets/06_multiscale_texture_20000.webp",
+        "multiscale_texture_24000": "assets/06_multiscale_texture_24000.webp"
       }
     },
     {
@@ -137,7 +143,8 @@
         "multiscale_texture_05000": "assets/07_multiscale_texture_05000.webp",
         "multiscale_texture_10000": "assets/07_multiscale_texture_10000.webp",
         "multiscale_texture_15000": "assets/07_multiscale_texture_15000.webp",
-        "multiscale_texture_20000": "assets/07_multiscale_texture_20000.webp"
+        "multiscale_texture_20000": "assets/07_multiscale_texture_20000.webp",
+        "multiscale_texture_24000": "assets/07_multiscale_texture_24000.webp"
       }
     },
     {
@@ -157,7 +164,8 @@
         "multiscale_texture_05000": "assets/08_multiscale_texture_05000.webp",
         "multiscale_texture_10000": "assets/08_multiscale_texture_10000.webp",
         "multiscale_texture_15000": "assets/08_multiscale_texture_15000.webp",
-        "multiscale_texture_20000": "assets/08_multiscale_texture_20000.webp"
+        "multiscale_texture_20000": "assets/08_multiscale_texture_20000.webp",
+        "multiscale_texture_24000": "assets/08_multiscale_texture_24000.webp"
       }
     },
     {
@@ -177,7 +185,8 @@
         "multiscale_texture_05000": "assets/09_multiscale_texture_05000.webp",
         "multiscale_texture_10000": "assets/09_multiscale_texture_10000.webp",
         "multiscale_texture_15000": "assets/09_multiscale_texture_15000.webp",
-        "multiscale_texture_20000": "assets/09_multiscale_texture_20000.webp"
+        "multiscale_texture_20000": "assets/09_multiscale_texture_20000.webp",
+        "multiscale_texture_24000": "assets/09_multiscale_texture_24000.webp"
       }
     },
     {
@@ -197,7 +206,8 @@
         "multiscale_texture_05000": "assets/10_multiscale_texture_05000.webp",
         "multiscale_texture_10000": "assets/10_multiscale_texture_10000.webp",
         "multiscale_texture_15000": "assets/10_multiscale_texture_15000.webp",
-        "multiscale_texture_20000": "assets/10_multiscale_texture_20000.webp"
+        "multiscale_texture_20000": "assets/10_multiscale_texture_20000.webp",
+        "multiscale_texture_24000": "assets/10_multiscale_texture_24000.webp"
       }
     }
   ],
@@ -216,7 +226,8 @@
     "multiscale_texture_05000": "Textura multiescala · +5,000 passos",
     "multiscale_texture_10000": "Textura multiescala · +10,000 passos",
     "multiscale_texture_15000": "Textura multiescala · +15,000 passos",
-    "multiscale_texture_20000": "Textura multiescala · +20,000 passos"
+    "multiscale_texture_20000": "Textura multiescala · +20,000 passos",
+    "multiscale_texture_24000": "Textura multiescala · +24,000 passos"
   },
   "scores": {
     "directional_continue": [
@@ -533,6 +544,32 @@
         },
         "train_loss": 0.050558,
         "elapsed_seconds": 955.9
+      },
+      {
+        "step": 22500,
+        "metrics": {
+          "MAE": 0.021749,
+          "highpass_error": 0.009139,
+          "highpass_energy_ratio": 0.910212,
+          "direction_cosine": 0.818695,
+          "amplitude_ratio": 0.903784,
+          "directional_loss": 0.045822
+        },
+        "train_loss": 0.068306,
+        "elapsed_seconds": 1077.6
+      },
+      {
+        "step": 24000,
+        "metrics": {
+          "MAE": 0.022146,
+          "highpass_error": 0.009126,
+          "highpass_energy_ratio": 0.915019,
+          "direction_cosine": 0.813807,
+          "amplitude_ratio": 0.923634,
+          "directional_loss": 0.046412
+        },
+        "train_loss": 0.058589,
+        "elapsed_seconds": 1149.2
       }
     ]
   },
