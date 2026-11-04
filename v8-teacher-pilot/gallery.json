@@ -1,0 +1,416 @@
+{
+  "title": "APS-44 · V8 Teacher Identity Pilot",
+  "cases": [
+    {
+      "index": 1,
+      "identity": "SFHQ_pt3_00002799",
+      "images": {
+        "Original": "assets/01_original.webp",
+        "Stable-Makeup": "assets/01_stable_makeup.webp",
+        "V8_full": "assets/01_v8_full.webp",
+        "V8_safe": "assets/01_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 2,
+      "identity": "SFHQ_pt3_00013312",
+      "images": {
+        "Original": "assets/02_original.webp",
+        "Stable-Makeup": "assets/02_stable_makeup.webp",
+        "V8_full": "assets/02_v8_full.webp",
+        "V8_safe": "assets/02_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 3,
+      "identity": "SFHQ_pt3_00016032",
+      "images": {
+        "Original": "assets/03_original.webp",
+        "Stable-Makeup": "assets/03_stable_makeup.webp",
+        "V8_full": "assets/03_v8_full.webp",
+        "V8_safe": "assets/03_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 4,
+      "identity": "SFHQ_pt3_00016161",
+      "images": {
+        "Original": "assets/04_original.webp",
+        "Stable-Makeup": "assets/04_stable_makeup.webp",
+        "V8_full": "assets/04_v8_full.webp",
+        "V8_safe": "assets/04_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 5,
+      "identity": "SFHQ_pt3_00020270",
+      "images": {
+        "Original": "assets/05_original.webp",
+        "Stable-Makeup": "assets/05_stable_makeup.webp",
+        "V8_full": "assets/05_v8_full.webp",
+        "V8_safe": "assets/05_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 6,
+      "identity": "SFHQ_pt3_00025479",
+      "images": {
+        "Original": "assets/06_original.webp",
+        "Stable-Makeup": "assets/06_stable_makeup.webp",
+        "V8_full": "assets/06_v8_full.webp",
+        "V8_safe": "assets/06_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 7,
+      "identity": "SFHQ_pt3_00038799",
+      "images": {
+        "Original": "assets/07_original.webp",
+        "Stable-Makeup": "assets/07_stable_makeup.webp",
+        "V8_full": "assets/07_v8_full.webp",
+        "V8_safe": "assets/07_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 8,
+      "identity": "SFHQ_pt3_00056451",
+      "images": {
+        "Original": "assets/08_original.webp",
+        "Stable-Makeup": "assets/08_stable_makeup.webp",
+        "V8_full": "assets/08_v8_full.webp",
+        "V8_safe": "assets/08_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 9,
+      "identity": "SFHQ_pt3_00063632",
+      "images": {
+        "Original": "assets/09_original.webp",
+        "Stable-Makeup": "assets/09_stable_makeup.webp",
+        "V8_full": "assets/09_v8_full.webp",
+        "V8_safe": "assets/09_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 10,
+      "identity": "SFHQ_pt3_00063811",
+      "images": {
+        "Original": "assets/10_original.webp",
+        "Stable-Makeup": "assets/10_stable_makeup.webp",
+        "V8_full": "assets/10_v8_full.webp",
+        "V8_safe": "assets/10_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          -1.0,
+          -1.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 11,
+      "identity": "SFHQ_pt3_00064670",
+      "images": {
+        "Original": "assets/11_original.webp",
+        "Stable-Makeup": "assets/11_stable_makeup.webp",
+        "V8_full": "assets/11_v8_full.webp",
+        "V8_safe": "assets/11_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 12,
+      "identity": "SFHQ_pt3_00074567",
+      "images": {
+        "Original": "assets/12_original.webp",
+        "Stable-Makeup": "assets/12_stable_makeup.webp",
+        "V8_full": "assets/12_v8_full.webp",
+        "V8_safe": "assets/12_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 13,
+      "identity": "SFHQ_pt3_00078711",
+      "images": {
+        "Original": "assets/13_original.webp",
+        "Stable-Makeup": "assets/13_stable_makeup.webp",
+        "V8_full": "assets/13_v8_full.webp",
+        "V8_safe": "assets/13_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 14,
+      "identity": "SFHQ_pt3_00080947",
+      "images": {
+        "Original": "assets/14_original.webp",
+        "Stable-Makeup": "assets/14_stable_makeup.webp",
+        "V8_full": "assets/14_v8_full.webp",
+        "V8_safe": "assets/14_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 15,
+      "identity": "SFHQ_pt3_00091939",
+      "images": {
+        "Original": "assets/15_original.webp",
+        "Stable-Makeup": "assets/15_stable_makeup.webp",
+        "V8_full": "assets/15_v8_full.webp",
+        "V8_safe": "assets/15_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 16,
+      "identity": "SFHQ_pt3_00101075",
+      "images": {
+        "Original": "assets/16_original.webp",
+        "Stable-Makeup": "assets/16_stable_makeup.webp",
+        "V8_full": "assets/16_v8_full.webp",
+        "V8_safe": "assets/16_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 17,
+      "identity": "SFHQ_pt3_00104060",
+      "images": {
+        "Original": "assets/17_original.webp",
+        "Stable-Makeup": "assets/17_stable_makeup.webp",
+        "V8_full": "assets/17_v8_full.webp",
+        "V8_safe": "assets/17_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 18,
+      "identity": "SFHQ_pt3_00104310",
+      "images": {
+        "Original": "assets/18_original.webp",
+        "Stable-Makeup": "assets/18_stable_makeup.webp",
+        "V8_full": "assets/18_v8_full.webp",
+        "V8_safe": "assets/18_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 19,
+      "identity": "SFHQ_pt3_00111628",
+      "images": {
+        "Original": "assets/19_original.webp",
+        "Stable-Makeup": "assets/19_stable_makeup.webp",
+        "V8_full": "assets/19_v8_full.webp",
+        "V8_safe": "assets/19_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    },
+    {
+      "index": 20,
+      "identity": "SFHQ_pt3_00115256",
+      "images": {
+        "Original": "assets/20_original.webp",
+        "Stable-Makeup": "assets/20_stable_makeup.webp",
+        "V8_full": "assets/20_v8_full.webp",
+        "V8_safe": "assets/20_v8_safe.webp"
+      },
+      "guards": {
+        "stable_skin_median_Lab_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cavity_exact": true,
+        "background_exact": true,
+        "eye_core_exact": true
+      }
+    }
+  ],
+  "variants": [
+    "Original",
+    "Stable-Makeup",
+    "V8_full",
+    "V8_safe"
+  ],
+  "validation_only": true,
+  "research_only": true,
+  "dataset_modified": false,
+  "teacher_model_changed": false,
+  "generated_utc": "2026-11-03T23:58:33.764056+00:00"
+}
