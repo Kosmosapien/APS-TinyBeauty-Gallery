@@ -1,0 +1,237 @@
+{
+  "cases": [
+    {
+      "id": "SFHQ_pt3_00001690",
+      "images": {
+        "original": "assets/01_original.webp",
+        "teacher": "assets/01_teacher.webp",
+        "tiny24": "assets/01_tiny24.webp",
+        "wide48": "assets/01_wide48.webp",
+        "global_unet": "assets/01_global_unet.webp",
+        "global_modulated": "assets/01_global_modulated.webp",
+        "global_unet_directional": "assets/01_global_unet_directional.webp",
+        "global_modulated_directional": "assets/01_global_modulated_directional.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00002799",
+      "images": {
+        "original": "assets/02_original.webp",
+        "teacher": "assets/02_teacher.webp",
+        "tiny24": "assets/02_tiny24.webp",
+        "wide48": "assets/02_wide48.webp",
+        "global_unet": "assets/02_global_unet.webp",
+        "global_modulated": "assets/02_global_modulated.webp",
+        "global_unet_directional": "assets/02_global_unet_directional.webp",
+        "global_modulated_directional": "assets/02_global_modulated_directional.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00005043",
+      "images": {
+        "original": "assets/03_original.webp",
+        "teacher": "assets/03_teacher.webp",
+        "tiny24": "assets/03_tiny24.webp",
+        "wide48": "assets/03_wide48.webp",
+        "global_unet": "assets/03_global_unet.webp",
+        "global_modulated": "assets/03_global_modulated.webp",
+        "global_unet_directional": "assets/03_global_unet_directional.webp",
+        "global_modulated_directional": "assets/03_global_modulated_directional.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00005983",
+      "images": {
+        "original": "assets/04_original.webp",
+        "teacher": "assets/04_teacher.webp",
+        "tiny24": "assets/04_tiny24.webp",
+        "wide48": "assets/04_wide48.webp",
+        "global_unet": "assets/04_global_unet.webp",
+        "global_modulated": "assets/04_global_modulated.webp",
+        "global_unet_directional": "assets/04_global_unet_directional.webp",
+        "global_modulated_directional": "assets/04_global_modulated_directional.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00006549",
+      "images": {
+        "original": "assets/05_original.webp",
+        "teacher": "assets/05_teacher.webp",
+        "tiny24": "assets/05_tiny24.webp",
+        "wide48": "assets/05_wide48.webp",
+        "global_unet": "assets/05_global_unet.webp",
+        "global_modulated": "assets/05_global_modulated.webp",
+        "global_unet_directional": "assets/05_global_unet_directional.webp",
+        "global_modulated_directional": "assets/05_global_modulated_directional.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00006969",
+      "images": {
+        "original": "assets/06_original.webp",
+        "teacher": "assets/06_teacher.webp",
+        "tiny24": "assets/06_tiny24.webp",
+        "wide48": "assets/06_wide48.webp",
+        "global_unet": "assets/06_global_unet.webp",
+        "global_modulated": "assets/06_global_modulated.webp",
+        "global_unet_directional": "assets/06_global_unet_directional.webp",
+        "global_modulated_directional": "assets/06_global_modulated_directional.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00007250",
+      "images": {
+        "original": "assets/07_original.webp",
+        "teacher": "assets/07_teacher.webp",
+        "tiny24": "assets/07_tiny24.webp",
+        "wide48": "assets/07_wide48.webp",
+        "global_unet": "assets/07_global_unet.webp",
+        "global_modulated": "assets/07_global_modulated.webp",
+        "global_unet_directional": "assets/07_global_unet_directional.webp",
+        "global_modulated_directional": "assets/07_global_modulated_directional.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00007369",
+      "images": {
+        "original": "assets/08_original.webp",
+        "teacher": "assets/08_teacher.webp",
+        "tiny24": "assets/08_tiny24.webp",
+        "wide48": "assets/08_wide48.webp",
+        "global_unet": "assets/08_global_unet.webp",
+        "global_modulated": "assets/08_global_modulated.webp",
+        "global_unet_directional": "assets/08_global_unet_directional.webp",
+        "global_modulated_directional": "assets/08_global_modulated_directional.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00007455",
+      "images": {
+        "original": "assets/09_original.webp",
+        "teacher": "assets/09_teacher.webp",
+        "tiny24": "assets/09_tiny24.webp",
+        "wide48": "assets/09_wide48.webp",
+        "global_unet": "assets/09_global_unet.webp",
+        "global_modulated": "assets/09_global_modulated.webp",
+        "global_unet_directional": "assets/09_global_unet_directional.webp",
+        "global_modulated_directional": "assets/09_global_modulated_directional.webp"
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00008011",
+      "images": {
+        "original": "assets/10_original.webp",
+        "teacher": "assets/10_teacher.webp",
+        "tiny24": "assets/10_tiny24.webp",
+        "wide48": "assets/10_wide48.webp",
+        "global_unet": "assets/10_global_unet.webp",
+        "global_modulated": "assets/10_global_modulated.webp",
+        "global_unet_directional": "assets/10_global_unet_directional.webp",
+        "global_modulated_directional": "assets/10_global_modulated_directional.webp"
+      }
+    }
+  ],
+  "choices": {
+    "original": "Fotografia original",
+    "teacher": "Teacher corrigido · V4 Social",
+    "tiny24": "TinyBeauty 24c · sem Albumentations · 20k",
+    "wide48": "BeautyREC 48c · 20k",
+    "global_unet": "U-Net global multiescala · perda padrão",
+    "global_modulated": "U-Net global modulada · perda padrão",
+    "global_unet_directional": "U-Net global · direção/amplitude",
+    "global_modulated_directional": "U-Net modulada · direção/amplitude"
+  },
+  "fair_metrics": {
+    "tiny24": {
+      "mae": 0.0236981,
+      "face": 0.056638,
+      "detail": 0.0856468,
+      "background_leak": 0.0018941,
+      "detail_amplitude": 0.7888193,
+      "weighted": 0.0521726
+    },
+    "wide48": {
+      "mae": 0.0240729,
+      "face": 0.0498286,
+      "detail": 0.0721634,
+      "background_leak": 0.0080655,
+      "detail_amplitude": 0.9242383,
+      "weighted": 0.0467493
+    },
+    "global_unet": {
+      "mae": 0.0343944,
+      "face": 0.0859895,
+      "detail": 0.1421191,
+      "background_leak": 0.000525,
+      "detail_amplitude": 0.0566368,
+      "weighted": 0.0796472
+    },
+    "global_modulated": {
+      "mae": 0.0340175,
+      "face": 0.0840024,
+      "detail": 0.1330343,
+      "background_leak": 0.0012326,
+      "detail_amplitude": 0.213494,
+      "weighted": 0.0774182
+    },
+    "global_unet_directional": {
+      "mae": 0.0322365,
+      "face": 0.0751853,
+      "detail": 0.1136213,
+      "background_leak": 0.0040088,
+      "detail_amplitude": 0.604264,
+      "weighted": 0.0695376
+    },
+    "global_modulated_directional": {
+      "mae": 0.0301753,
+      "face": 0.0703137,
+      "detail": 0.105423,
+      "background_leak": 0.0040084,
+      "detail_amplitude": 0.7500112,
+      "weighted": 0.064925
+    }
+  },
+  "new_architecture_metrics": [
+    {
+      "name": "global_unet",
+      "params": 899427,
+      "steps": 1800,
+      "mae": 0.034394,
+      "edge": 0.010964,
+      "highpass_contrast_ratio": 0.999279,
+      "amplitude": 0.087661,
+      "loss": 0.057837
+    },
+    {
+      "name": "global_modulated",
+      "params": 977403,
+      "steps": 1800,
+      "mae": 0.034018,
+      "edge": 0.010936,
+      "highpass_contrast_ratio": 0.995499,
+      "amplitude": 0.22132,
+      "loss": 0.057287
+    },
+    {
+      "name": "global_unet_directional",
+      "params": 899427,
+      "steps": 1800,
+      "mae": 0.032236,
+      "edge": 0.01081,
+      "highpass_contrast_ratio": 0.973716,
+      "amplitude": 0.61168,
+      "loss": 0.075456
+    },
+    {
+      "name": "global_modulated_directional",
+      "params": 977403,
+      "steps": 1800,
+      "mae": 0.030175,
+      "edge": 0.010445,
+      "highpass_contrast_ratio": 0.940752,
+      "amplitude": 0.741765,
+      "loss": 0.067543
+    }
+  ],
+  "note": "Historic 24c/48c baselines trained 20k; global variants 1800 steps fresh scratch; no cosmetic-local ROI masks or loss."
+}

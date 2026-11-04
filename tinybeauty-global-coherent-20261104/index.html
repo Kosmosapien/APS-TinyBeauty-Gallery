@@ -1,0 +1,68 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111d2b">
+<title>AI Photo Studio · U-Net global vs modulação espacial</title>
+<style>
+*{box-sizing:border-box}body{background:#0f1b2a;color:#f2f7ff;font:15px/1.5 system-ui,-apple-system,Segoe UI,Arial,sans-serif;margin:0}
+main{max-width:960px;margin:auto;padding:16px 12px 65px}h1{font-size:clamp(1.4rem,4vw,2rem);line-height:1.2}
+p{color:#b4c7dd}.tag{display:inline-block;font-size:.76rem;border-radius:30px;padding:4px 10px;background:#243c50;color:#c4e8ef}
+nav{display:flex;gap:8px;align-items:center;position:sticky;top:0;background:#0f1b2aed;z-index:3;padding:10px 0;border-bottom:1px solid #3e566f}
+select,button,textarea{font:inherit;background:#1c3248;border:1px solid #526d88;border-radius:10px;padding:10px;color:#f4faff}button{cursor:pointer}
+nav select{flex:1;min-width:0}.choices{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:13px 0}
+.choices label{display:flex;flex-direction:column;gap:5px;min-width:0;font-size:.8rem;color:#bfcfe0}
+.choices select{width:100%;font-size:.78rem;min-width:0}.cols{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.pic{border:1px solid #38556f;background:#18283a;border-radius:11px;overflow:hidden}
+.pic strong{display:block;min-height:46px;font-size:.8rem;padding:8px}
+.pic img{display:block;width:100%;aspect-ratio:1;object-fit:contain;cursor:zoom-in}
+.review{margin:16px 0;background:#182d41;padding:13px;border-radius:12px;border:1px solid #3b5770}
+.review .buttons{display:flex;gap:7px;margin-top:10px}.review .buttons button{flex:1;font-size:.81rem}
+button.active{background:#17634f;border-color:#68dab7}
+textarea{width:100%;min-height:80px;margin:10px 0}details{padding:12px;border:1px solid #496079;border-radius:10px;margin:12px 0}
+table{width:100%;border-collapse:collapse;font-size:.81rem}td,th{padding:7px;text-align:right;border-bottom:1px solid #405973}
+td:first-child,th:first-child{text-align:left}
+dialog{background:#14283b;color:white;border:1px solid #6c90a6;border-radius:12px;max-width:96vw}
+dialog img{max-width:89vw;max-height:78vh;display:block}dialog::backdrop{background:#000d}
+a{color:#a8d6fa}
+</style></head><body><main><span class="tag">Experimento arquitetural · Global e coerente · 2026-11-04</span>
+<h1>U-Net global ou decoder com modulação?</h1>
+<p>Comparação sem máscaras cosméticas locais. Todas as imagens vêm das mesmas identidades de validação V4 e foram tratadas em 256 × 256. Avalie fidelidade da maquiagem ao teacher, delicadeza do delineado e coerência entre olhos, testa e restante da pele.</p>
+<p><strong>Importante:</strong> os modelos históricos receberam 20.000 passos; estas U-Nets foram treinadas do zero por 1.800 passos. Este piloto testa viabilidade de representação, não uma comparação justa de convergência final.</p>
+<nav><button id="prev">‹</button><select id="person"></select><button id="next">›</button></nav>
+<div class="choices"><label>Versão à esquerda<select id="left"></select></label>
+<label>Versão à direita<select id="right"></select></label></div>
+<div class="cols"><div class="pic"><strong id="labelL"></strong><img id="imgL" alt="Resultado da esquerda"></div>
+<div class="pic"><strong id="labelR"></strong><img id="imgR" alt="Resultado da direita"></div></div>
+<section class="review"><b>Qual reproduz melhor o teacher?</b><div class="buttons">
+<button id="voteL">Esquerda</button><button id="voteR">Direita</button><button id="voteTie">Empate</button></div>
+<textarea id="comments" placeholder="Tom, textura, sombra, delineado, batom, identidade, artefatos..."></textarea>
+<button id="export">Exportar avaliações</button><p style="font-size:.77rem">As avaliações ficam neste dispositivo até exportá-las.</p></section>
+<details><summary>Métricas iniciais das duas novas arquiteturas (136 identidades)</summary>
+<table><thead><tr><th>Modelo</th><th>Erro face</th><th>Erro detalhe</th><th>Alteração externa</th><th>Intensidade detalhe</th></tr></thead><tbody id="metrics"></tbody></table>
+<p>Mesma definição e as mesmas 136 identidades para todos os modelos. Menor erro é melhor; intensidade não significa fidelidade. Os modelos históricos receberam 20.000 passos, contra 1.800 das novas variantes.</p></details>
+<p><a href="../tinybeauty-texture-geometry-20261104/">Ver galeria anterior de textura e deformação</a></p>
+<dialog id="zoom"><button id="close">Fechar</button><h3 id="zoomTitle"></h3><img id="zoomImg"></dialog>
+</main><script>
+const db={"cases":[{"id":"SFHQ_pt3_00001690","images":{"original":"assets/01_original.webp","teacher":"assets/01_teacher.webp","tiny24":"assets/01_tiny24.webp","wide48":"assets/01_wide48.webp","global_unet":"assets/01_global_unet.webp","global_modulated":"assets/01_global_modulated.webp","global_unet_directional":"assets/01_global_unet_directional.webp","global_modulated_directional":"assets/01_global_modulated_directional.webp"}},{"id":"SFHQ_pt3_00002799","images":{"original":"assets/02_original.webp","teacher":"assets/02_teacher.webp","tiny24":"assets/02_tiny24.webp","wide48":"assets/02_wide48.webp","global_unet":"assets/02_global_unet.webp","global_modulated":"assets/02_global_modulated.webp","global_unet_directional":"assets/02_global_unet_directional.webp","global_modulated_directional":"assets/02_global_modulated_directional.webp"}},{"id":"SFHQ_pt3_00005043","images":{"original":"assets/03_original.webp","teacher":"assets/03_teacher.webp","tiny24":"assets/03_tiny24.webp","wide48":"assets/03_wide48.webp","global_unet":"assets/03_global_unet.webp","global_modulated":"assets/03_global_modulated.webp","global_unet_directional":"assets/03_global_unet_directional.webp","global_modulated_directional":"assets/03_global_modulated_directional.webp"}},{"id":"SFHQ_pt3_00005983","images":{"original":"assets/04_original.webp","teacher":"assets/04_teacher.webp","tiny24":"assets/04_tiny24.webp","wide48":"assets/04_wide48.webp","global_unet":"assets/04_global_unet.webp","global_modulated":"assets/04_global_modulated.webp","global_unet_directional":"assets/04_global_unet_directional.webp","global_modulated_directional":"assets/04_global_modulated_directional.webp"}},{"id":"SFHQ_pt3_00006549","images":{"original":"assets/05_original.webp","teacher":"assets/05_teacher.webp","tiny24":"assets/05_tiny24.webp","wide48":"assets/05_wide48.webp","global_unet":"assets/05_global_unet.webp","global_modulated":"assets/05_global_modulated.webp","global_unet_directional":"assets/05_global_unet_directional.webp","global_modulated_directional":"assets/05_global_modulated_directional.webp"}},{"id":"SFHQ_pt3_00006969","images":{"original":"assets/06_original.webp","teacher":"assets/06_teacher.webp","tiny24":"assets/06_tiny24.webp","wide48":"assets/06_wide48.webp","global_unet":"assets/06_global_unet.webp","global_modulated":"assets/06_global_modulated.webp","global_unet_directional":"assets/06_global_unet_directional.webp","global_modulated_directional":"assets/06_global_modulated_directional.webp"}},{"id":"SFHQ_pt3_00007250","images":{"original":"assets/07_original.webp","teacher":"assets/07_teacher.webp","tiny24":"assets/07_tiny24.webp","wide48":"assets/07_wide48.webp","global_unet":"assets/07_global_unet.webp","global_modulated":"assets/07_global_modulated.webp","global_unet_directional":"assets/07_global_unet_directional.webp","global_modulated_directional":"assets/07_global_modulated_directional.webp"}},{"id":"SFHQ_pt3_00007369","images":{"original":"assets/08_original.webp","teacher":"assets/08_teacher.webp","tiny24":"assets/08_tiny24.webp","wide48":"assets/08_wide48.webp","global_unet":"assets/08_global_unet.webp","global_modulated":"assets/08_global_modulated.webp","global_unet_directional":"assets/08_global_unet_directional.webp","global_modulated_directional":"assets/08_global_modulated_directional.webp"}},{"id":"SFHQ_pt3_00007455","images":{"original":"assets/09_original.webp","teacher":"assets/09_teacher.webp","tiny24":"assets/09_tiny24.webp","wide48":"assets/09_wide48.webp","global_unet":"assets/09_global_unet.webp","global_modulated":"assets/09_global_modulated.webp","global_unet_directional":"assets/09_global_unet_directional.webp","global_modulated_directional":"assets/09_global_modulated_directional.webp"}},{"id":"SFHQ_pt3_00008011","images":{"original":"assets/10_original.webp","teacher":"assets/10_teacher.webp","tiny24":"assets/10_tiny24.webp","wide48":"assets/10_wide48.webp","global_unet":"assets/10_global_unet.webp","global_modulated":"assets/10_global_modulated.webp","global_unet_directional":"assets/10_global_unet_directional.webp","global_modulated_directional":"assets/10_global_modulated_directional.webp"}}],"choices":{"original":"Fotografia original","teacher":"Teacher corrigido · V4 Social","tiny24":"TinyBeauty 24c · sem Albumentations · 20k","wide48":"BeautyREC 48c · 20k","global_unet":"U-Net global multiescala · perda padrão","global_modulated":"U-Net global modulada · perda padrão","global_unet_directional":"U-Net global · direção/amplitude","global_modulated_directional":"U-Net modulada · direção/amplitude"},"fair_metrics":{"tiny24":{"mae":0.0236981,"face":0.056638,"detail":0.0856468,"background_leak":0.0018941,"detail_amplitude":0.7888193,"weighted":0.0521726},"wide48":{"mae":0.0240729,"face":0.0498286,"detail":0.0721634,"background_leak":0.0080655,"detail_amplitude":0.9242383,"weighted":0.0467493},"global_unet":{"mae":0.0343944,"face":0.0859895,"detail":0.1421191,"background_leak":0.000525,"detail_amplitude":0.0566368,"weighted":0.0796472},"global_modulated":{"mae":0.0340175,"face":0.0840024,"detail":0.1330343,"background_leak":0.0012326,"detail_amplitude":0.213494,"weighted":0.0774182},"global_unet_directional":{"mae":0.0322365,"face":0.0751853,"detail":0.1136213,"background_leak":0.0040088,"detail_amplitude":0.604264,"weighted":0.0695376},"global_modulated_directional":{"mae":0.0301753,"face":0.0703137,"detail":0.105423,"background_leak":0.0040084,"detail_amplitude":0.7500112,"weighted":0.064925}},"new_architecture_metrics":[{"name":"global_unet","params":899427,"steps":1800,"mae":0.034394,"edge":0.010964,"highpass_contrast_ratio":0.999279,"amplitude":0.087661,"loss":0.057837},{"name":"global_modulated","params":977403,"steps":1800,"mae":0.034018,"edge":0.010936,"highpass_contrast_ratio":0.995499,"amplitude":0.22132,"loss":0.057287},{"name":"global_unet_directional","params":899427,"steps":1800,"mae":0.032236,"edge":0.01081,"highpass_contrast_ratio":0.973716,"amplitude":0.61168,"loss":0.075456},{"name":"global_modulated_directional","params":977403,"steps":1800,"mae":0.030175,"edge":0.010445,"highpass_contrast_ratio":0.940752,"amplitude":0.741765,"loss":0.067543}],"note":"Historic 24c/48c baselines trained 20k; global variants 1800 steps fresh scratch; no cosmetic-local ROI masks or loss."}, $=id=>document.getElementById(id), key='global-unet-makeup-20261104';
+let state;try{state=JSON.parse(localStorage.getItem(key)||'{"votes":{},"notes":{}}')}catch{state={votes:{},notes:{}}}
+let index=0;
+db.cases.forEach((c,i)=>{let o=document.createElement('option');o.value=i;o.textContent=(i+1)+' · '+c.id;$('person').append(o)});
+for(let [k,name] of Object.entries(db.choices))for(let side of ['left','right']){
+ let o=document.createElement('option');o.value=k;o.textContent=name;$(side).append(o)}
+$('left').value='tiny24';$('right').value='global_modulated';
+function pairkey(){return db.cases[index].id+'|'+$('left').value+'|'+$('right').value}
+function save(){try{localStorage.setItem(key,JSON.stringify(state))}catch(e){}}
+function render(){let c=db.cases[index];$('person').value=index;
+ for(let side of ['left','right']){let model=$(side).value,code=side==='left'?'L':'R';$('label'+code).textContent=db.choices[model];$('img'+code).src=c.images[model]}
+ for(let [button,v] of [['voteL','L'],['voteR','R'],['voteTie','tie']])$(button).className=state.votes[pairkey()]===v?'active':'';
+ $('comments').value=state.notes[pairkey()]||''}
+$('prev').onclick=()=>{index=(index+db.cases.length-1)%db.cases.length;render()};
+$('next').onclick=()=>{index=(index+1)%db.cases.length;render()};
+$('person').onchange=()=>{index=Number($('person').value);render()};
+for(let side of ['left','right'])$(side).onchange=render;
+for(let [button,v] of [['voteL','L'],['voteR','R'],['voteTie','tie']])$(button).onclick=()=>{state.votes[pairkey()]=v;save();render()};
+$('comments').oninput=()=>{state.notes[pairkey()]=$('comments').value;save()};
+$('export').onclick=()=>{let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(state,null,2)],{type:'application/json'}));a.download='global_unet_review.json';a.click()};
+for(let side of ['L','R'])$('img'+side).onclick=()=>{$('zoomImg').src=$('img'+side).src;$('zoomTitle').textContent=$('label'+side).textContent;$('zoom').showModal()};
+$('close').onclick=()=>$('zoom').close();
+for(let model of ['tiny24','wide48','global_unet','global_modulated','global_unet_directional','global_modulated_directional']){let r=db.fair_metrics[model],tr=document.createElement('tr');for(let v of [db.choices[model],r.face.toFixed(5),r.detail.toFixed(5),r.background_leak.toFixed(5),(r.detail_amplitude*100).toFixed(1)+'%']){let td=document.createElement('td');td.textContent=v;tr.append(td)}$('metrics').append(tr)}
+render();
+</script></body></html>
