@@ -1,0 +1,736 @@
+{
+  "title": "APS-44 — cobertura da testa V2, preservando maquiagem do teacher",
+  "cases": [
+    {
+      "id": "SFHQ_pt3_00072699",
+      "style": "natural",
+      "files": {
+        "Original": {
+          "face": "assets/01_original_face.webp",
+          "testa": "assets/01_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/01_teacher_face.webp",
+          "testa": "assets/01_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/01_mp_tom_face.webp",
+          "testa": "assets/01_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/01_v2_tom_face.webp",
+          "testa": "assets/01_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/01_mp_textura_face.webp",
+          "testa": "assets/01_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/01_v2_textura_face.webp",
+          "testa": "assets/01_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00091461",
+      "style": "natural",
+      "files": {
+        "Original": {
+          "face": "assets/02_original_face.webp",
+          "testa": "assets/02_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/02_teacher_face.webp",
+          "testa": "assets/02_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/02_mp_tom_face.webp",
+          "testa": "assets/02_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/02_v2_tom_face.webp",
+          "testa": "assets/02_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/02_mp_textura_face.webp",
+          "testa": "assets/02_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/02_v2_textura_face.webp",
+          "testa": "assets/02_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00022663",
+      "style": "natural",
+      "files": {
+        "Original": {
+          "face": "assets/03_original_face.webp",
+          "testa": "assets/03_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/03_teacher_face.webp",
+          "testa": "assets/03_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/03_mp_tom_face.webp",
+          "testa": "assets/03_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/03_v2_tom_face.webp",
+          "testa": "assets/03_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/03_mp_textura_face.webp",
+          "testa": "assets/03_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/03_v2_textura_face.webp",
+          "testa": "assets/03_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00038336",
+      "style": "natural",
+      "files": {
+        "Original": {
+          "face": "assets/04_original_face.webp",
+          "testa": "assets/04_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/04_teacher_face.webp",
+          "testa": "assets/04_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/04_mp_tom_face.webp",
+          "testa": "assets/04_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/04_v2_tom_face.webp",
+          "testa": "assets/04_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/04_mp_textura_face.webp",
+          "testa": "assets/04_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/04_v2_textura_face.webp",
+          "testa": "assets/04_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00107217",
+      "style": "natural",
+      "files": {
+        "Original": {
+          "face": "assets/05_original_face.webp",
+          "testa": "assets/05_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/05_teacher_face.webp",
+          "testa": "assets/05_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/05_mp_tom_face.webp",
+          "testa": "assets/05_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/05_v2_tom_face.webp",
+          "testa": "assets/05_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/05_mp_textura_face.webp",
+          "testa": "assets/05_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/05_v2_textura_face.webp",
+          "testa": "assets/05_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00075422",
+      "style": "natural",
+      "files": {
+        "Original": {
+          "face": "assets/06_original_face.webp",
+          "testa": "assets/06_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/06_teacher_face.webp",
+          "testa": "assets/06_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/06_mp_tom_face.webp",
+          "testa": "assets/06_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/06_v2_tom_face.webp",
+          "testa": "assets/06_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/06_mp_textura_face.webp",
+          "testa": "assets/06_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/06_v2_textura_face.webp",
+          "testa": "assets/06_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00006614",
+      "style": "social",
+      "files": {
+        "Original": {
+          "face": "assets/07_original_face.webp",
+          "testa": "assets/07_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/07_teacher_face.webp",
+          "testa": "assets/07_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/07_mp_tom_face.webp",
+          "testa": "assets/07_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/07_v2_tom_face.webp",
+          "testa": "assets/07_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/07_mp_textura_face.webp",
+          "testa": "assets/07_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/07_v2_textura_face.webp",
+          "testa": "assets/07_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00028267",
+      "style": "social",
+      "files": {
+        "Original": {
+          "face": "assets/08_original_face.webp",
+          "testa": "assets/08_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/08_teacher_face.webp",
+          "testa": "assets/08_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/08_mp_tom_face.webp",
+          "testa": "assets/08_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/08_v2_tom_face.webp",
+          "testa": "assets/08_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/08_mp_textura_face.webp",
+          "testa": "assets/08_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/08_v2_textura_face.webp",
+          "testa": "assets/08_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00116501",
+      "style": "social",
+      "files": {
+        "Original": {
+          "face": "assets/09_original_face.webp",
+          "testa": "assets/09_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/09_teacher_face.webp",
+          "testa": "assets/09_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/09_mp_tom_face.webp",
+          "testa": "assets/09_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/09_v2_tom_face.webp",
+          "testa": "assets/09_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/09_mp_textura_face.webp",
+          "testa": "assets/09_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/09_v2_textura_face.webp",
+          "testa": "assets/09_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00035247",
+      "style": "social",
+      "files": {
+        "Original": {
+          "face": "assets/10_original_face.webp",
+          "testa": "assets/10_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/10_teacher_face.webp",
+          "testa": "assets/10_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/10_mp_tom_face.webp",
+          "testa": "assets/10_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/10_v2_tom_face.webp",
+          "testa": "assets/10_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/10_mp_textura_face.webp",
+          "testa": "assets/10_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/10_v2_textura_face.webp",
+          "testa": "assets/10_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00099347",
+      "style": "social",
+      "files": {
+        "Original": {
+          "face": "assets/11_original_face.webp",
+          "testa": "assets/11_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/11_teacher_face.webp",
+          "testa": "assets/11_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/11_mp_tom_face.webp",
+          "testa": "assets/11_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/11_v2_tom_face.webp",
+          "testa": "assets/11_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/11_mp_textura_face.webp",
+          "testa": "assets/11_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/11_v2_textura_face.webp",
+          "testa": "assets/11_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00024171",
+      "style": "social",
+      "files": {
+        "Original": {
+          "face": "assets/12_original_face.webp",
+          "testa": "assets/12_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/12_teacher_face.webp",
+          "testa": "assets/12_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/12_mp_tom_face.webp",
+          "testa": "assets/12_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/12_v2_tom_face.webp",
+          "testa": "assets/12_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/12_mp_textura_face.webp",
+          "testa": "assets/12_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/12_v2_textura_face.webp",
+          "testa": "assets/12_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00027159",
+      "style": "noite",
+      "files": {
+        "Original": {
+          "face": "assets/13_original_face.webp",
+          "testa": "assets/13_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/13_teacher_face.webp",
+          "testa": "assets/13_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/13_mp_tom_face.webp",
+          "testa": "assets/13_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/13_v2_tom_face.webp",
+          "testa": "assets/13_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/13_mp_textura_face.webp",
+          "testa": "assets/13_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/13_v2_textura_face.webp",
+          "testa": "assets/13_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00069838",
+      "style": "noite",
+      "files": {
+        "Original": {
+          "face": "assets/14_original_face.webp",
+          "testa": "assets/14_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/14_teacher_face.webp",
+          "testa": "assets/14_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/14_mp_tom_face.webp",
+          "testa": "assets/14_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/14_v2_tom_face.webp",
+          "testa": "assets/14_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/14_mp_textura_face.webp",
+          "testa": "assets/14_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/14_v2_textura_face.webp",
+          "testa": "assets/14_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00076225",
+      "style": "noite",
+      "files": {
+        "Original": {
+          "face": "assets/15_original_face.webp",
+          "testa": "assets/15_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/15_teacher_face.webp",
+          "testa": "assets/15_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/15_mp_tom_face.webp",
+          "testa": "assets/15_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/15_v2_tom_face.webp",
+          "testa": "assets/15_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/15_mp_textura_face.webp",
+          "testa": "assets/15_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/15_v2_textura_face.webp",
+          "testa": "assets/15_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00068116",
+      "style": "noite",
+      "files": {
+        "Original": {
+          "face": "assets/16_original_face.webp",
+          "testa": "assets/16_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/16_teacher_face.webp",
+          "testa": "assets/16_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/16_mp_tom_face.webp",
+          "testa": "assets/16_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/16_v2_tom_face.webp",
+          "testa": "assets/16_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/16_mp_textura_face.webp",
+          "testa": "assets/16_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/16_v2_textura_face.webp",
+          "testa": "assets/16_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00064670",
+      "style": "noite",
+      "files": {
+        "Original": {
+          "face": "assets/17_original_face.webp",
+          "testa": "assets/17_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/17_teacher_face.webp",
+          "testa": "assets/17_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/17_mp_tom_face.webp",
+          "testa": "assets/17_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/17_v2_tom_face.webp",
+          "testa": "assets/17_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/17_mp_textura_face.webp",
+          "testa": "assets/17_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/17_v2_textura_face.webp",
+          "testa": "assets/17_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00113142",
+      "style": "noite",
+      "files": {
+        "Original": {
+          "face": "assets/18_original_face.webp",
+          "testa": "assets/18_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/18_teacher_face.webp",
+          "testa": "assets/18_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/18_mp_tom_face.webp",
+          "testa": "assets/18_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/18_v2_tom_face.webp",
+          "testa": "assets/18_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/18_mp_textura_face.webp",
+          "testa": "assets/18_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/18_v2_textura_face.webp",
+          "testa": "assets/18_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00044614",
+      "style": "contraste",
+      "files": {
+        "Original": {
+          "face": "assets/19_original_face.webp",
+          "testa": "assets/19_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/19_teacher_face.webp",
+          "testa": "assets/19_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/19_mp_tom_face.webp",
+          "testa": "assets/19_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/19_v2_tom_face.webp",
+          "testa": "assets/19_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/19_mp_textura_face.webp",
+          "testa": "assets/19_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/19_v2_textura_face.webp",
+          "testa": "assets/19_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00117638",
+      "style": "contraste",
+      "files": {
+        "Original": {
+          "face": "assets/20_original_face.webp",
+          "testa": "assets/20_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/20_teacher_face.webp",
+          "testa": "assets/20_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/20_mp_tom_face.webp",
+          "testa": "assets/20_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/20_v2_tom_face.webp",
+          "testa": "assets/20_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/20_mp_textura_face.webp",
+          "testa": "assets/20_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/20_v2_textura_face.webp",
+          "testa": "assets/20_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00012896",
+      "style": "contraste",
+      "files": {
+        "Original": {
+          "face": "assets/21_original_face.webp",
+          "testa": "assets/21_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/21_teacher_face.webp",
+          "testa": "assets/21_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/21_mp_tom_face.webp",
+          "testa": "assets/21_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/21_v2_tom_face.webp",
+          "testa": "assets/21_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/21_mp_textura_face.webp",
+          "testa": "assets/21_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/21_v2_textura_face.webp",
+          "testa": "assets/21_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00056747",
+      "style": "contraste",
+      "files": {
+        "Original": {
+          "face": "assets/22_original_face.webp",
+          "testa": "assets/22_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/22_teacher_face.webp",
+          "testa": "assets/22_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/22_mp_tom_face.webp",
+          "testa": "assets/22_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/22_v2_tom_face.webp",
+          "testa": "assets/22_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/22_mp_textura_face.webp",
+          "testa": "assets/22_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/22_v2_textura_face.webp",
+          "testa": "assets/22_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00043015",
+      "style": "contraste",
+      "files": {
+        "Original": {
+          "face": "assets/23_original_face.webp",
+          "testa": "assets/23_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/23_teacher_face.webp",
+          "testa": "assets/23_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/23_mp_tom_face.webp",
+          "testa": "assets/23_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/23_v2_tom_face.webp",
+          "testa": "assets/23_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/23_mp_textura_face.webp",
+          "testa": "assets/23_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/23_v2_textura_face.webp",
+          "testa": "assets/23_v2_textura_testa.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00070142",
+      "style": "contraste",
+      "files": {
+        "Original": {
+          "face": "assets/24_original_face.webp",
+          "testa": "assets/24_original_testa.webp"
+        },
+        "Teacher": {
+          "face": "assets/24_teacher_face.webp",
+          "testa": "assets/24_teacher_testa.webp"
+        },
+        "MP_tom": {
+          "face": "assets/24_mp_tom_face.webp",
+          "testa": "assets/24_mp_tom_testa.webp"
+        },
+        "V2_tom": {
+          "face": "assets/24_v2_tom_face.webp",
+          "testa": "assets/24_v2_tom_testa.webp"
+        },
+        "MP_textura": {
+          "face": "assets/24_mp_textura_face.webp",
+          "testa": "assets/24_mp_textura_testa.webp"
+        },
+        "V2_textura": {
+          "face": "assets/24_v2_textura_face.webp",
+          "testa": "assets/24_v2_textura_testa.webp"
+        }
+      }
+    }
+  ],
+  "variants": [
+    "Original",
+    "Teacher",
+    "MP_tom",
+    "V2_tom",
+    "MP_textura",
+    "V2_textura"
+  ],
+  "research_only": true,
+  "bulk_not_started": true,
+  "timestamp_utc": "2026-11-04T01:57:28.267901+00:00"
+}
