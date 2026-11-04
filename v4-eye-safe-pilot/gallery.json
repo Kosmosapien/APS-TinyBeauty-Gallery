@@ -1,0 +1,1041 @@
+{
+  "title": "APS-44: corrigir artefatos brancos nos olhos e duplicação de óculos",
+  "cases": [
+    {
+      "id": "SFHQ_pt3_00072699",
+      "style": "natural",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/01_original_face.webp",
+          "eyes": "assets/01_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/01_teacher_face.webp",
+          "eyes": "assets/01_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/01_retrofix_antigo_face.webp",
+          "eyes": "assets/01_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/01_a_dark_face.webp",
+          "eyes": "assets/01_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/01_b_rimsafe_face.webp",
+          "eyes": "assets/01_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/01_c_sourceeyes_face.webp",
+          "eyes": "assets/01_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00091461",
+      "style": "natural",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/02_original_face.webp",
+          "eyes": "assets/02_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/02_teacher_face.webp",
+          "eyes": "assets/02_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/02_retrofix_antigo_face.webp",
+          "eyes": "assets/02_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/02_a_dark_face.webp",
+          "eyes": "assets/02_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/02_b_rimsafe_face.webp",
+          "eyes": "assets/02_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/02_c_sourceeyes_face.webp",
+          "eyes": "assets/02_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00022663",
+      "style": "natural",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/03_original_face.webp",
+          "eyes": "assets/03_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/03_teacher_face.webp",
+          "eyes": "assets/03_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/03_retrofix_antigo_face.webp",
+          "eyes": "assets/03_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/03_a_dark_face.webp",
+          "eyes": "assets/03_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/03_b_rimsafe_face.webp",
+          "eyes": "assets/03_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/03_c_sourceeyes_face.webp",
+          "eyes": "assets/03_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00038336",
+      "style": "natural",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/04_original_face.webp",
+          "eyes": "assets/04_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/04_teacher_face.webp",
+          "eyes": "assets/04_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/04_retrofix_antigo_face.webp",
+          "eyes": "assets/04_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/04_a_dark_face.webp",
+          "eyes": "assets/04_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/04_b_rimsafe_face.webp",
+          "eyes": "assets/04_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/04_c_sourceeyes_face.webp",
+          "eyes": "assets/04_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00107217",
+      "style": "natural",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/05_original_face.webp",
+          "eyes": "assets/05_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/05_teacher_face.webp",
+          "eyes": "assets/05_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/05_retrofix_antigo_face.webp",
+          "eyes": "assets/05_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/05_a_dark_face.webp",
+          "eyes": "assets/05_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/05_b_rimsafe_face.webp",
+          "eyes": "assets/05_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/05_c_sourceeyes_face.webp",
+          "eyes": "assets/05_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00075422",
+      "style": "natural",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/06_original_face.webp",
+          "eyes": "assets/06_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/06_teacher_face.webp",
+          "eyes": "assets/06_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/06_retrofix_antigo_face.webp",
+          "eyes": "assets/06_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/06_a_dark_face.webp",
+          "eyes": "assets/06_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/06_b_rimsafe_face.webp",
+          "eyes": "assets/06_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/06_c_sourceeyes_face.webp",
+          "eyes": "assets/06_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00006549",
+      "style": "natural",
+      "glasses": false,
+      "gate": "open",
+      "images": {
+        "Original": {
+          "face": "assets/07_original_face.webp",
+          "eyes": "assets/07_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/07_teacher_face.webp",
+          "eyes": "assets/07_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/07_retrofix_antigo_face.webp",
+          "eyes": "assets/07_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/07_a_dark_face.webp",
+          "eyes": "assets/07_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/07_b_rimsafe_face.webp",
+          "eyes": "assets/07_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/07_c_sourceeyes_face.webp",
+          "eyes": "assets/07_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00028291",
+      "style": "natural",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/08_original_face.webp",
+          "eyes": "assets/08_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/08_teacher_face.webp",
+          "eyes": "assets/08_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/08_retrofix_antigo_face.webp",
+          "eyes": "assets/08_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/08_a_dark_face.webp",
+          "eyes": "assets/08_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/08_b_rimsafe_face.webp",
+          "eyes": "assets/08_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/08_c_sourceeyes_face.webp",
+          "eyes": "assets/08_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00116501",
+      "style": "social",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/09_original_face.webp",
+          "eyes": "assets/09_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/09_teacher_face.webp",
+          "eyes": "assets/09_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/09_retrofix_antigo_face.webp",
+          "eyes": "assets/09_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/09_a_dark_face.webp",
+          "eyes": "assets/09_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/09_b_rimsafe_face.webp",
+          "eyes": "assets/09_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/09_c_sourceeyes_face.webp",
+          "eyes": "assets/09_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00035247",
+      "style": "social",
+      "glasses": true,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/10_original_face.webp",
+          "eyes": "assets/10_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/10_teacher_face.webp",
+          "eyes": "assets/10_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/10_retrofix_antigo_face.webp",
+          "eyes": "assets/10_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/10_a_dark_face.webp",
+          "eyes": "assets/10_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/10_b_rimsafe_face.webp",
+          "eyes": "assets/10_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/10_c_sourceeyes_face.webp",
+          "eyes": "assets/10_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00099347",
+      "style": "social",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/11_original_face.webp",
+          "eyes": "assets/11_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/11_teacher_face.webp",
+          "eyes": "assets/11_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/11_retrofix_antigo_face.webp",
+          "eyes": "assets/11_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/11_a_dark_face.webp",
+          "eyes": "assets/11_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/11_b_rimsafe_face.webp",
+          "eyes": "assets/11_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/11_c_sourceeyes_face.webp",
+          "eyes": "assets/11_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00024171",
+      "style": "social",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/12_original_face.webp",
+          "eyes": "assets/12_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/12_teacher_face.webp",
+          "eyes": "assets/12_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/12_retrofix_antigo_face.webp",
+          "eyes": "assets/12_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/12_a_dark_face.webp",
+          "eyes": "assets/12_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/12_b_rimsafe_face.webp",
+          "eyes": "assets/12_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/12_c_sourceeyes_face.webp",
+          "eyes": "assets/12_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00026516",
+      "style": "social",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/13_original_face.webp",
+          "eyes": "assets/13_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/13_teacher_face.webp",
+          "eyes": "assets/13_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/13_retrofix_antigo_face.webp",
+          "eyes": "assets/13_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/13_a_dark_face.webp",
+          "eyes": "assets/13_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/13_b_rimsafe_face.webp",
+          "eyes": "assets/13_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/13_c_sourceeyes_face.webp",
+          "eyes": "assets/13_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00068536",
+      "style": "social",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/14_original_face.webp",
+          "eyes": "assets/14_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/14_teacher_face.webp",
+          "eyes": "assets/14_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/14_retrofix_antigo_face.webp",
+          "eyes": "assets/14_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/14_a_dark_face.webp",
+          "eyes": "assets/14_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/14_b_rimsafe_face.webp",
+          "eyes": "assets/14_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/14_c_sourceeyes_face.webp",
+          "eyes": "assets/14_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00075342",
+      "style": "social",
+      "glasses": true,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/15_original_face.webp",
+          "eyes": "assets/15_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/15_teacher_face.webp",
+          "eyes": "assets/15_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/15_retrofix_antigo_face.webp",
+          "eyes": "assets/15_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/15_a_dark_face.webp",
+          "eyes": "assets/15_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/15_b_rimsafe_face.webp",
+          "eyes": "assets/15_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/15_c_sourceeyes_face.webp",
+          "eyes": "assets/15_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00066862",
+      "style": "social",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/16_original_face.webp",
+          "eyes": "assets/16_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/16_teacher_face.webp",
+          "eyes": "assets/16_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/16_retrofix_antigo_face.webp",
+          "eyes": "assets/16_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/16_a_dark_face.webp",
+          "eyes": "assets/16_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/16_b_rimsafe_face.webp",
+          "eyes": "assets/16_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/16_c_sourceeyes_face.webp",
+          "eyes": "assets/16_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00064670",
+      "style": "noite",
+      "glasses": true,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/17_original_face.webp",
+          "eyes": "assets/17_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/17_teacher_face.webp",
+          "eyes": "assets/17_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/17_retrofix_antigo_face.webp",
+          "eyes": "assets/17_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/17_a_dark_face.webp",
+          "eyes": "assets/17_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/17_b_rimsafe_face.webp",
+          "eyes": "assets/17_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/17_c_sourceeyes_face.webp",
+          "eyes": "assets/17_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00113142",
+      "style": "noite",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/18_original_face.webp",
+          "eyes": "assets/18_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/18_teacher_face.webp",
+          "eyes": "assets/18_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/18_retrofix_antigo_face.webp",
+          "eyes": "assets/18_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/18_a_dark_face.webp",
+          "eyes": "assets/18_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/18_b_rimsafe_face.webp",
+          "eyes": "assets/18_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/18_c_sourceeyes_face.webp",
+          "eyes": "assets/18_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00080669",
+      "style": "noite",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/19_original_face.webp",
+          "eyes": "assets/19_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/19_teacher_face.webp",
+          "eyes": "assets/19_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/19_retrofix_antigo_face.webp",
+          "eyes": "assets/19_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/19_a_dark_face.webp",
+          "eyes": "assets/19_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/19_b_rimsafe_face.webp",
+          "eyes": "assets/19_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/19_c_sourceeyes_face.webp",
+          "eyes": "assets/19_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00021553",
+      "style": "noite",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/20_original_face.webp",
+          "eyes": "assets/20_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/20_teacher_face.webp",
+          "eyes": "assets/20_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/20_retrofix_antigo_face.webp",
+          "eyes": "assets/20_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/20_a_dark_face.webp",
+          "eyes": "assets/20_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/20_b_rimsafe_face.webp",
+          "eyes": "assets/20_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/20_c_sourceeyes_face.webp",
+          "eyes": "assets/20_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00096251",
+      "style": "noite",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/21_original_face.webp",
+          "eyes": "assets/21_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/21_teacher_face.webp",
+          "eyes": "assets/21_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/21_retrofix_antigo_face.webp",
+          "eyes": "assets/21_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/21_a_dark_face.webp",
+          "eyes": "assets/21_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/21_b_rimsafe_face.webp",
+          "eyes": "assets/21_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/21_c_sourceeyes_face.webp",
+          "eyes": "assets/21_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00076089",
+      "style": "noite",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/22_original_face.webp",
+          "eyes": "assets/22_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/22_teacher_face.webp",
+          "eyes": "assets/22_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/22_retrofix_antigo_face.webp",
+          "eyes": "assets/22_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/22_a_dark_face.webp",
+          "eyes": "assets/22_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/22_b_rimsafe_face.webp",
+          "eyes": "assets/22_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/22_c_sourceeyes_face.webp",
+          "eyes": "assets/22_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00057683",
+      "style": "noite",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/23_original_face.webp",
+          "eyes": "assets/23_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/23_teacher_face.webp",
+          "eyes": "assets/23_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/23_retrofix_antigo_face.webp",
+          "eyes": "assets/23_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/23_a_dark_face.webp",
+          "eyes": "assets/23_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/23_b_rimsafe_face.webp",
+          "eyes": "assets/23_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/23_c_sourceeyes_face.webp",
+          "eyes": "assets/23_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00081940",
+      "style": "noite",
+      "glasses": false,
+      "gate": "open",
+      "images": {
+        "Original": {
+          "face": "assets/24_original_face.webp",
+          "eyes": "assets/24_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/24_teacher_face.webp",
+          "eyes": "assets/24_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/24_retrofix_antigo_face.webp",
+          "eyes": "assets/24_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/24_a_dark_face.webp",
+          "eyes": "assets/24_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/24_b_rimsafe_face.webp",
+          "eyes": "assets/24_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/24_c_sourceeyes_face.webp",
+          "eyes": "assets/24_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00103147",
+      "style": "contraste",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/25_original_face.webp",
+          "eyes": "assets/25_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/25_teacher_face.webp",
+          "eyes": "assets/25_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/25_retrofix_antigo_face.webp",
+          "eyes": "assets/25_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/25_a_dark_face.webp",
+          "eyes": "assets/25_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/25_b_rimsafe_face.webp",
+          "eyes": "assets/25_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/25_c_sourceeyes_face.webp",
+          "eyes": "assets/25_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00117450",
+      "style": "contraste",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/26_original_face.webp",
+          "eyes": "assets/26_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/26_teacher_face.webp",
+          "eyes": "assets/26_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/26_retrofix_antigo_face.webp",
+          "eyes": "assets/26_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/26_a_dark_face.webp",
+          "eyes": "assets/26_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/26_b_rimsafe_face.webp",
+          "eyes": "assets/26_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/26_c_sourceeyes_face.webp",
+          "eyes": "assets/26_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00018868",
+      "style": "contraste",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/27_original_face.webp",
+          "eyes": "assets/27_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/27_teacher_face.webp",
+          "eyes": "assets/27_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/27_retrofix_antigo_face.webp",
+          "eyes": "assets/27_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/27_a_dark_face.webp",
+          "eyes": "assets/27_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/27_b_rimsafe_face.webp",
+          "eyes": "assets/27_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/27_c_sourceeyes_face.webp",
+          "eyes": "assets/27_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00018943",
+      "style": "contraste",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/28_original_face.webp",
+          "eyes": "assets/28_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/28_teacher_face.webp",
+          "eyes": "assets/28_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/28_retrofix_antigo_face.webp",
+          "eyes": "assets/28_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/28_a_dark_face.webp",
+          "eyes": "assets/28_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/28_b_rimsafe_face.webp",
+          "eyes": "assets/28_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/28_c_sourceeyes_face.webp",
+          "eyes": "assets/28_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00007227",
+      "style": "contraste",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/29_original_face.webp",
+          "eyes": "assets/29_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/29_teacher_face.webp",
+          "eyes": "assets/29_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/29_retrofix_antigo_face.webp",
+          "eyes": "assets/29_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/29_a_dark_face.webp",
+          "eyes": "assets/29_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/29_b_rimsafe_face.webp",
+          "eyes": "assets/29_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/29_c_sourceeyes_face.webp",
+          "eyes": "assets/29_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00085188",
+      "style": "contraste",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/30_original_face.webp",
+          "eyes": "assets/30_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/30_teacher_face.webp",
+          "eyes": "assets/30_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/30_retrofix_antigo_face.webp",
+          "eyes": "assets/30_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/30_a_dark_face.webp",
+          "eyes": "assets/30_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/30_b_rimsafe_face.webp",
+          "eyes": "assets/30_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/30_c_sourceeyes_face.webp",
+          "eyes": "assets/30_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00108713",
+      "style": "contraste",
+      "glasses": false,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/31_original_face.webp",
+          "eyes": "assets/31_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/31_teacher_face.webp",
+          "eyes": "assets/31_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/31_retrofix_antigo_face.webp",
+          "eyes": "assets/31_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/31_a_dark_face.webp",
+          "eyes": "assets/31_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/31_b_rimsafe_face.webp",
+          "eyes": "assets/31_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/31_c_sourceeyes_face.webp",
+          "eyes": "assets/31_c_sourceeyes_eyes.webp"
+        }
+      }
+    },
+    {
+      "id": "SFHQ_pt3_00083138",
+      "style": "contraste",
+      "glasses": true,
+      "gate": "closed",
+      "images": {
+        "Original": {
+          "face": "assets/32_original_face.webp",
+          "eyes": "assets/32_original_eyes.webp"
+        },
+        "Teacher": {
+          "face": "assets/32_teacher_face.webp",
+          "eyes": "assets/32_teacher_eyes.webp"
+        },
+        "Retrofix_antigo": {
+          "face": "assets/32_retrofix_antigo_face.webp",
+          "eyes": "assets/32_retrofix_antigo_eyes.webp"
+        },
+        "A_Dark": {
+          "face": "assets/32_a_dark_face.webp",
+          "eyes": "assets/32_a_dark_eyes.webp"
+        },
+        "B_RimSafe": {
+          "face": "assets/32_b_rimsafe_face.webp",
+          "eyes": "assets/32_b_rimsafe_eyes.webp"
+        },
+        "C_SourceEyes": {
+          "face": "assets/32_c_sourceeyes_face.webp",
+          "eyes": "assets/32_c_sourceeyes_eyes.webp"
+        }
+      }
+    }
+  ],
+  "names": [
+    "Original",
+    "Teacher",
+    "Retrofix_antigo",
+    "A_Dark",
+    "B_RimSafe",
+    "C_SourceEyes"
+  ],
+  "research_only": true,
+  "glasses_labels_manual_only": true,
+  "no_bulk_restarted": true,
+  "created_utc": "2026-11-04T01:38:41.761446+00:00"
+}
