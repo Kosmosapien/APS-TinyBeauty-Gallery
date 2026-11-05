@@ -1,0 +1,101 @@
+{
+  "train": 8,
+  "val": 0,
+  "checkpoint_mask_predictor": 1300,
+  "labels": {
+    "mvp": "MVP",
+    "teacher": "Teacher corrigido",
+    "aps47": "APS47 sem máscara",
+    "oracle_fixedpaint": "Máscara teacher + pigmento APS47",
+    "oracle_teacher_upperbound": "Máscara teacher + pixels do próprio teacher (oráculo inviável em produção)",
+    "predicted_fixedpaint": "Máscara predita + pigmento APS47",
+    "oracle_mask": "Máscara-oráculo derivada do teacher",
+    "pred_mask": "Máscara prevista"
+  },
+  "baseline": {
+    "mvp": {
+      "mae": 0.046778,
+      "hp3_cos": 0.2317,
+      "hp3_energy": 0.98459
+    },
+    "aps47": {
+      "mae": 0.030227,
+      "hp3_cos": 0.30028,
+      "hp3_energy": 0.41727
+    },
+    "oracle_fixedpaint": {
+      "mae": 0.042625,
+      "hp3_cos": 0.25849,
+      "hp3_energy": 0.74586
+    },
+    "oracle_teacher_upperbound": {
+      "mae": 0.032509,
+      "hp3_cos": 0.74913,
+      "hp3_energy": 0.96059
+    },
+    "oracle_area_mean": 0.17609137296676636,
+    "oracle_area_gt50": 0.1741647720336914
+  },
+  "history": [
+    {
+      "step": 100,
+      "time_s": 2.2,
+      "loss": 0.424573,
+      "mask_mae": 0.226776,
+      "area_gt50": 0.00045,
+      "image": {
+        "mae": 0.042674,
+        "hp3_cos": 0.24557,
+        "hp3_energy": 0.85872
+      }
+    },
+    {
+      "step": 300,
+      "time_s": 5.7,
+      "loss": 0.411007,
+      "mask_mae": 0.209811,
+      "area_gt50": 0.01611,
+      "image": {
+        "mae": 0.042667,
+        "hp3_cos": 0.24751,
+        "hp3_energy": 0.84198
+      }
+    },
+    {
+      "step": 600,
+      "time_s": 11.8,
+      "loss": 0.412213,
+      "mask_mae": 0.203723,
+      "area_gt50": 0.02698,
+      "image": {
+        "mae": 0.042331,
+        "hp3_cos": 0.24811,
+        "hp3_energy": 0.82068
+      }
+    },
+    {
+      "step": 1000,
+      "time_s": 18.8,
+      "loss": 0.365808,
+      "mask_mae": 0.188399,
+      "area_gt50": 0.05984,
+      "image": {
+        "mae": 0.042163,
+        "hp3_cos": 0.24826,
+        "hp3_energy": 0.80318
+      }
+    },
+    {
+      "step": 1300,
+      "time_s": 24.8,
+      "loss": 0.366037,
+      "mask_mae": 0.160582,
+      "area_gt50": 0.09551,
+      "image": {
+        "mae": 0.042385,
+        "hp3_cos": 0.24591,
+        "hp3_energy": 0.7991
+      }
+    }
+  ]
+}
