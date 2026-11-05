@@ -1,0 +1,2339 @@
+{
+  "summary": {
+    "faces": 16,
+    "wings": 32,
+    "mean_gain_pct": 7.009,
+    "median_gain_pct": 4.379,
+    "wings_above_0_5pct": 26,
+    "zero_change_outside_polygon": true,
+    "gate": "NOT PASSED until visual review: 80% convincing natural wings"
+  },
+  "cases": [
+    {
+      "id": "SFHQ_pt3_00001690",
+      "wings": [
+        {
+          "side": 0,
+          "roi": [
+            121,
+            219,
+            177,
+            263
+          ],
+          "gain": 2.0636,
+          "relative_gain_pct": 17.791,
+          "polygon_count": 2,
+          "vertices": 21,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 2,
+            "opacity": 0.7,
+            "polygons": [
+              [
+                [
+                  47,
+                  13
+                ],
+                [
+                  44,
+                  13
+                ],
+                [
+                  43,
+                  17
+                ],
+                [
+                  41,
+                  15
+                ],
+                [
+                  39,
+                  20
+                ],
+                [
+                  37,
+                  18
+                ],
+                [
+                  36,
+                  20
+                ],
+                [
+                  30,
+                  21
+                ],
+                [
+                  29,
+                  24
+                ],
+                [
+                  19,
+                  24
+                ],
+                [
+                  23,
+                  27
+                ],
+                [
+                  20,
+                  30
+                ],
+                [
+                  17,
+                  30
+                ],
+                [
+                  30,
+                  30
+                ],
+                [
+                  37,
+                  28
+                ],
+                [
+                  41,
+                  23
+                ],
+                [
+                  43,
+                  23
+                ]
+              ],
+              [
+                [
+                  42,
+                  26
+                ],
+                [
+                  44,
+                  29
+                ],
+                [
+                  48,
+                  28
+                ],
+                [
+                  45,
+                  25
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "side": 1,
+          "roi": [
+            330,
+            227,
+            379,
+            268
+          ],
+          "gain": 0.12541,
+          "relative_gain_pct": 1.006,
+          "polygon_count": 2,
+          "vertices": 11,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 2,
+            "opacity": 0.45,
+            "polygons": [
+              [
+                [
+                  17,
+                  20
+                ],
+                [
+                  18,
+                  23
+                ],
+                [
+                  21,
+                  23
+                ],
+                [
+                  24,
+                  27
+                ],
+                [
+                  23,
+                  24
+                ],
+                [
+                  25,
+                  22
+                ],
+                [
+                  20,
+                  22
+                ]
+              ],
+              [
+                [
+                  0,
+                  17
+                ],
+                [
+                  5,
+                  19
+                ],
+                [
+                  6,
+                  16
+                ],
+                [
+                  3,
+                  15
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "outside_mask_identical": true
+    },
+    {
+      "id": "SFHQ_pt3_00002799",
+      "wings": [
+        {
+          "side": 0,
+          "roi": [
+            124,
+            220,
+            177,
+            262
+          ],
+          "gain": 0.07822,
+          "relative_gain_pct": 0.762,
+          "polygon_count": 1,
+          "vertices": 4,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 1,
+            "opacity": 0.45,
+            "polygons": [
+              [
+                [
+                  32,
+                  14
+                ],
+                [
+                  31,
+                  16
+                ],
+                [
+                  35,
+                  18
+                ],
+                [
+                  35,
+                  14
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "side": 1,
+          "roi": [
+            331,
+            221,
+            380,
+            262
+          ],
+          "gain": 0.5235,
+          "relative_gain_pct": 4.541,
+          "polygon_count": 2,
+          "vertices": 9,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 2,
+            "opacity": 0.45,
+            "polygons": [
+              [
+                [
+                  0,
+                  18
+                ],
+                [
+                  0,
+                  20
+                ],
+                [
+                  4,
+                  23
+                ],
+                [
+                  7,
+                  23
+                ],
+                [
+                  6,
+                  20
+                ]
+              ],
+              [
+                [
+                  9,
+                  27
+                ],
+                [
+                  17,
+                  27
+                ],
+                [
+                  17,
+                  25
+                ],
+                [
+                  11,
+                  25
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "outside_mask_identical": true
+    },
+    {
+      "id": "SFHQ_pt3_00005043",
+      "wings": [
+        {
+          "side": 0,
+          "roi": [
+            122,
+            219,
+            175,
+            261
+          ],
+          "gain": 0.2656,
+          "relative_gain_pct": 2.586,
+          "polygon_count": 2,
+          "vertices": 9,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 2,
+            "opacity": 0.7,
+            "polygons": [
+              [
+                [
+                  52,
+                  16
+                ],
+                [
+                  47,
+                  17
+                ],
+                [
+                  37,
+                  25
+                ],
+                [
+                  47,
+                  20
+                ],
+                [
+                  51,
+                  21
+                ]
+              ],
+              [
+                [
+                  25,
+                  27
+                ],
+                [
+                  31,
+                  28
+                ],
+                [
+                  28,
+                  24
+                ],
+                [
+                  28,
+                  26
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "side": 1,
+          "roi": [
+            336,
+            216,
+            391,
+            259
+          ],
+          "gain": 0,
+          "relative_gain_pct": 0.0,
+          "polygon_count": 0,
+          "vertices": 0,
+          "parameters": []
+        }
+      ],
+      "outside_mask_identical": true
+    },
+    {
+      "id": "SFHQ_pt3_00005983",
+      "wings": [
+        {
+          "side": 0,
+          "roi": [
+            122,
+            218,
+            177,
+            261
+          ],
+          "gain": 0.09101,
+          "relative_gain_pct": 1.353,
+          "polygon_count": 2,
+          "vertices": 7,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 2,
+            "opacity": 0.45,
+            "polygons": [
+              [
+                [
+                  11,
+                  3
+                ],
+                [
+                  9,
+                  3
+                ],
+                [
+                  6,
+                  8
+                ],
+                [
+                  9,
+                  7
+                ]
+              ],
+              [
+                [
+                  24,
+                  26
+                ],
+                [
+                  25,
+                  29
+                ],
+                [
+                  29,
+                  27
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "side": 1,
+          "roi": [
+            333,
+            219,
+            386,
+            261
+          ],
+          "gain": 0.74868,
+          "relative_gain_pct": 6.785,
+          "polygon_count": 2,
+          "vertices": 12,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 2,
+            "opacity": 0.7,
+            "polygons": [
+              [
+                [
+                  29,
+                  27
+                ],
+                [
+                  25,
+                  25
+                ],
+                [
+                  28,
+                  21
+                ],
+                [
+                  25,
+                  22
+                ],
+                [
+                  25,
+                  25
+                ],
+                [
+                  17,
+                  23
+                ],
+                [
+                  17,
+                  25
+                ],
+                [
+                  21,
+                  28
+                ]
+              ],
+              [
+                [
+                  11,
+                  18
+                ],
+                [
+                  13,
+                  21
+                ],
+                [
+                  16,
+                  21
+                ],
+                [
+                  14,
+                  18
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "outside_mask_identical": true
+    },
+    {
+      "id": "SFHQ_pt3_00006549",
+      "wings": [
+        {
+          "side": 0,
+          "roi": [
+            116,
+            211,
+            172,
+            254
+          ],
+          "gain": 0.12044,
+          "relative_gain_pct": 1.526,
+          "polygon_count": 1,
+          "vertices": 4,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 1,
+            "opacity": 0.7,
+            "polygons": [
+              [
+                [
+                  53,
+                  12
+                ],
+                [
+                  52,
+                  16
+                ],
+                [
+                  55,
+                  17
+                ],
+                [
+                  55,
+                  13
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "side": 1,
+          "roi": [
+            336,
+            217,
+            397,
+            263
+          ],
+          "gain": 0.81529,
+          "relative_gain_pct": 7.948,
+          "polygon_count": 1,
+          "vertices": 7,
+          "parameters": {
+            "threshold": 23,
+            "epsilon": 1.2,
+            "max_components": 1,
+            "opacity": 0.45,
+            "polygons": [
+              [
+                [
+                  44,
+                  18
+                ],
+                [
+                  36,
+                  20
+                ],
+                [
+                  23,
+                  28
+                ],
+                [
+                  29,
+                  29
+                ],
+                [
+                  29,
+                  26
+                ],
+                [
+                  34,
+                  27
+                ],
+                [
+                  42,
+                  23
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "outside_mask_identical": true
+    },
+    {
+      "id": "SFHQ_pt3_00006969",
+      "wings": [
+        {
+          "side": 0,
+          "roi": [
+            128,
+            226,
+            179,
+            268
+          ],
+          "gain": 0,
+          "relative_gain_pct": 0.0,
+          "polygon_count": 0,
+          "vertices": 0,
+          "parameters": []
+        },
+        {
+          "side": 1,
+          "roi": [
+            331,
+            219,
+            377,
+            260
+          ],
+          "gain": 2.82109,
+          "relative_gain_pct": 23.817,
+          "polygon_count": 1,
+          "vertices": 11,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 2.5,
+            "max_components": 1,
+            "opacity": 0.45,
+            "polygons": [
+              [
+                [
+                  0,
+                  10
+                ],
+                [
+                  12,
+                  17
+                ],
+                [
+                  0,
+                  15
+                ],
+                [
+                  0,
+                  21
+                ],
+                [
+                  8,
+                  27
+                ],
+                [
+                  20,
+                  24
+                ],
+                [
+                  17,
+                  22
+                ],
+                [
+                  21,
+                  19
+                ],
+                [
+                  21,
+                  12
+                ],
+                [
+                  13,
+                  13
+                ],
+                [
+                  11,
+                  8
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "outside_mask_identical": true
+    },
+    {
+      "id": "SFHQ_pt3_00007250",
+      "wings": [
+        {
+          "side": 0,
+          "roi": [
+            130,
+            223,
+            179,
+            264
+          ],
+          "gain": 3.3995,
+          "relative_gain_pct": 19.13,
+          "polygon_count": 3,
+          "vertices": 39,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 3,
+            "opacity": 0.45,
+            "polygons": [
+              [
+                [
+                  15,
+                  13
+                ],
+                [
+                  10,
+                  12
+                ],
+                [
+                  0,
+                  15
+                ],
+                [
+                  0,
+                  27
+                ],
+                [
+                  7,
+                  27
+                ],
+                [
+                  11,
+                  23
+                ],
+                [
+                  11,
+                  15
+                ]
+              ],
+              [
+                [
+                  15,
+                  17
+                ],
+                [
+                  16,
+                  21
+                ],
+                [
+                  21,
+                  22
+                ],
+                [
+                  24,
+                  27
+                ],
+                [
+                  30,
+                  25
+                ],
+                [
+                  33,
+                  27
+                ],
+                [
+                  33,
+                  25
+                ],
+                [
+                  30,
+                  24
+                ],
+                [
+                  34,
+                  20
+                ],
+                [
+                  34,
+                  16
+                ],
+                [
+                  28,
+                  16
+                ],
+                [
+                  30,
+                  19
+                ],
+                [
+                  26,
+                  22
+                ],
+                [
+                  25,
+                  18
+                ],
+                [
+                  21,
+                  20
+                ],
+                [
+                  20,
+                  18
+                ],
+                [
+                  17,
+                  19
+                ],
+                [
+                  17,
+                  16
+                ]
+              ],
+              [
+                [
+                  14,
+                  0
+                ],
+                [
+                  7,
+                  0
+                ],
+                [
+                  5,
+                  4
+                ],
+                [
+                  0,
+                  4
+                ],
+                [
+                  2,
+                  7
+                ],
+                [
+                  0,
+                  12
+                ],
+                [
+                  2,
+                  12
+                ],
+                [
+                  1,
+                  10
+                ],
+                [
+                  6,
+                  7
+                ],
+                [
+                  8,
+                  10
+                ],
+                [
+                  11,
+                  8
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  15,
+                  9
+                ],
+                [
+                  13,
+                  4
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "side": 1,
+          "roi": [
+            333,
+            225,
+            383,
+            266
+          ],
+          "gain": 4.83793,
+          "relative_gain_pct": 20.088,
+          "polygon_count": 3,
+          "vertices": 41,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 3,
+            "opacity": 0.45,
+            "polygons": [
+              [
+                [
+                  0,
+                  15
+                ],
+                [
+                  0,
+                  18
+                ],
+                [
+                  3,
+                  16
+                ],
+                [
+                  6,
+                  20
+                ],
+                [
+                  8,
+                  17
+                ],
+                [
+                  13,
+                  18
+                ],
+                [
+                  13,
+                  24
+                ],
+                [
+                  15,
+                  24
+                ],
+                [
+                  16,
+                  27
+                ],
+                [
+                  42,
+                  26
+                ],
+                [
+                  38,
+                  26
+                ],
+                [
+                  37,
+                  24
+                ],
+                [
+                  43,
+                  20
+                ],
+                [
+                  39,
+                  19
+                ],
+                [
+                  37,
+                  22
+                ],
+                [
+                  35,
+                  18
+                ],
+                [
+                  34,
+                  24
+                ],
+                [
+                  32,
+                  12
+                ],
+                [
+                  26,
+                  8
+                ],
+                [
+                  13,
+                  7
+                ],
+                [
+                  16,
+                  8
+                ],
+                [
+                  16,
+                  12
+                ],
+                [
+                  19,
+                  13
+                ],
+                [
+                  15,
+                  14
+                ],
+                [
+                  13,
+                  12
+                ],
+                [
+                  13,
+                  17
+                ],
+                [
+                  6,
+                  14
+                ]
+              ],
+              [
+                [
+                  47,
+                  9
+                ],
+                [
+                  41,
+                  7
+                ],
+                [
+                  34,
+                  10
+                ],
+                [
+                  38,
+                  13
+                ]
+              ],
+              [
+                [
+                  2,
+                  3
+                ],
+                [
+                  5,
+                  4
+                ],
+                [
+                  6,
+                  2
+                ],
+                [
+                  7,
+                  4
+                ],
+                [
+                  12,
+                  4
+                ],
+                [
+                  12,
+                  2
+                ],
+                [
+                  9,
+                  2
+                ],
+                [
+                  8,
+                  0
+                ],
+                [
+                  6,
+                  0
+                ],
+                [
+                  5,
+                  3
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "outside_mask_identical": true
+    },
+    {
+      "id": "SFHQ_pt3_00007369",
+      "wings": [
+        {
+          "side": 0,
+          "roi": [
+            120,
+            222,
+            176,
+            265
+          ],
+          "gain": 0.53849,
+          "relative_gain_pct": 6.083,
+          "polygon_count": 2,
+          "vertices": 13,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 2,
+            "opacity": 0.45,
+            "polygons": [
+              [
+                [
+                  33,
+                  15
+                ],
+                [
+                  23,
+                  18
+                ],
+                [
+                  26,
+                  21
+                ],
+                [
+                  29,
+                  19
+                ],
+                [
+                  32,
+                  24
+                ],
+                [
+                  27,
+                  25
+                ],
+                [
+                  19,
+                  19
+                ],
+                [
+                  17,
+                  21
+                ],
+                [
+                  30,
+                  27
+                ],
+                [
+                  34,
+                  22
+                ]
+              ],
+              [
+                [
+                  21,
+                  0
+                ],
+                [
+                  18,
+                  0
+                ],
+                [
+                  16,
+                  4
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "side": 1,
+          "roi": [
+            336,
+            220,
+            388,
+            262
+          ],
+          "gain": 0.10255,
+          "relative_gain_pct": 0.835,
+          "polygon_count": 1,
+          "vertices": 4,
+          "parameters": {
+            "threshold": 23,
+            "epsilon": 1.2,
+            "max_components": 1,
+            "opacity": 0.45,
+            "polygons": [
+              [
+                [
+                  28,
+                  17
+                ],
+                [
+                  22,
+                  19
+                ],
+                [
+                  22,
+                  22
+                ],
+                [
+                  26,
+                  21
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "outside_mask_identical": true
+    },
+    {
+      "id": "SFHQ_pt3_00007455",
+      "wings": [
+        {
+          "side": 0,
+          "roi": [
+            119,
+            221,
+            175,
+            265
+          ],
+          "gain": 1.47543,
+          "relative_gain_pct": 12.229,
+          "polygon_count": 3,
+          "vertices": 15,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 2.5,
+            "max_components": 3,
+            "opacity": 0.45,
+            "polygons": [
+              [
+                [
+                  8,
+                  19
+                ],
+                [
+                  25,
+                  29
+                ],
+                [
+                  38,
+                  29
+                ],
+                [
+                  39,
+                  20
+                ],
+                [
+                  23,
+                  24
+                ],
+                [
+                  19,
+                  18
+                ]
+              ],
+              [
+                [
+                  50,
+                  6
+                ],
+                [
+                  37,
+                  8
+                ],
+                [
+                  31,
+                  12
+                ],
+                [
+                  32,
+                  18
+                ],
+                [
+                  40,
+                  18
+                ],
+                [
+                  40,
+                  13
+                ]
+              ],
+              [
+                [
+                  15,
+                  0
+                ],
+                [
+                  10,
+                  0
+                ],
+                [
+                  7,
+                  6
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "side": 1,
+          "roi": [
+            332,
+            218,
+            386,
+            261
+          ],
+          "gain": 0.55726,
+          "relative_gain_pct": 5.669,
+          "polygon_count": 1,
+          "vertices": 4,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 1,
+            "opacity": 0.45,
+            "polygons": [
+              [
+                [
+                  37,
+                  24
+                ],
+                [
+                  21,
+                  27
+                ],
+                [
+                  20,
+                  29
+                ],
+                [
+                  33,
+                  29
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "outside_mask_identical": true
+    },
+    {
+      "id": "SFHQ_pt3_00008011",
+      "wings": [
+        {
+          "side": 0,
+          "roi": [
+            124,
+            224,
+            177,
+            266
+          ],
+          "gain": 0.10414,
+          "relative_gain_pct": 1.004,
+          "polygon_count": 1,
+          "vertices": 3,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 1,
+            "opacity": 0.7,
+            "polygons": [
+              [
+                [
+                  24,
+                  17
+                ],
+                [
+                  25,
+                  20
+                ],
+                [
+                  28,
+                  21
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "side": 1,
+          "roi": [
+            335,
+            223,
+            389,
+            265
+          ],
+          "gain": 0.41898,
+          "relative_gain_pct": 3.678,
+          "polygon_count": 2,
+          "vertices": 10,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 2,
+            "opacity": 0.45,
+            "polygons": [
+              [
+                [
+                  32,
+                  23
+                ],
+                [
+                  30,
+                  21
+                ],
+                [
+                  26,
+                  23
+                ],
+                [
+                  23,
+                  22
+                ],
+                [
+                  19,
+                  28
+                ],
+                [
+                  28,
+                  28
+                ],
+                [
+                  26,
+                  26
+                ]
+              ],
+              [
+                [
+                  2,
+                  13
+                ],
+                [
+                  10,
+                  16
+                ],
+                [
+                  9,
+                  14
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "outside_mask_identical": true
+    },
+    {
+      "id": "SFHQ_pt3_00009903",
+      "wings": [
+        {
+          "side": 0,
+          "roi": [
+            128,
+            223,
+            182,
+            265
+          ],
+          "gain": 1.24798,
+          "relative_gain_pct": 9.943,
+          "polygon_count": 3,
+          "vertices": 22,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 3,
+            "opacity": 0.7,
+            "polygons": [
+              [
+                [
+                  6,
+                  21
+                ],
+                [
+                  16,
+                  25
+                ],
+                [
+                  17,
+                  27
+                ],
+                [
+                  29,
+                  27
+                ],
+                [
+                  36,
+                  24
+                ],
+                [
+                  35,
+                  21
+                ],
+                [
+                  33,
+                  23
+                ],
+                [
+                  30,
+                  17
+                ],
+                [
+                  28,
+                  17
+                ],
+                [
+                  31,
+                  20
+                ],
+                [
+                  30,
+                  22
+                ],
+                [
+                  24,
+                  22
+                ],
+                [
+                  22,
+                  20
+                ],
+                [
+                  18,
+                  21
+                ],
+                [
+                  12,
+                  17
+                ],
+                [
+                  9,
+                  22
+                ]
+              ],
+              [
+                [
+                  40,
+                  16
+                ],
+                [
+                  38,
+                  20
+                ],
+                [
+                  41,
+                  19
+                ]
+              ],
+              [
+                [
+                  43,
+                  25
+                ],
+                [
+                  47,
+                  26
+                ],
+                [
+                  45,
+                  24
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "side": 1,
+          "roi": [
+            326,
+            216,
+            374,
+            257
+          ],
+          "gain": 0.14317,
+          "relative_gain_pct": 1.505,
+          "polygon_count": 3,
+          "vertices": 9,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 3,
+            "opacity": 0.45,
+            "polygons": [
+              [
+                [
+                  11,
+                  19
+                ],
+                [
+                  9,
+                  27
+                ],
+                [
+                  11,
+                  27
+                ]
+              ],
+              [
+                [
+                  28,
+                  14
+                ],
+                [
+                  25,
+                  17
+                ],
+                [
+                  27,
+                  17
+                ]
+              ],
+              [
+                [
+                  17,
+                  8
+                ],
+                [
+                  16,
+                  10
+                ],
+                [
+                  19,
+                  11
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "outside_mask_identical": true
+    },
+    {
+      "id": "SFHQ_pt3_00010706",
+      "wings": [
+        {
+          "side": 0,
+          "roi": [
+            124,
+            220,
+            177,
+            262
+          ],
+          "gain": 0,
+          "relative_gain_pct": 0.0,
+          "polygon_count": 0,
+          "vertices": 0,
+          "parameters": []
+        },
+        {
+          "side": 1,
+          "roi": [
+            335,
+            222,
+            388,
+            264
+          ],
+          "gain": 0,
+          "relative_gain_pct": 0.0,
+          "polygon_count": 0,
+          "vertices": 0,
+          "parameters": []
+        }
+      ],
+      "outside_mask_identical": true
+    },
+    {
+      "id": "SFHQ_pt3_00011801",
+      "wings": [
+        {
+          "side": 0,
+          "roi": [
+            127,
+            216,
+            178,
+            257
+          ],
+          "gain": 0.54026,
+          "relative_gain_pct": 4.216,
+          "polygon_count": 1,
+          "vertices": 3,
+          "parameters": {
+            "threshold": 23,
+            "epsilon": 2.5,
+            "max_components": 1,
+            "opacity": 0.45,
+            "polygons": [
+              [
+                [
+                  21,
+                  22
+                ],
+                [
+                  25,
+                  27
+                ],
+                [
+                  34,
+                  25
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "side": 1,
+          "roi": [
+            333,
+            216,
+            384,
+            258
+          ],
+          "gain": 1.2714,
+          "relative_gain_pct": 9.082,
+          "polygon_count": 1,
+          "vertices": 11,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 2.5,
+            "max_components": 1,
+            "opacity": 0.45,
+            "polygons": [
+              [
+                [
+                  0,
+                  11
+                ],
+                [
+                  0,
+                  15
+                ],
+                [
+                  4,
+                  12
+                ],
+                [
+                  4,
+                  15
+                ],
+                [
+                  16,
+                  18
+                ],
+                [
+                  21,
+                  28
+                ],
+                [
+                  32,
+                  25
+                ],
+                [
+                  15,
+                  18
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  7,
+                  13
+                ],
+                [
+                  4,
+                  9
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "outside_mask_identical": true
+    },
+    {
+      "id": "SFHQ_pt3_00011865",
+      "wings": [
+        {
+          "side": 0,
+          "roi": [
+            112,
+            221,
+            174,
+            268
+          ],
+          "gain": 0,
+          "relative_gain_pct": 0.0,
+          "polygon_count": 0,
+          "vertices": 0,
+          "parameters": []
+        },
+        {
+          "side": 1,
+          "roi": [
+            332,
+            219,
+            385,
+            261
+          ],
+          "gain": 0,
+          "relative_gain_pct": 0.0,
+          "polygon_count": 0,
+          "vertices": 0,
+          "parameters": []
+        }
+      ],
+      "outside_mask_identical": true
+    },
+    {
+      "id": "SFHQ_pt3_00012896",
+      "wings": [
+        {
+          "side": 0,
+          "roi": [
+            125,
+            220,
+            178,
+            262
+          ],
+          "gain": 3.45932,
+          "relative_gain_pct": 18.243,
+          "polygon_count": 2,
+          "vertices": 33,
+          "parameters": {
+            "threshold": 23,
+            "epsilon": 1.2,
+            "max_components": 2,
+            "opacity": 0.45,
+            "polygons": [
+              [
+                [
+                  46,
+                  19
+                ],
+                [
+                  43,
+                  15
+                ],
+                [
+                  38,
+                  17
+                ],
+                [
+                  37,
+                  21
+                ],
+                [
+                  32,
+                  24
+                ],
+                [
+                  26,
+                  22
+                ],
+                [
+                  26,
+                  20
+                ],
+                [
+                  35,
+                  15
+                ],
+                [
+                  33,
+                  13
+                ],
+                [
+                  37,
+                  9
+                ],
+                [
+                  35,
+                  8
+                ],
+                [
+                  33,
+                  10
+                ],
+                [
+                  27,
+                  10
+                ],
+                [
+                  27,
+                  12
+                ],
+                [
+                  22,
+                  14
+                ],
+                [
+                  20,
+                  17
+                ],
+                [
+                  16,
+                  16
+                ],
+                [
+                  17,
+                  18
+                ],
+                [
+                  10,
+                  25
+                ],
+                [
+                  19,
+                  28
+                ],
+                [
+                  32,
+                  28
+                ],
+                [
+                  33,
+                  26
+                ],
+                [
+                  36,
+                  28
+                ],
+                [
+                  38,
+                  25
+                ],
+                [
+                  42,
+                  28
+                ],
+                [
+                  42,
+                  26
+                ],
+                [
+                  39,
+                  26
+                ],
+                [
+                  37,
+                  22
+                ]
+              ],
+              [
+                [
+                  52,
+                  21
+                ],
+                [
+                  50,
+                  20
+                ],
+                [
+                  45,
+                  25
+                ],
+                [
+                  49,
+                  22
+                ],
+                [
+                  52,
+                  24
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "side": 1,
+          "roi": [
+            331,
+            223,
+            382,
+            265
+          ],
+          "gain": 2.38276,
+          "relative_gain_pct": 15.894,
+          "polygon_count": 3,
+          "vertices": 28,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 3,
+            "opacity": 0.7,
+            "polygons": [
+              [
+                [
+                  40,
+                  19
+                ],
+                [
+                  36,
+                  19
+                ],
+                [
+                  35,
+                  15
+                ],
+                [
+                  33,
+                  14
+                ],
+                [
+                  35,
+                  12
+                ],
+                [
+                  32,
+                  12
+                ],
+                [
+                  32,
+                  14
+                ],
+                [
+                  28,
+                  16
+                ],
+                [
+                  20,
+                  15
+                ],
+                [
+                  23,
+                  20
+                ],
+                [
+                  20,
+                  21
+                ],
+                [
+                  18,
+                  26
+                ],
+                [
+                  15,
+                  26
+                ],
+                [
+                  14,
+                  23
+                ],
+                [
+                  10,
+                  23
+                ],
+                [
+                  10,
+                  25
+                ],
+                [
+                  13,
+                  28
+                ],
+                [
+                  34,
+                  28
+                ],
+                [
+                  40,
+                  23
+                ]
+              ],
+              [
+                [
+                  47,
+                  2
+                ],
+                [
+                  48,
+                  9
+                ],
+                [
+                  45,
+                  11
+                ],
+                [
+                  48,
+                  14
+                ],
+                [
+                  50,
+                  13
+                ],
+                [
+                  49,
+                  3
+                ]
+              ],
+              [
+                [
+                  7,
+                  25
+                ],
+                [
+                  6,
+                  26
+                ],
+                [
+                  9,
+                  28
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "outside_mask_identical": true
+    },
+    {
+      "id": "SFHQ_pt3_00013292",
+      "wings": [
+        {
+          "side": 0,
+          "roi": [
+            135,
+            221,
+            185,
+            262
+          ],
+          "gain": 1.46202,
+          "relative_gain_pct": 15.036,
+          "polygon_count": 3,
+          "vertices": 16,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 3,
+            "opacity": 0.7,
+            "polygons": [
+              [
+                [
+                  34,
+                  16
+                ],
+                [
+                  27,
+                  19
+                ],
+                [
+                  27,
+                  12
+                ],
+                [
+                  18,
+                  22
+                ],
+                [
+                  16,
+                  21
+                ],
+                [
+                  16,
+                  23
+                ],
+                [
+                  20,
+                  27
+                ],
+                [
+                  33,
+                  27
+                ],
+                [
+                  33,
+                  23
+                ],
+                [
+                  28,
+                  21
+                ]
+              ],
+              [
+                [
+                  42,
+                  25
+                ],
+                [
+                  38,
+                  27
+                ],
+                [
+                  41,
+                  27
+                ]
+              ],
+              [
+                [
+                  41,
+                  6
+                ],
+                [
+                  39,
+                  8
+                ],
+                [
+                  41,
+                  8
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "side": 1,
+          "roi": [
+            328,
+            219,
+            378,
+            260
+          ],
+          "gain": 1.59637,
+          "relative_gain_pct": 13.525,
+          "polygon_count": 3,
+          "vertices": 27,
+          "parameters": {
+            "threshold": 14,
+            "epsilon": 1.2,
+            "max_components": 3,
+            "opacity": 0.45,
+            "polygons": [
+              [
+                [
+                  0,
+                  11
+                ],
+                [
+                  0,
+                  13
+                ],
+                [
+                  3,
+                  13
+                ],
+                [
+                  12,
+                  20
+                ],
+                [
+                  18,
+                  20
+                ],
+                [
+                  18,
+                  22
+                ],
+                [
+                  14,
+                  25
+                ],
+                [
+                  7,
+                  25
+                ],
+                [
+                  9,
+                  27
+                ],
+                [
+                  18,
+                  27
+                ],
+                [
+                  19,
+                  25
+                ],
+                [
+                  22,
+                  27
+                ],
+                [
+                  30,
+                  25
+                ],
+                [
+                  26,
+                  24
+                ],
+                [
+                  24,
+                  19
+                ],
+                [
+                  14,
+                  19
+                ],
+                [
+                  13,
+                  17
+                ],
+                [
+                  15,
+                  14
+                ],
+                [
+                  13,
+                  17
+                ],
+                [
+                  6,
+                  12
+                ]
+              ],
+              [
+                [
+                  49,
+                  0
+                ],
+                [
+                  47,
+                  7
+                ],
+                [
+                  47,
+                  27
+                ],
+                [
+                  49,
+                  27
+                ]
+              ],
+              [
+                [
+                  0,
+                  17
+                ],
+                [
+                  2,
+                  21
+                ],
+                [
+                  2,
+                  18
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "outside_mask_identical": true
+    }
+  ],
+  "caveats": [
+    "Teacher-aided fitting; NOT student generalization",
+    "polygon geometry extracted by optimization from teacher residual; never teacher image at inference",
+    "dark fixed pigment, no lashes/shadows synthesis",
+    "ROI MAE alone cannot pass realism gate"
+  ]
+}
