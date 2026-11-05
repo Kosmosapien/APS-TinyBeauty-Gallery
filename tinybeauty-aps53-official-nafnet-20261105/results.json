@@ -1,0 +1,12 @@
+{
+  "metrics": [
+    0.05165,
+    0.92306,
+    0.202617,
+    0.023294
+  ],
+  "source": "official upstream NAFNet architecture",
+  "pretrained_makeup_weights": false,
+  "train": 1000,
+  "holdout": 136
+}
