@@ -1,0 +1,7 @@
+{
+  "step": 2400,
+  "n_train": 8,
+  "n_validation": 0,
+  "research_only": true,
+  "cases": 8
+}
