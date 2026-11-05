@@ -1,0 +1,106 @@
+{
+  "train_images": 8,
+  "validation_images": 0,
+  "variants": [
+    {
+      "id": "mvp",
+      "label": "MVP preservado"
+    },
+    {
+      "id": "teacher",
+      "label": "Teacher corrigido"
+    },
+    {
+      "id": "aps47",
+      "label": "APS-47 borrado"
+    },
+    {
+      "id": "oracle_mask",
+      "label": "Máscara diferença-oráculo"
+    },
+    {
+      "id": "oracle_masked_aps47",
+      "label": "APS-47 com máscara-oráculo"
+    },
+    {
+      "id": "oracle_teacher",
+      "label": "Teacher apenas nas alterações"
+    },
+    {
+      "id": "pred_mask",
+      "label": "Máscara predita (equilibrada)"
+    },
+    {
+      "id": "pred_result",
+      "label": "APS-47 com máscara predita"
+    },
+    {
+      "id": "anatomic_mask",
+      "label": "Máscara anatômica fonte"
+    },
+    {
+      "id": "anatomic_aps47",
+      "label": "APS-47 olhos/lábios"
+    },
+    {
+      "id": "anatomic_teacher",
+      "label": "Teacher olhos/lábios (oráculo)"
+    }
+  ],
+  "oracle_uses_teacher": true,
+  "nonproduction": true,
+  "predictor_steps": 1600,
+  "stats": {
+    "edge": {
+      "masked_aps47": {
+        "mae": 0.02151,
+        "hp_cos": 0.236242,
+        "hp_energy": 0.782074
+      },
+      "oracle_teacher": {
+        "mae": 0.017417,
+        "hp_cos": 0.644986,
+        "hp_energy": 0.911554
+      },
+      "area_gt25": 0.17196
+    },
+    "color": {
+      "masked_aps47": {
+        "mae": 0.021048,
+        "hp_cos": 0.233591,
+        "hp_energy": 0.791416
+      },
+      "oracle_teacher": {
+        "mae": 0.017069,
+        "hp_cos": 0.630844,
+        "hp_energy": 0.914187
+      },
+      "area_gt25": 0.16775
+    },
+    "combined": {
+      "masked_aps47": {
+        "mae": 0.021257,
+        "hp_cos": 0.23215,
+        "hp_energy": 0.805922
+      },
+      "oracle_teacher": {
+        "mae": 0.017614,
+        "hp_cos": 0.605363,
+        "hp_energy": 0.916497
+      },
+      "area_gt25": 0.14808
+    }
+  },
+  "anatomical_stats": {
+    "aps47_anatomic": {
+      "mae": 0.021993,
+      "hp_cos": 0.212831,
+      "hp_energy": 0.88163
+    },
+    "teacher_anatomic_oracle": {
+      "mae": 0.01952,
+      "hp_cos": 0.353059,
+      "hp_energy": 0.957639
+    }
+  }
+}

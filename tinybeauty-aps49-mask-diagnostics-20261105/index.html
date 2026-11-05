@@ -1,0 +1,25 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>APS49 · Máscaras e preservação de textura</title><style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#0b1520;color:#edf4fc}
+body{max-width:1520px;margin:0 auto;padding:16px}
+p{color:#b2c4d7;line-height:1.5}button,select{font:inherit;background:#253a50;color:white;padding:9px;border:1px solid #627b93;border-radius:8px;cursor:pointer}
+.controls{position:sticky;top:0;padding:9px 0;background:#0b1520ef;display:flex;gap:8px;flex-wrap:wrap;z-index:4}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:12px}
+.card{background:#18283a;border:1px solid #36516e;border-radius:12px;padding:9px}
+.card img{width:100%;height:auto;cursor:zoom-in}
+.card h3{font-size:14px}
+#zoom{display:none;position:fixed;inset:0;background:#000e;z-index:5;padding:15px;overflow:auto;text-align:center}
+#zoom img{max-width:96vw;height:auto}
+</style></head><body>
+<h1>APS-49 · Onde editar versus como desenhar</h1>
+<p><b>Oito identidades de treino</b>, não há validação out-of-sample. Máscaras-oráculo e os resultados 'teacher-oráculo' utilizam o teacher, logo NÃO são modelos implantáveis. A máscara predita recebe apenas original + MVP. Os números de energia não garantem fidelidade geométrica.</p>
+<div class="controls"><button onclick="change(-1)">← Anterior</button><select id="case"></select><button onclick="change(1)">Próxima →</button></div>
+<div class="grid" id="grid"></div><div id="zoom" onclick="this.style.display='none'"><button>Fechar</button><img id="big"></div>
+<script>const VS=[{"id": "mvp", "label": "MVP preservado"}, {"id": "teacher", "label": "Teacher corrigido"}, {"id": "aps47", "label": "APS-47 borrado"}, {"id": "oracle_mask", "label": "Máscara diferença-oráculo"}, {"id": "oracle_masked_aps47", "label": "APS-47 com máscara-oráculo"}, {"id": "oracle_teacher", "label": "Teacher apenas nas alterações"}, {"id": "pred_mask", "label": "Máscara predita (equilibrada)"}, {"id": "pred_result", "label": "APS-47 com máscara predita"}, {"id": "anatomic_mask", "label": "Máscara anatômica fonte"}, {"id": "anatomic_aps47", "label": "APS-47 olhos/lábios"}, {"id": "anatomic_teacher", "label": "Teacher olhos/lábios (oráculo)"}];let idx=0;
+const sel=document.getElementById('case');for(let i=0;i<8;i++){let o=document.createElement('option');o.value=i;o.textContent='Imagem '+String(i+1).padStart(2,'0');sel.append(o)}
+sel.onchange=()=>{idx=+sel.value;render()};
+function change(n){idx=(idx+n+8)%8;render()}
+function render(){sel.value=idx;document.getElementById('grid').innerHTML=VS.map(v=>{
+const path='assets/'+String(idx).padStart(2,'0')+'_'+v.id+'.webp';
+return '<div class="card"><h3>'+v.label+'</h3><img loading="lazy" src="'+path+'" onclick="document.getElementById(\'big\').src=this.src;document.getElementById(\'zoom\').style.display=\'block\'"></div>'}).join('')}
+render();</script></body></html>
