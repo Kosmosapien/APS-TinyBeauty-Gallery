@@ -1,0 +1,35 @@
+{
+  "architecture_notes": {
+    "nafmini": "NAFNet-inspired 46k-residual CNN, not official weights",
+    "addblend": "low-resolution additive/multiplicative RGB map, not AAAI paper reproduction",
+    "bilateral": "XY-luma locally affine grid, not InstantRetouch official reproduction"
+  },
+  "data": "1000 TRAIN; 136 held-out IDs; no training identity used in gallery",
+  "training": "1200 gradient updates per arm; 1.2 passages over training set, no data augmentation",
+  "holdout_136": {
+    "mvp": {
+      "mae": 0.057606,
+      "hp_energy": 0.932849,
+      "hp_cos": 0.21226,
+      "mvp_delta": 0.0
+    },
+    "nafmini": {
+      "mae": 0.051219,
+      "hp_energy": 0.929878,
+      "hp_cos": 0.211192,
+      "mvp_delta": 0.023558
+    },
+    "addblend": {
+      "mae": 0.056086,
+      "hp_energy": 0.903956,
+      "hp_cos": 0.211661,
+      "mvp_delta": 0.009934
+    },
+    "bilateral": {
+      "mae": 0.056239,
+      "hp_energy": 0.89839,
+      "hp_cos": 0.212084,
+      "mvp_delta": 0.008639
+    }
+  }
+}
