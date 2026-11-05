@@ -1,0 +1,26 @@
+{
+  "a": {
+    "n_faces": 16,
+    "n_wings": 32,
+    "positive_wings": 20,
+    "mean_roi_improvement_pct": 1.2483,
+    "median_roi_improvement_pct": 0.753,
+    "note": "Positive ROI MAE improvement alone does not prove eyeliner geometry, realism, or mobile quality."
+  },
+  "b": {
+    "faces": 16,
+    "wings": 32,
+    "positive_gt0.5pct": 26,
+    "mean_roi_improvement_pct": 1.507,
+    "median_roi_improvement_pct": 1.243
+  },
+  "c": {
+    "n_images": 16,
+    "n_eyes": 32,
+    "mean_lid_region_gain_pct": 0.7401,
+    "n_improved_1pct": 12
+  },
+  "train_student": 0,
+  "oracle_uses_teacher_params": true,
+  "n": 16
+}
