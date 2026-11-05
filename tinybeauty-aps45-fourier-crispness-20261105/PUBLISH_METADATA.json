@@ -1,0 +1,12 @@
+{
+  "slug": "tinybeauty-aps45-fourier-crispness-20261105",
+  "images": 88,
+  "other_files": 2,
+  "total_files": 90,
+  "bytes": 16676160,
+  "source": "C:\\Datasets\\APS-Makeup\\DesktopGallery_APS45_FourierTexture_20261105",
+  "destination": "C:\\Datasets\\APS-Makeup\\TinyBeautyExperiments\\GitPublish_APS45_20261105\\tinybeauty-aps45-fourier-crispness-20261105",
+  "research_only": true,
+  "one_identity_used_for_training": true,
+  "no_model_weights": true
+}
