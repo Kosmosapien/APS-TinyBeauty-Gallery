@@ -1,0 +1,357 @@
+{
+  "title": "APS46 · Fourier Social · comparação holdout",
+  "training_unique_identities": 1000,
+  "validation_total": 136,
+  "gallery_validation_identities": 24,
+  "checkpoint_step": 8000,
+  "teacher": "Stable-Makeup Social V4 plane_iris_pixels",
+  "mvp": "U-Net global +24k, energy 2500, RGB global 300",
+  "student": "FourierNative 512 with 32 Fourier channels",
+  "fusion": "Fourier - highpass(Fourier - MVP, Gaussian sigma=3), keep=100%",
+  "important": "These photos were NOT used to train the Fourier network. This is research only.",
+  "cases": [
+    {
+      "id": 1,
+      "key": "SFHQ_pt3_00001690",
+      "files": {
+        "source": "00_source.webp",
+        "teacher": "00_teacher.webp",
+        "mvp": "00_mvp.webp",
+        "fourier": "00_fourier.webp",
+        "fusion": "00_fusion.webp"
+      }
+    },
+    {
+      "id": 2,
+      "key": "SFHQ_pt3_00002799",
+      "files": {
+        "source": "01_source.webp",
+        "teacher": "01_teacher.webp",
+        "mvp": "01_mvp.webp",
+        "fourier": "01_fourier.webp",
+        "fusion": "01_fusion.webp"
+      }
+    },
+    {
+      "id": 3,
+      "key": "SFHQ_pt3_00005043",
+      "files": {
+        "source": "02_source.webp",
+        "teacher": "02_teacher.webp",
+        "mvp": "02_mvp.webp",
+        "fourier": "02_fourier.webp",
+        "fusion": "02_fusion.webp"
+      }
+    },
+    {
+      "id": 4,
+      "key": "SFHQ_pt3_00005983",
+      "files": {
+        "source": "03_source.webp",
+        "teacher": "03_teacher.webp",
+        "mvp": "03_mvp.webp",
+        "fourier": "03_fourier.webp",
+        "fusion": "03_fusion.webp"
+      }
+    },
+    {
+      "id": 5,
+      "key": "SFHQ_pt3_00006549",
+      "files": {
+        "source": "04_source.webp",
+        "teacher": "04_teacher.webp",
+        "mvp": "04_mvp.webp",
+        "fourier": "04_fourier.webp",
+        "fusion": "04_fusion.webp"
+      }
+    },
+    {
+      "id": 6,
+      "key": "SFHQ_pt3_00006969",
+      "files": {
+        "source": "05_source.webp",
+        "teacher": "05_teacher.webp",
+        "mvp": "05_mvp.webp",
+        "fourier": "05_fourier.webp",
+        "fusion": "05_fusion.webp"
+      }
+    },
+    {
+      "id": 7,
+      "key": "SFHQ_pt3_00007250",
+      "files": {
+        "source": "06_source.webp",
+        "teacher": "06_teacher.webp",
+        "mvp": "06_mvp.webp",
+        "fourier": "06_fourier.webp",
+        "fusion": "06_fusion.webp"
+      }
+    },
+    {
+      "id": 8,
+      "key": "SFHQ_pt3_00007369",
+      "files": {
+        "source": "07_source.webp",
+        "teacher": "07_teacher.webp",
+        "mvp": "07_mvp.webp",
+        "fourier": "07_fourier.webp",
+        "fusion": "07_fusion.webp"
+      }
+    },
+    {
+      "id": 9,
+      "key": "SFHQ_pt3_00007455",
+      "files": {
+        "source": "08_source.webp",
+        "teacher": "08_teacher.webp",
+        "mvp": "08_mvp.webp",
+        "fourier": "08_fourier.webp",
+        "fusion": "08_fusion.webp"
+      }
+    },
+    {
+      "id": 10,
+      "key": "SFHQ_pt3_00008011",
+      "files": {
+        "source": "09_source.webp",
+        "teacher": "09_teacher.webp",
+        "mvp": "09_mvp.webp",
+        "fourier": "09_fourier.webp",
+        "fusion": "09_fusion.webp"
+      }
+    },
+    {
+      "id": 11,
+      "key": "SFHQ_pt3_00009903",
+      "files": {
+        "source": "10_source.webp",
+        "teacher": "10_teacher.webp",
+        "mvp": "10_mvp.webp",
+        "fourier": "10_fourier.webp",
+        "fusion": "10_fusion.webp"
+      }
+    },
+    {
+      "id": 12,
+      "key": "SFHQ_pt3_00010706",
+      "files": {
+        "source": "11_source.webp",
+        "teacher": "11_teacher.webp",
+        "mvp": "11_mvp.webp",
+        "fourier": "11_fourier.webp",
+        "fusion": "11_fusion.webp"
+      }
+    },
+    {
+      "id": 13,
+      "key": "SFHQ_pt3_00011801",
+      "files": {
+        "source": "12_source.webp",
+        "teacher": "12_teacher.webp",
+        "mvp": "12_mvp.webp",
+        "fourier": "12_fourier.webp",
+        "fusion": "12_fusion.webp"
+      }
+    },
+    {
+      "id": 14,
+      "key": "SFHQ_pt3_00011865",
+      "files": {
+        "source": "13_source.webp",
+        "teacher": "13_teacher.webp",
+        "mvp": "13_mvp.webp",
+        "fourier": "13_fourier.webp",
+        "fusion": "13_fusion.webp"
+      }
+    },
+    {
+      "id": 15,
+      "key": "SFHQ_pt3_00012896",
+      "files": {
+        "source": "14_source.webp",
+        "teacher": "14_teacher.webp",
+        "mvp": "14_mvp.webp",
+        "fourier": "14_fourier.webp",
+        "fusion": "14_fusion.webp"
+      }
+    },
+    {
+      "id": 16,
+      "key": "SFHQ_pt3_00013292",
+      "files": {
+        "source": "15_source.webp",
+        "teacher": "15_teacher.webp",
+        "mvp": "15_mvp.webp",
+        "fourier": "15_fourier.webp",
+        "fusion": "15_fusion.webp"
+      }
+    },
+    {
+      "id": 17,
+      "key": "SFHQ_pt3_00016032",
+      "files": {
+        "source": "16_source.webp",
+        "teacher": "16_teacher.webp",
+        "mvp": "16_mvp.webp",
+        "fourier": "16_fourier.webp",
+        "fusion": "16_fusion.webp"
+      }
+    },
+    {
+      "id": 18,
+      "key": "SFHQ_pt3_00016161",
+      "files": {
+        "source": "17_source.webp",
+        "teacher": "17_teacher.webp",
+        "mvp": "17_mvp.webp",
+        "fourier": "17_fourier.webp",
+        "fusion": "17_fusion.webp"
+      }
+    },
+    {
+      "id": 19,
+      "key": "SFHQ_pt3_00017617",
+      "files": {
+        "source": "18_source.webp",
+        "teacher": "18_teacher.webp",
+        "mvp": "18_mvp.webp",
+        "fourier": "18_fourier.webp",
+        "fusion": "18_fusion.webp"
+      }
+    },
+    {
+      "id": 20,
+      "key": "SFHQ_pt3_00017618",
+      "files": {
+        "source": "19_source.webp",
+        "teacher": "19_teacher.webp",
+        "mvp": "19_mvp.webp",
+        "fourier": "19_fourier.webp",
+        "fusion": "19_fusion.webp"
+      }
+    },
+    {
+      "id": 21,
+      "key": "SFHQ_pt3_00018576",
+      "files": {
+        "source": "20_source.webp",
+        "teacher": "20_teacher.webp",
+        "mvp": "20_mvp.webp",
+        "fourier": "20_fourier.webp",
+        "fusion": "20_fusion.webp"
+      }
+    },
+    {
+      "id": 22,
+      "key": "SFHQ_pt3_00020466",
+      "files": {
+        "source": "21_source.webp",
+        "teacher": "21_teacher.webp",
+        "mvp": "21_mvp.webp",
+        "fourier": "21_fourier.webp",
+        "fusion": "21_fusion.webp"
+      }
+    },
+    {
+      "id": 23,
+      "key": "SFHQ_pt3_00020555",
+      "files": {
+        "source": "22_source.webp",
+        "teacher": "22_teacher.webp",
+        "mvp": "22_mvp.webp",
+        "fourier": "22_fourier.webp",
+        "fusion": "22_fusion.webp"
+      }
+    },
+    {
+      "id": 24,
+      "key": "SFHQ_pt3_00020714",
+      "files": {
+        "source": "23_source.webp",
+        "teacher": "23_teacher.webp",
+        "mvp": "23_mvp.webp",
+        "fourier": "23_fourier.webp",
+        "fusion": "23_fusion.webp"
+      }
+    }
+  ],
+  "history": [
+    {
+      "step": 100,
+      "seconds": 10.7,
+      "loss": 0.083898,
+      "validation32": {
+        "mae": 0.055329,
+        "hp_error": 0.023537,
+        "hp_cos": 0.214392,
+        "hp_energy": 0.927834
+      }
+    },
+    {
+      "step": 300,
+      "seconds": 29.2,
+      "loss": 0.081258,
+      "validation32": {
+        "mae": 0.054511,
+        "hp_error": 0.023534,
+        "hp_cos": 0.214048,
+        "hp_energy": 0.927253
+      }
+    },
+    {
+      "step": 600,
+      "seconds": 58.6,
+      "loss": 0.066073,
+      "validation32": {
+        "mae": 0.053958,
+        "hp_error": 0.02353,
+        "hp_cos": 0.214103,
+        "hp_energy": 0.926941
+      }
+    },
+    {
+      "step": 1100,
+      "seconds": 102.9,
+      "loss": 0.082268,
+      "validation32": {
+        "mae": 0.054076,
+        "hp_error": 0.023518,
+        "hp_cos": 0.213552,
+        "hp_energy": 0.925187
+      }
+    },
+    {
+      "step": 2000,
+      "seconds": 183.7,
+      "loss": 0.100562,
+      "validation32": {
+        "mae": 0.053812,
+        "hp_error": 0.023477,
+        "hp_cos": 0.213189,
+        "hp_energy": 0.9213
+      }
+    },
+    {
+      "step": 4000,
+      "seconds": 356.5,
+      "loss": 0.081808,
+      "validation32": {
+        "mae": 0.051005,
+        "hp_error": 0.020193,
+        "hp_cos": 0.209103,
+        "hp_energy": 0.559802
+      }
+    },
+    {
+      "step": 8000,
+      "seconds": 703.3,
+      "loss": 0.051508,
+      "validation32": {
+        "mae": 0.048743,
+        "hp_error": 0.018927,
+        "hp_cos": 0.263919,
+        "hp_energy": 0.413234
+      }
+    }
+  ]
+}

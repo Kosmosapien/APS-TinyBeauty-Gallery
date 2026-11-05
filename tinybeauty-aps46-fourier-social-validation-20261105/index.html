@@ -1,0 +1,61 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>APS-46 — Fourier Social · validação</title><style>
+:root{font-family:system-ui,-apple-system,sans-serif;color-scheme:dark;background:#0d141d;color:#edf4fb}
+*{box-sizing:border-box}body{margin:0 auto;padding:15px 12px 48px;max-width:1320px}
+h1{font-size:clamp(1.4rem,4vw,2.2rem);margin:8px 0}p{max-width:970px;line-height:1.4;color:#b7c6d6}
+.mark{font-size:12px;color:#aec3d3}.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:12px 0;position:sticky;top:0;background:#0d141df7;z-index:6;border-bottom:1px solid #34485b}
+button,select{background:#253c50;border:1px solid #49677f;color:white;font:inherit;border-radius:8px;padding:9px;cursor:pointer}
+button.active{background:#176b57;border-color:#6ccdb2}
+.focus{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:13px;margin-top:16px}
+.frame{background:#192837;border:1px solid #385066;border-radius:12px;padding:12px;overflow:hidden}
+.frame img{width:100%;max-height:690px;object-fit:contain;image-rendering:auto;cursor:zoom-in}
+.frame h3{font-size:14px;margin:0 0 9px}
+.types{display:flex;gap:6px;flex-wrap:wrap;margin:9px 0}
+.small{font-size:12px;color:#b2c3d3}
+#overlay{display:none;position:fixed;inset:0;background:#000f;z-index:20;padding:12px;overflow:auto;text-align:center}
+#overlay img{max-width:100%;height:auto}
+</style></head><body><h1>APS-46 · Fourier + textura MVP</h1>
+<p>Comparação de validação em identidades inéditas. Veja <b>Original → Teacher → MVP → Fourier escalado → Fourier + textura MVP 100% · σ 3</b>.
+Apenas o Fourier foi retreinado; a fusão é um pós-processamento determinístico. A grade livre 256/512 da APS-45 não está aqui porque memorizava aquela fotografia.</p>
+<p id="traininfo"></p>
+<div class="controls"><button onclick="change(-1)">← Anterior</button><select id="choose"></select><button onclick="change(1)">Próxima →</button>
+<button class="active" id="modefull" onclick="setMode('full')">Face completa</button>
+<button id="modeeyes" onclick="setMode('eyes')">Zoom olhos</button>
+<button id="modelips" onclick="setMode('lips')">Zoom lábios</button>
+</div>
+<div class="types" id="types"></div><div class="focus" id="focus"></div>
+<p class="small">Pesquisa de arquitetura, não lançamento de produção. A seleção visual dos melhores checkpoints deve considerar geometria de delineado, preservação da textura, lábios e olhos, sem depender apenas de MAE.</p>
+<div id="overlay" onclick="this.style.display='none'"><button>Fechar zoom</button><img id="zoom"></div>
+<script>
+const DATA={"title": "APS46 · Fourier Social · comparação holdout", "training_unique_identities": 1000, "validation_total": 136, "gallery_validation_identities": 24, "checkpoint_step": 8000, "teacher": "Stable-Makeup Social V4 plane_iris_pixels", "mvp": "U-Net global +24k, energy 2500, RGB global 300", "student": "FourierNative 512 with 32 Fourier channels", "fusion": "Fourier - highpass(Fourier - MVP, Gaussian sigma=3), keep=100%", "important": "These photos were NOT used to train the Fourier network. This is research only.", "cases": [{"id": 1, "key": "SFHQ_pt3_00001690", "files": {"source": "00_source.webp", "teacher": "00_teacher.webp", "mvp": "00_mvp.webp", "fourier": "00_fourier.webp", "fusion": "00_fusion.webp"}}, {"id": 2, "key": "SFHQ_pt3_00002799", "files": {"source": "01_source.webp", "teacher": "01_teacher.webp", "mvp": "01_mvp.webp", "fourier": "01_fourier.webp", "fusion": "01_fusion.webp"}}, {"id": 3, "key": "SFHQ_pt3_00005043", "files": {"source": "02_source.webp", "teacher": "02_teacher.webp", "mvp": "02_mvp.webp", "fourier": "02_fourier.webp", "fusion": "02_fusion.webp"}}, {"id": 4, "key": "SFHQ_pt3_00005983", "files": {"source": "03_source.webp", "teacher": "03_teacher.webp", "mvp": "03_mvp.webp", "fourier": "03_fourier.webp", "fusion": "03_fusion.webp"}}, {"id": 5, "key": "SFHQ_pt3_00006549", "files": {"source": "04_source.webp", "teacher": "04_teacher.webp", "mvp": "04_mvp.webp", "fourier": "04_fourier.webp", "fusion": "04_fusion.webp"}}, {"id": 6, "key": "SFHQ_pt3_00006969", "files": {"source": "05_source.webp", "teacher": "05_teacher.webp", "mvp": "05_mvp.webp", "fourier": "05_fourier.webp", "fusion": "05_fusion.webp"}}, {"id": 7, "key": "SFHQ_pt3_00007250", "files": {"source": "06_source.webp", "teacher": "06_teacher.webp", "mvp": "06_mvp.webp", "fourier": "06_fourier.webp", "fusion": "06_fusion.webp"}}, {"id": 8, "key": "SFHQ_pt3_00007369", "files": {"source": "07_source.webp", "teacher": "07_teacher.webp", "mvp": "07_mvp.webp", "fourier": "07_fourier.webp", "fusion": "07_fusion.webp"}}, {"id": 9, "key": "SFHQ_pt3_00007455", "files": {"source": "08_source.webp", "teacher": "08_teacher.webp", "mvp": "08_mvp.webp", "fourier": "08_fourier.webp", "fusion": "08_fusion.webp"}}, {"id": 10, "key": "SFHQ_pt3_00008011", "files": {"source": "09_source.webp", "teacher": "09_teacher.webp", "mvp": "09_mvp.webp", "fourier": "09_fourier.webp", "fusion": "09_fusion.webp"}}, {"id": 11, "key": "SFHQ_pt3_00009903", "files": {"source": "10_source.webp", "teacher": "10_teacher.webp", "mvp": "10_mvp.webp", "fourier": "10_fourier.webp", "fusion": "10_fusion.webp"}}, {"id": 12, "key": "SFHQ_pt3_00010706", "files": {"source": "11_source.webp", "teacher": "11_teacher.webp", "mvp": "11_mvp.webp", "fourier": "11_fourier.webp", "fusion": "11_fusion.webp"}}, {"id": 13, "key": "SFHQ_pt3_00011801", "files": {"source": "12_source.webp", "teacher": "12_teacher.webp", "mvp": "12_mvp.webp", "fourier": "12_fourier.webp", "fusion": "12_fusion.webp"}}, {"id": 14, "key": "SFHQ_pt3_00011865", "files": {"source": "13_source.webp", "teacher": "13_teacher.webp", "mvp": "13_mvp.webp", "fourier": "13_fourier.webp", "fusion": "13_fusion.webp"}}, {"id": 15, "key": "SFHQ_pt3_00012896", "files": {"source": "14_source.webp", "teacher": "14_teacher.webp", "mvp": "14_mvp.webp", "fourier": "14_fourier.webp", "fusion": "14_fusion.webp"}}, {"id": 16, "key": "SFHQ_pt3_00013292", "files": {"source": "15_source.webp", "teacher": "15_teacher.webp", "mvp": "15_mvp.webp", "fourier": "15_fourier.webp", "fusion": "15_fusion.webp"}}, {"id": 17, "key": "SFHQ_pt3_00016032", "files": {"source": "16_source.webp", "teacher": "16_teacher.webp", "mvp": "16_mvp.webp", "fourier": "16_fourier.webp", "fusion": "16_fusion.webp"}}, {"id": 18, "key": "SFHQ_pt3_00016161", "files": {"source": "17_source.webp", "teacher": "17_teacher.webp", "mvp": "17_mvp.webp", "fourier": "17_fourier.webp", "fusion": "17_fusion.webp"}}, {"id": 19, "key": "SFHQ_pt3_00017617", "files": {"source": "18_source.webp", "teacher": "18_teacher.webp", "mvp": "18_mvp.webp", "fourier": "18_fourier.webp", "fusion": "18_fusion.webp"}}, {"id": 20, "key": "SFHQ_pt3_00017618", "files": {"source": "19_source.webp", "teacher": "19_teacher.webp", "mvp": "19_mvp.webp", "fourier": "19_fourier.webp", "fusion": "19_fusion.webp"}}, {"id": 21, "key": "SFHQ_pt3_00018576", "files": {"source": "20_source.webp", "teacher": "20_teacher.webp", "mvp": "20_mvp.webp", "fourier": "20_fourier.webp", "fusion": "20_fusion.webp"}}, {"id": 22, "key": "SFHQ_pt3_00020466", "files": {"source": "21_source.webp", "teacher": "21_teacher.webp", "mvp": "21_mvp.webp", "fourier": "21_fourier.webp", "fusion": "21_fusion.webp"}}, {"id": 23, "key": "SFHQ_pt3_00020555", "files": {"source": "22_source.webp", "teacher": "22_teacher.webp", "mvp": "22_mvp.webp", "fourier": "22_fourier.webp", "fusion": "22_fusion.webp"}}, {"id": 24, "key": "SFHQ_pt3_00020714", "files": {"source": "23_source.webp", "teacher": "23_teacher.webp", "mvp": "23_mvp.webp", "fourier": "23_fourier.webp", "fusion": "23_fusion.webp"}}]};
+const variantNames={source:"Original",teacher:"Teacher Social V4",mvp:"MVP · RGB Global +300",fourier:"CNN Fourier · treino ampliado",fusion:"Fourier + textura MVP 100% · σ 3"};
+let n=0,mode="full",selected=["teacher","mvp","fourier","fusion"];
+document.getElementById("traininfo").textContent=
+"Treino: "+DATA.training_unique_identities+" identidades · Validação: "+DATA.validation_total+
+" identidades separadas · Galeria: "+DATA.gallery_validation_identities+
+" imagens de validação · Checkpoint: "+DATA.checkpoint_step+" passos.";
+const sel=document.getElementById("choose");
+DATA.cases.forEach((c,i)=>{let option=document.createElement("option");option.value=i;option.textContent="Validação "+String(i+1).padStart(2,"0");sel.add(option)});
+sel.onchange=()=>{n=Number(sel.value);render()};
+function change(d){n=(n+d+DATA.cases.length)%DATA.cases.length;render()}
+function setMode(t){mode=t;for(const q of ["full","eyes","lips"])document.getElementById("mode"+q).classList.toggle("active",t===q);render()}
+function render(){
+sel.value=n;
+const types=document.getElementById("types");types.replaceChildren();
+for(const k of Object.keys(variantNames)){let button=document.createElement("button");button.textContent=variantNames[k];button.classList.toggle("active",selected.includes(k));button.onclick=()=>{selected=selected.includes(k)?selected.filter(x=>x!==k):[...selected,k];render()};types.append(button)}
+const box=document.getElementById("focus");box.replaceChildren();
+for(const k of selected){
+const c=DATA.cases[n],url="assets/"+c.files[k];
+const card=document.createElement("div");card.className="frame";
+const title=document.createElement("h3");title.textContent=variantNames[k];
+const img=document.createElement("img");img.loading="lazy";img.src=url;img.alt=variantNames[k];
+img.style.aspectRatio="1";img.style.objectFit="cover";
+if(mode==="eyes"){img.style.objectPosition="50% 37%";img.style.height="220px"}
+else if(mode==="lips"){img.style.objectPosition="50% 67%";img.style.height="180px"}
+else{img.style.height="auto"}
+img.onclick=()=>{document.getElementById("zoom").src=url;document.getElementById("overlay").style.display="block"};
+card.append(title,img);box.append(card);
+}
+}
+render();
+</script></body></html>
