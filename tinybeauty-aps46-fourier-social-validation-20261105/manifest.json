@@ -3,7 +3,7 @@
   "training_unique_identities": 1000,
   "validation_total": 136,
   "gallery_validation_identities": 24,
-  "checkpoint_step": 8000,
+  "checkpoint_step": 12000,
   "teacher": "Stable-Makeup Social V4 plane_iris_pixels",
   "mvp": "U-Net global +24k, energy 2500, RGB global 300",
   "student": "FourierNative 512 with 32 Fourier channels",
@@ -351,6 +351,17 @@
         "hp_error": 0.018927,
         "hp_cos": 0.263919,
         "hp_energy": 0.413234
+      }
+    },
+    {
+      "step": 12000,
+      "seconds": 1051.3,
+      "loss": 0.056768,
+      "validation32": {
+        "mae": 0.048021,
+        "hp_error": 0.018755,
+        "hp_cos": 0.277949,
+        "hp_energy": 0.391904
       }
     }
   ]
